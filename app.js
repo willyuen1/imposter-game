@@ -39,14 +39,14 @@ function shuffle(arr) {
 
 /* ---------- game state ---------- */
 const state = {
-  screen: 'setup',        // 'setup' | 'menu' | 'card' | 'first' | 'reveal'
+  screen: 'setup',        // 'setup' | 'menu' | 'card' | 'order' | 'reveal'
   names: ['', '', ''],    // raw text fields on the setup screen
   numImposters: 1,
   players: [],            // [{ name, isImposter, seen }] — kept in entry order
   category: '',
   word: '',
   clue: '',
-  firstPlayer: null,      // index into players
+  order: [],              // randomised speaking order (array of player indices)
   activeCard: null,       // index of player currently viewing their card
   cardRevealed: false,    // two-step privacy gate on the card screen
   focusLast: false        // focus the last name field after re-render
@@ -97,16 +97,14 @@ function dealRoles() {
     name, isImposter: imposterSet.has(i), seen: false
   }));
 
-  state.firstPlayer = null;
+  state.order = [];
   state.activeCard = null;
   state.cardRevealed = false;
 }
 
-function pickFirstPlayer() {
-  if (state.players.length <= 1) { state.firstPlayer = 0; return; }
-  let i;
-  do { i = randInt(state.players.length); } while (i === state.firstPlayer);
-  state.firstPlayer = i;
+function pickOrder() {
+  // a random permutation of all players: order[0] speaks first, then order[1], ...
+  state.order = shuffle(state.players.map((_, i) => i));
 }
 
 /* ======================================================================
@@ -237,8 +235,8 @@ function menuScreen() {
     h('button', {
       class: 'btn btn-primary',
       disabled: !allSeen,
-      onclick: () => { pickFirstPlayer(); state.screen = 'first'; render(); }
-    }, allSeen ? 'Reveal who goes first  →' : 'Everyone needs to look first')
+      onclick: () => { pickOrder(); state.screen = 'order'; render(); }
+    }, allSeen ? 'Reveal the speaking order  →' : 'Everyone needs to look first')
   );
 }
 
@@ -300,22 +298,25 @@ function cardScreen() {
   );
 }
 
-function firstPlayerScreen() {
-  const p = state.players[state.firstPlayer];
+function orderScreen() {
   return h('div', { class: 'screen fade-in' },
-    h('div', { class: 'spacer' }),
-    h('div', { class: 'center' },
-      h('div', { class: 'big-emoji' }, '🎤'),
-      h('p', { class: 'subtitle' }, 'Goes first'),
-      h('div', { class: 'reveal-name' }, p.name),
-      h('p', { class: 'note' },
-        'Say a word or two about the secret word. Insiders: prove you know it — without handing it to the imposter.')
+    h('h1', { class: 'title' }, 'Speaking order'),
+    h('p', { class: 'subtitle' },
+      'Take turns in this order, then keep going around. Say a word or two about the secret word — insiders, show you know it without handing it to the imposter.'),
+    h('div', { class: 'order-list' },
+      state.order.map((pi, idx) =>
+        h('div', { class: 'order-row' + (idx === 0 ? ' first' : '') },
+          h('span', { class: 'order-num' }, String(idx + 1)),
+          h('span', null, state.players[pi].name),
+          idx === 0 ? h('span', { class: 'first-tag' }, '🎤 starts') : null
+        )
+      )
     ),
     h('div', { class: 'spacer' }),
     h('button', {
       class: 'btn btn-secondary',
-      onclick: () => { pickFirstPlayer(); render(); }
-    }, '🔀  Pick someone else'),
+      onclick: () => { pickOrder(); render(); }
+    }, '🔀  Reshuffle order'),
     h('button', {
       class: 'btn btn-primary',
       onclick: () => {
@@ -375,7 +376,7 @@ function render() {
   switch (state.screen) {
     case 'menu':  screen = menuScreen(); break;
     case 'card':  screen = cardScreen(); break;
-    case 'first': screen = firstPlayerScreen(); break;
+    case 'order': screen = orderScreen(); break;
     case 'reveal': screen = revealScreen(); break;
     default:      screen = setupScreen(); break;
   }
