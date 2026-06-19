@@ -67,13 +67,14 @@ Screen**. Done — it's now an app icon on your phone.
 Open `words.js`. Each entry is:
 
 ```js
-{ word: "Elephant", related: ["Rhino", "Hippo", "Giraffe"] }
+{ word: "Elephant", emoji: "🐘", def: "A huge grey mammal with a trunk and tusks.", clues: ["Grey", "Memory", "Herd"] }
 ```
 
 - `word` — what the insiders see.
-- `related` — decoy words the imposter might see (the game shows one at random).
-  Pick close cousins (usually same category) so the imposter can bluff, but
-  specific clues still give them away.
+- `emoji` — the icon on the card. Use `""` to get a coloured letter avatar instead (good for people, brands, movies).
+- `def` — a one-line definition shown to insiders. Use `""` to omit.
+- `clues` — subtle ONE-WORD hints the imposter sees; the game shows one at random.
+  Keep them oblique so they don't give the word away.
 
 Add lines to a category, or add a whole new `"Category": [ ... ]` block.
 If you host on GitHub Pages, commit + push and the live version updates.
