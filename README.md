@@ -67,12 +67,13 @@ Screen**. Done — it's now an app icon on your phone.
 Open `words.js`. Each entry is:
 
 ```js
-{ word: "Elephant", clue: "Never forgets a thing" }
+{ word: "Elephant", related: ["Rhino", "Hippo", "Giraffe"] }
 ```
 
 - `word` — what the insiders see.
-- `clue` — the subtle hint the imposter sees. Good clues nudge toward the word
-  without giving it away.
+- `related` — decoy words the imposter might see (the game shows one at random).
+  Pick close cousins (usually same category) so the imposter can bluff, but
+  specific clues still give them away.
 
 Add lines to a category, or add a whole new `"Category": [ ... ]` block.
 If you host on GitHub Pages, commit + push and the live version updates.

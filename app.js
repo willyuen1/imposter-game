@@ -45,7 +45,7 @@ const state = {
   players: [],            // [{ name, isImposter, seen }] — kept in entry order
   category: '',
   word: '',
-  clue: '',
+  decoy: '',              // the related word shown to the imposter
   order: [],              // randomised speaking order (array of player indices)
   activeCard: null,       // index of player currently viewing their card
   cardRevealed: false,    // two-step privacy gate on the card screen
@@ -80,15 +80,15 @@ function dealRoles() {
   const flat = [];
   for (const category in WORD_PACK) {
     for (const item of WORD_PACK[category]) {
-      const clues = item.clues || (item.clue ? [item.clue] : []);
-      flat.push({ category, word: item.word, clues });
+      const related = item.related || item.clues || (item.clue ? [item.clue] : []);
+      flat.push({ category, word: item.word, related });
     }
   }
   const pick = flat[randInt(flat.length)];
   state.category = pick.category;
   state.word = pick.word;
-  // each word has several possible clues — draw one at random for the imposter
-  state.clue = pick.clues[randInt(pick.clues.length)] || '';
+  // each word has several related decoys — draw one at random for the imposter
+  state.decoy = pick.related[randInt(pick.related.length)] || '';
 
   // assign imposters to random positions, but keep players in entry order
   const positions = shuffle(names.map((_, i) => i));
@@ -271,9 +271,9 @@ function cardScreen() {
         h('div', { class: 'big-emoji' }, '🕵️'),
         h('div', { class: 'role' }, 'You\'re the imposter'),
         h('span', { class: 'chip' }, state.category),
-        h('div', { class: 'clue-label' }, 'Your only clue:'),
-        h('div', { class: 'clue' }, '“' + state.clue + '”'),
-        h('p', { class: 'note' }, 'Blend in. Figure out the word without giving yourself away.')
+        h('div', { class: 'clue-label' }, 'A related word:'),
+        h('div', { class: 'word' }, state.decoy),
+        h('p', { class: 'note' }, 'Not the real word — just close. Describe it loosely and blend in.')
       )
     : h('div', { class: 'card' },
         h('div', { class: 'kicker' }, state.category),
