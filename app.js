@@ -45,7 +45,9 @@ const state = {
   players: [],            // [{ name, isImposter, seen }] — kept in entry order
   category: '',
   word: '',
-  decoy: '',              // the related word shown to the imposter
+  wordEmoji: '',          // emoji icon for the secret word (insider card)
+  wordDef: '',            // short definition of the secret word (insider card)
+  clue: '',               // the subtle one-word clue shown to the imposter
   order: [],              // randomised speaking order (array of player indices)
   activeCard: null,       // index of player currently viewing their card
   cardRevealed: false,    // two-step privacy gate on the card screen
@@ -80,15 +82,17 @@ function dealRoles() {
   const flat = [];
   for (const category in WORD_PACK) {
     for (const item of WORD_PACK[category]) {
-      const related = item.related || item.clues || (item.clue ? [item.clue] : []);
-      flat.push({ category, word: item.word, related });
+      const clues = item.clues || item.related || (item.clue ? [item.clue] : []);
+      flat.push({ category, word: item.word, emoji: item.emoji || '', def: item.def || '', clues });
     }
   }
   const pick = flat[randInt(flat.length)];
   state.category = pick.category;
   state.word = pick.word;
-  // each word has several related decoys — draw one at random for the imposter
-  state.decoy = pick.related[randInt(pick.related.length)] || '';
+  state.wordEmoji = pick.emoji;
+  state.wordDef = pick.def;
+  // each word has several one-word clues — draw one at random for the imposter
+  state.clue = pick.clues[randInt(pick.clues.length)] || '';
 
   // assign imposters to random positions, but keep players in entry order
   const positions = shuffle(names.map((_, i) => i));
@@ -240,6 +244,20 @@ function menuScreen() {
   );
 }
 
+// a simple stable hue from a string, for letter avatars
+function hashHue(s) {
+  let n = 0;
+  for (let i = 0; i < s.length; i++) n = (n * 31 + s.charCodeAt(i)) % 360;
+  return n;
+}
+
+// the visual for a word: its emoji if it has one, else a coloured initial avatar
+function imageNode(word, emoji) {
+  if (emoji) return h('div', { class: 'word-emoji' }, emoji);
+  const letter = (word || '?').trim().charAt(0).toUpperCase();
+  return h('div', { class: 'avatar', style: 'background: hsl(' + hashHue(word) + ', 55%, 45%)' }, letter);
+}
+
 function cardScreen() {
   const p = state.players[state.activeCard];
 
@@ -271,13 +289,15 @@ function cardScreen() {
         h('div', { class: 'big-emoji' }, '🕵️'),
         h('div', { class: 'role' }, 'You\'re the imposter'),
         h('span', { class: 'chip' }, state.category),
-        h('div', { class: 'clue-label' }, 'A related word:'),
-        h('div', { class: 'word' }, state.decoy),
-        h('p', { class: 'note' }, 'Not the real word — just close. Describe it loosely and blend in.')
+        h('div', { class: 'clue-label' }, 'Your one-word clue:'),
+        h('div', { class: 'word' }, state.clue),
+        h('p', { class: 'note' }, 'Use it to blend in. Work out the word without giving yourself away.')
       )
     : h('div', { class: 'card' },
+        imageNode(state.word, state.wordEmoji),
         h('div', { class: 'kicker' }, state.category),
         h('div', { class: 'word' }, state.word),
+        state.wordDef ? h('p', { class: 'def' }, state.wordDef) : null,
         h('p', { class: 'note' }, 'Drop hints subtle enough that the imposter can\'t guess it.')
       );
 
