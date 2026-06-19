@@ -3,7 +3,7 @@
  * once it has been opened once (over https — e.g. GitHub Pages).
  * Bump CACHE when you change any file so phones pick up the new version.
  */
-const CACHE = 'imposter-v2';
+const CACHE = 'imposter-v3';
 
 // Files the game cannot run without.
 const CORE = [

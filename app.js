@@ -116,6 +116,8 @@ function pickOrder() {
  * ==================================================================== */
 
 function setupScreen() {
+  let packTotal = 0;
+  for (const c in WORD_PACK) packTotal += WORD_PACK[c].length;
   const trimmed = state.names.map((n) => n.trim());
   const count = trimmed.filter(Boolean).length;
   const maxImp = Math.max(1, count - 1);
@@ -186,7 +188,8 @@ function setupScreen() {
       class: 'btn btn-primary',
       disabled: !canStart,
       onclick: () => { saveSetup(); dealRoles(); state.screen = 'menu'; render(); }
-    }, 'Start game')
+    }, 'Start game'),
+    h('p', { class: 'buildtag' }, packTotal + ' words · ' + Object.keys(WORD_PACK).length + ' categories')
   );
 }
 
