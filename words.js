@@ -7,223 +7,23 @@
 const WORD_PACK = {
   "Animals": [
     {
-      "word": "Elephant",
-      "emoji": "🐘",
-      "def": "The largest land animal with a long trunk and big ears.",
+      "word": "Meerkat",
+      "emoji": "",
+      "def": "A small desert animal that stands up tall to watch for danger.",
       "clues": [
-        "Grey",
-        "Memory",
-        "Herd"
+        "Lookout",
+        "Burrow",
+        "Alert"
       ]
     },
     {
-      "word": "Owl",
-      "emoji": "🦉",
-      "def": "A bird that hunts at night and makes a hooting sound.",
+      "word": "Pufferfish",
+      "emoji": "🐡",
+      "def": "A fish that puffs up into a spiky ball when scared.",
       "clues": [
-        "Night",
-        "Wise",
-        "Hoot"
-      ]
-    },
-    {
-      "word": "Dolphin",
-      "emoji": "🐬",
-      "def": "A smart ocean animal that loves to leap and play.",
-      "clues": [
-        "Clicks",
-        "Flipper",
-        "Playful"
-      ]
-    },
-    {
-      "word": "Penguin",
-      "emoji": "🐧",
-      "def": "A black-and-white bird that swims but cannot fly.",
-      "clues": [
-        "Waddle",
-        "Tuxedo",
-        "Antarctic"
-      ]
-    },
-    {
-      "word": "Giraffe",
-      "emoji": "🦒",
-      "def": "The tallest animal on Earth with a very long neck.",
-      "clues": [
-        "Tall",
-        "Spotted",
-        "Savanna"
-      ]
-    },
-    {
-      "word": "Lion",
-      "emoji": "🦁",
-      "def": "A big cat often called the king of the jungle.",
-      "clues": [
-        "Mane",
-        "Roar",
-        "Pride"
-      ]
-    },
-    {
-      "word": "Frog",
-      "emoji": "🐸",
-      "def": "A small green animal that jumps and lives near water.",
-      "clues": [
-        "Leap",
-        "Pond",
-        "Ribbit"
-      ]
-    },
-    {
-      "word": "Butterfly",
-      "emoji": "🦋",
-      "def": "A colorful insect that starts life as a caterpillar.",
-      "clues": [
-        "Flutter",
-        "Metamorphosis",
-        "Wings"
-      ]
-    },
-    {
-      "word": "Shark",
-      "emoji": "🦈",
-      "def": "A powerful ocean fish with sharp teeth and fins.",
-      "clues": [
-        "Fin",
-        "Circling",
-        "Predator"
-      ]
-    },
-    {
-      "word": "Kangaroo",
-      "emoji": "🦘",
-      "def": "An Australian animal that hops and carries babies in a pouch.",
-      "clues": [
-        "Pouch",
-        "Bounce",
-        "Outback"
-      ]
-    },
-    {
-      "word": "Parrot",
-      "emoji": "🦜",
-      "def": "A colorful bird that can mimic human speech.",
-      "clues": [
-        "Mimic",
-        "Colorful",
-        "Perch"
-      ]
-    },
-    {
-      "word": "Cheetah",
-      "emoji": "🐆",
-      "def": "The fastest land animal with spotted fur.",
-      "clues": [
-        "Speed",
-        "Spotted",
-        "Sprint"
-      ]
-    },
-    {
-      "word": "Gorilla",
-      "emoji": "🦍",
-      "def": "A large strong ape that lives in African forests.",
-      "clues": [
-        "Chest",
-        "Knuckles",
-        "Jungle"
-      ]
-    },
-    {
-      "word": "Flamingo",
-      "emoji": "🦩",
-      "def": "A pink bird that stands on one leg in shallow water.",
-      "clues": [
-        "Pink",
-        "Balance",
-        "Wading"
-      ]
-    },
-    {
-      "word": "Turtle",
-      "emoji": "🐢",
-      "def": "A slow reptile that carries its home on its back.",
-      "clues": [
-        "Shell",
-        "Slow",
-        "Ancient"
-      ]
-    },
-    {
-      "word": "Wolf",
-      "emoji": "🐺",
-      "def": "A wild dog that howls at the moon and lives in packs.",
-      "clues": [
-        "Howl",
-        "Pack",
-        "Forest"
-      ]
-    },
-    {
-      "word": "Crab",
-      "emoji": "🦀",
-      "def": "A sea creature with claws and a hard shell that walks sideways.",
-      "clues": [
-        "Pinch",
-        "Sideways",
-        "Tidal"
-      ]
-    },
-    {
-      "word": "Peacock",
-      "emoji": "🦚",
-      "def": "A bird known for its spectacular colorful tail feathers.",
-      "clues": [
-        "Fan",
-        "Display",
-        "Iridescent"
-      ]
-    },
-    {
-      "word": "Bear",
-      "emoji": "🐻",
-      "def": "A large furry animal that hibernates through winter.",
-      "clues": [
-        "Hibernate",
-        "Honey",
-        "Furry"
-      ]
-    },
-    {
-      "word": "Zebra",
-      "emoji": "🦓",
-      "def": "An African animal that looks like a striped horse.",
-      "clues": [
-        "Stripes",
-        "Herd",
-        "Grassland"
-      ]
-    },
-    {
-      "word": "Octopus",
-      "emoji": "🐙",
-      "def": "A sea creature with eight arms and no bones.",
-      "clues": [
-        "Ink",
-        "Tentacles",
-        "Camouflage"
-      ]
-    },
-    {
-      "word": "Deer",
-      "emoji": "🦌",
-      "def": "A graceful forest animal with antlers and long thin legs.",
-      "clues": [
-        "Antlers",
-        "Graceful",
-        "Meadow"
+        "Spiky",
+        "Reef",
+        "Round"
       ]
     },
     {
@@ -231,985 +31,1185 @@ const WORD_PACK = {
       "emoji": "🦔",
       "def": "A small animal covered in sharp spines for protection.",
       "clues": [
-        "Spines",
         "Curl",
-        "Nocturnal"
+        "Nocturnal",
+        "Garden"
       ]
     },
     {
-      "word": "Crocodile",
-      "emoji": "🐊",
-      "def": "A large reptile with powerful jaws that lives near rivers.",
+      "word": "Flamingo",
+      "emoji": "🦩",
+      "def": "A pink bird that stands on one leg in shallow water.",
       "clues": [
-        "Jaw",
-        "Lurking",
-        "Scales"
+        "Balance",
+        "Wading",
+        "Bright"
       ]
     },
     {
-      "word": "Bee",
-      "emoji": "🐝",
-      "def": "A buzzing insect that makes honey and pollinates flowers.",
+      "word": "Komodo Dragon",
+      "emoji": "",
+      "def": "A giant lizard with a powerful bite from a faraway island.",
       "clues": [
-        "Buzz",
-        "Hive",
-        "Sting"
+        "Reptile",
+        "Island",
+        "Ancient"
       ]
     },
     {
-      "word": "Fox",
-      "emoji": "🦊",
-      "def": "A clever red animal with a bushy tail.",
+      "word": "Otter",
+      "emoji": "🦦",
+      "def": "A playful river animal that floats on its back to eat.",
       "clues": [
-        "Clever",
-        "Bushy",
-        "Cunning"
+        "River",
+        "Float",
+        "Playful"
       ]
     },
     {
-      "word": "Seal",
+      "word": "Raccoon",
+      "emoji": "🦝",
+      "def": "A clever night animal with a mask and a striped tail.",
+      "clues": [
+        "Bandit",
+        "Nimble",
+        "Sneaky"
+      ]
+    },
+    {
+      "word": "Toucan",
+      "emoji": "",
+      "def": "A rainforest bird with a huge brightly colored beak.",
+      "clues": [
+        "Colorful",
+        "Canopy",
+        "Perch"
+      ]
+    },
+    {
+      "word": "Platypus",
+      "emoji": "",
+      "def": "An odd animal that has a bill and lays eggs but has fur.",
+      "clues": [
+        "Odd",
+        "Aquatic",
+        "Rare"
+      ]
+    },
+    {
+      "word": "Chameleon",
+      "emoji": "",
+      "def": "A lizard that changes color and has eyes that move apart.",
+      "clues": [
+        "Blend",
+        "Patient",
+        "Slow"
+      ]
+    },
+    {
+      "word": "Walrus",
       "emoji": "🦭",
-      "def": "A playful ocean animal that barks and balances on its flippers.",
+      "def": "A huge sea animal with long tusks and thick whiskers.",
       "clues": [
-        "Bark",
-        "Flippers",
-        "Clap"
+        "Blubber",
+        "Whiskers",
+        "Arctic"
       ]
     },
     {
-      "word": "Camel",
-      "emoji": "🐪",
-      "def": "A desert animal that stores water in its humps.",
+      "word": "Sloth",
+      "emoji": "🦥",
+      "def": "A very slow animal that hangs upside down in trees.",
       "clues": [
-        "Hump",
-        "Desert",
-        "Thirst"
+        "Slow",
+        "Hanging",
+        "Mellow"
       ]
     },
     {
-      "word": "Squirrel",
-      "emoji": "🐿️",
-      "def": "A small furry animal that collects and hides acorns.",
+      "word": "Llama",
+      "emoji": "🦙",
+      "def": "A fluffy mountain animal that can spit when annoyed.",
       "clues": [
-        "Acorn",
-        "Bushy",
-        "Scurry"
+        "Fluffy",
+        "Mountain",
+        "Pack"
       ]
     },
     {
-      "word": "Monkey",
-      "emoji": "🐒",
-      "def": "A playful tree-climbing animal with a long tail.",
+      "word": "Porcupine",
+      "emoji": "",
+      "def": "A rodent covered in long sharp quills that protect it.",
       "clues": [
-        "Swing",
-        "Chatter",
-        "Treetop"
+        "Prickly",
+        "Defense",
+        "Bristly"
+      ]
+    },
+    {
+      "word": "Narwhal",
+      "emoji": "",
+      "def": "An arctic whale with a long spiral tusk like a horn.",
+      "clues": [
+        "Arctic",
+        "Spiral",
+        "Deep"
+      ]
+    },
+    {
+      "word": "Armadillo",
+      "emoji": "",
+      "def": "A small animal with a hard shell that can roll into a ball.",
+      "clues": [
+        "Armor",
+        "Roll",
+        "Burrow"
+      ]
+    },
+    {
+      "word": "Peacock",
+      "emoji": "🦚",
+      "def": "A bird known for its spectacular colorful tail feathers.",
+      "clues": [
+        "Display",
+        "Iridescent",
+        "Strut"
+      ]
+    },
+    {
+      "word": "Hippopotamus",
+      "emoji": "🦛",
+      "def": "A huge river animal that spends most of its day in water.",
+      "clues": [
+        "Massive",
+        "River",
+        "Wallow"
+      ]
+    },
+    {
+      "word": "Gecko",
+      "emoji": "🦎",
+      "def": "A small lizard that can climb walls and stick to ceilings.",
+      "clues": [
+        "Climb",
+        "Sticky",
+        "Tiny"
+      ]
+    },
+    {
+      "word": "Jellyfish",
+      "emoji": "🪼",
+      "def": "A see-through sea creature that drifts and can sting.",
+      "clues": [
+        "Drift",
+        "Glassy",
+        "Floating"
+      ]
+    },
+    {
+      "word": "Koala",
+      "emoji": "🐨",
+      "def": "A sleepy tree animal from Australia that eats eucalyptus.",
+      "clues": [
+        "Cuddly",
+        "Treetop",
+        "Sleepy"
+      ]
+    },
+    {
+      "word": "Pelican",
+      "emoji": "",
+      "def": "A big water bird that scoops up fish in its pouch beak.",
+      "clues": [
+        "Pouch",
+        "Coastal",
+        "Glide"
+      ]
+    },
+    {
+      "word": "Anteater",
+      "emoji": "",
+      "def": "A long-nosed animal that slurps up ants with a sticky tongue.",
+      "clues": [
+        "Snout",
+        "Forage",
+        "Lanky"
+      ]
+    },
+    {
+      "word": "Mongoose",
+      "emoji": "",
+      "def": "A quick small animal famous for fighting snakes.",
+      "clues": [
+        "Quick",
+        "Brave",
+        "Slim"
+      ]
+    },
+    {
+      "word": "Tapir",
+      "emoji": "",
+      "def": "A jungle animal with a short bendy nose like a tiny trunk.",
+      "clues": [
+        "Jungle",
+        "Snout",
+        "Shy"
+      ]
+    },
+    {
+      "word": "Lemur",
+      "emoji": "",
+      "def": "A wide-eyed animal with a striped tail from Madagascar.",
+      "clues": [
+        "Wide-eyed",
+        "Leaping",
+        "Island"
+      ]
+    },
+    {
+      "word": "Stingray",
+      "emoji": "",
+      "def": "A flat sea creature that glides along the ocean floor.",
+      "clues": [
+        "Flat",
+        "Glide",
+        "Seabed"
+      ]
+    },
+    {
+      "word": "Wombat",
+      "emoji": "",
+      "def": "A chunky burrowing animal from Australia with a tough bottom.",
+      "clues": [
+        "Burrow",
+        "Stocky",
+        "Outback"
+      ]
+    },
+    {
+      "word": "Beaver",
+      "emoji": "🦫",
+      "def": "A furry animal that builds dams and chews through trees.",
+      "clues": [
+        "Dam",
+        "Gnaw",
+        "Busy"
+      ]
+    },
+    {
+      "word": "Ferret",
+      "emoji": "",
+      "def": "A long skinny pet animal that loves to wriggle and explore.",
+      "clues": [
+        "Skinny",
+        "Curious",
+        "Wriggle"
       ]
     }
   ],
   "Food & Drink": [
     {
-      "word": "Pizza",
-      "emoji": "🍕",
-      "def": "A round baked dish with tomato sauce, cheese, and toppings.",
+      "word": "Lasagna",
+      "emoji": "",
+      "def": "A baked dish of flat pasta layered with sauce and cheese.",
       "clues": [
-        "Cheesy",
-        "Round",
-        "Shared"
+        "Layered",
+        "Baked",
+        "Hearty"
       ]
     },
     {
-      "word": "Sushi",
-      "emoji": "🍣",
-      "def": "A Japanese dish made of rice wrapped with fish or vegetables.",
+      "word": "Dumpling",
+      "emoji": "🥟",
+      "def": "A small parcel of dough filled with meat or vegetables.",
       "clues": [
-        "Roll",
-        "Raw",
-        "Dip"
-      ]
-    },
-    {
-      "word": "Chocolate",
-      "emoji": "🍫",
-      "def": "A sweet brown treat made from cacao beans.",
-      "clues": [
-        "Melt",
-        "Bitter",
-        "Indulge"
-      ]
-    },
-    {
-      "word": "Hamburger",
-      "emoji": "🍔",
-      "def": "A sandwich with a meat patty inside a round bun.",
-      "clues": [
-        "Bun",
-        "Juicy",
-        "Grill"
-      ]
-    },
-    {
-      "word": "Ice Cream",
-      "emoji": "🍦",
-      "def": "A cold sweet frozen treat that comes in many flavors.",
-      "clues": [
-        "Scoop",
-        "Drip",
-        "Summer"
-      ]
-    },
-    {
-      "word": "Popcorn",
-      "emoji": "🍿",
-      "def": "A snack made by heating corn kernels until they pop open.",
-      "clues": [
-        "Movie",
-        "Crunch",
-        "Salty"
-      ]
-    },
-    {
-      "word": "Tacos",
-      "emoji": "🌮",
-      "def": "A Mexican dish with a folded shell filled with meat and toppings.",
-      "clues": [
-        "Fold",
-        "Spicy",
-        "Crunch"
-      ]
-    },
-    {
-      "word": "Pancakes",
-      "emoji": "🥞",
-      "def": "Flat round breakfast cakes cooked on a griddle and stacked.",
-      "clues": [
-        "Stack",
-        "Syrup",
-        "Morning"
-      ]
-    },
-    {
-      "word": "Soup",
-      "emoji": "🍜",
-      "def": "A warm liquid dish made by cooking vegetables or meat in broth.",
-      "clues": [
-        "Slurp",
-        "Broth",
-        "Warm"
-      ]
-    },
-    {
-      "word": "Cake",
-      "emoji": "🎂",
-      "def": "A baked sweet dessert often covered with frosting and candles.",
-      "clues": [
-        "Frosting",
-        "Celebrate",
-        "Layer"
-      ]
-    },
-    {
-      "word": "Sandwich",
-      "emoji": "🥪",
-      "def": "Two slices of bread filled with your favorite toppings.",
-      "clues": [
-        "Bread",
-        "Packed",
+        "Folded",
+        "Steamed",
         "Bite"
       ]
     },
     {
-      "word": "Pasta",
-      "emoji": "🍝",
-      "def": "An Italian dish made from wheat dough shaped into noodles.",
+      "word": "Croissant",
+      "emoji": "🥐",
+      "def": "A flaky buttery pastry shaped like a crescent.",
       "clues": [
-        "Boil",
-        "Italian",
-        "Twirl"
-      ]
-    },
-    {
-      "word": "Curry",
-      "emoji": "🍛",
-      "def": "A spiced dish made with sauce, vegetables, or meat served with rice.",
-      "clues": [
-        "Spiced",
-        "Aromatic",
-        "Simmer"
-      ]
-    },
-    {
-      "word": "Donut",
-      "emoji": "🍩",
-      "def": "A sweet fried ring-shaped pastry often covered in glaze.",
-      "clues": [
-        "Glaze",
-        "Ring",
-        "Police"
-      ]
-    },
-    {
-      "word": "Hot Dog",
-      "emoji": "🌭",
-      "def": "A cooked sausage served in a long bun with toppings.",
-      "clues": [
-        "Mustard",
-        "Stadium",
-        "Bun"
-      ]
-    },
-    {
-      "word": "Coffee",
-      "emoji": "☕",
-      "def": "A hot dark drink made from roasted beans that wakes people up.",
-      "clues": [
-        "Roast",
-        "Morning",
-        "Bitter"
-      ]
-    },
-    {
-      "word": "Lemonade",
-      "emoji": "🍋",
-      "def": "A cold refreshing drink made from lemons, water, and sugar.",
-      "clues": [
-        "Tangy",
-        "Pitcher",
-        "Summer"
-      ]
-    },
-    {
-      "word": "Smoothie",
-      "emoji": "🥤",
-      "def": "A thick blended drink made from fruits or vegetables.",
-      "clues": [
-        "Blend",
-        "Thick",
-        "Fruity"
-      ]
-    },
-    {
-      "word": "Cereal",
-      "emoji": "🥣",
-      "def": "A crunchy breakfast food eaten with milk from a bowl.",
-      "clues": [
-        "Crunch",
-        "Milk",
+        "Flaky",
+        "Buttery",
         "Morning"
       ]
     },
     {
-      "word": "Cookies",
-      "emoji": "🍪",
-      "def": "Small flat baked sweet treats that are crispy or chewy.",
+      "word": "Smoothie",
+      "emoji": "",
+      "def": "A thick cold drink blended from fruit and ice.",
       "clues": [
-        "Bake",
-        "Dip",
-        "Crumble"
-      ]
-    },
-    {
-      "word": "Fried Chicken",
-      "emoji": "🍗",
-      "def": "Chicken coated in crispy batter and cooked in hot oil.",
-      "clues": [
-        "Crispy",
-        "Drumstick",
-        "Golden"
-      ]
-    },
-    {
-      "word": "Nachos",
-      "emoji": "🧀",
-      "def": "Tortilla chips topped with melted cheese and toppings.",
-      "clues": [
-        "Dip",
-        "Cheesy",
-        "Crunch"
-      ]
-    },
-    {
-      "word": "Milkshake",
-      "emoji": "🥛",
-      "def": "A thick cold drink blended from ice cream and milk.",
-      "clues": [
-        "Straw",
+        "Blended",
         "Thick",
-        "Creamy"
+        "Straw"
       ]
     },
     {
-      "word": "Waffles",
-      "emoji": "🧇",
-      "def": "A breakfast treat with a grid pattern cooked in a waffle iron.",
+      "word": "Ramen",
+      "emoji": "🍜",
+      "def": "A Japanese noodle soup served in a savory broth.",
       "clues": [
-        "Grid",
-        "Syrup",
-        "Crispy"
+        "Broth",
+        "Slurp",
+        "Warm"
+      ]
+    },
+    {
+      "word": "Taco",
+      "emoji": "🌮",
+      "def": "A folded tortilla stuffed with seasoned filling.",
+      "clues": [
+        "Folded",
+        "Crunch",
+        "Filling"
+      ]
+    },
+    {
+      "word": "Pancake",
+      "emoji": "🥞",
+      "def": "A flat round cake cooked in a pan and stacked up.",
+      "clues": [
+        "Stack",
+        "Flip",
+        "Syrup"
       ]
     },
     {
       "word": "Burrito",
       "emoji": "🌯",
-      "def": "A Mexican dish with a flour tortilla wrapped around fillings.",
+      "def": "A big tortilla wrapped tightly around rice and fillings.",
       "clues": [
         "Wrapped",
         "Stuffed",
-        "Foil"
+        "Handheld"
+      ]
+    },
+    {
+      "word": "Waffle",
+      "emoji": "🧇",
+      "def": "A crispy cake cooked in a grid of little square pockets.",
+      "clues": [
+        "Grid",
+        "Crispy",
+        "Breakfast"
+      ]
+    },
+    {
+      "word": "Pretzel",
+      "emoji": "🥨",
+      "def": "A baked snack twisted into a knot and sprinkled with salt.",
+      "clues": [
+        "Twisted",
+        "Salty",
+        "Knot"
+      ]
+    },
+    {
+      "word": "Lollipop",
+      "emoji": "🍭",
+      "def": "A hard candy on a stick that you lick slowly.",
+      "clues": [
+        "Stick",
+        "Lick",
+        "Sweet"
+      ]
+    },
+    {
+      "word": "Cupcake",
+      "emoji": "🧁",
+      "def": "A tiny cake topped with a swirl of frosting.",
+      "clues": [
+        "Frosting",
+        "Small",
+        "Swirl"
+      ]
+    },
+    {
+      "word": "Donut",
+      "emoji": "🍩",
+      "def": "A sweet fried ring of dough often covered in glaze.",
+      "clues": [
+        "Ring",
+        "Glazed",
+        "Treat"
       ]
     },
     {
       "word": "Spaghetti",
       "emoji": "🍝",
-      "def": "Long thin pasta noodles usually served with tomato sauce.",
+      "def": "Long thin pasta usually served with a rich sauce.",
       "clues": [
         "Twirl",
-        "Long",
-        "Slurp"
+        "Strands",
+        "Saucy"
       ]
     },
     {
-      "word": "Butter",
-      "emoji": "🧈",
-      "def": "A soft yellow spread made from cream that melts on warm bread.",
+      "word": "Sushi",
+      "emoji": "🍣",
+      "def": "A Japanese dish of rice rolled with fish or vegetables.",
       "clues": [
-        "Melt",
-        "Spread",
-        "Creamy"
+        "Rolled",
+        "Delicate",
+        "Chopsticks"
       ]
     },
     {
-      "word": "Honey",
-      "emoji": "🍯",
-      "def": "A sweet sticky liquid made by bees from flower nectar.",
+      "word": "Cookie",
+      "emoji": "🍪",
+      "def": "A small flat sweet baked treat often full of chips.",
       "clues": [
-        "Sticky",
-        "Golden",
-        "Bees"
+        "Crumbly",
+        "Baked",
+        "Batch"
       ]
     },
     {
-      "word": "Cheese",
-      "emoji": "🧀",
-      "def": "A dairy food made from pressed and aged milk.",
+      "word": "Burger",
+      "emoji": "🍔",
+      "def": "A patty served inside a soft round bun with toppings.",
       "clues": [
-        "Aged",
-        "Gooey",
-        "Mouse"
+        "Patty",
+        "Grill",
+        "Stacked"
       ]
     },
     {
-      "word": "Tea",
-      "emoji": "🍵",
-      "def": "A warm drink made by soaking dried leaves in hot water.",
+      "word": "Pie",
+      "emoji": "🥧",
+      "def": "A baked dish with a pastry crust and a sweet filling.",
       "clues": [
-        "Steep",
-        "Kettle",
-        "Soothing"
+        "Crust",
+        "Slice",
+        "Filling"
+      ]
+    },
+    {
+      "word": "Soda",
+      "emoji": "",
+      "def": "A fizzy sweet drink that bubbles when you pour it.",
+      "clues": [
+        "Fizzy",
+        "Bubbly",
+        "Chilled"
+      ]
+    },
+    {
+      "word": "Bagel",
+      "emoji": "🥯",
+      "def": "A chewy bread ring that is boiled and then baked.",
+      "clues": [
+        "Chewy",
+        "Ring",
+        "Toasted"
+      ]
+    },
+    {
+      "word": "Curry",
+      "emoji": "🍛",
+      "def": "A spiced saucy dish often served over rice.",
+      "clues": [
+        "Spiced",
+        "Saucy",
+        "Aromatic"
+      ]
+    },
+    {
+      "word": "Nachos",
+      "emoji": "",
+      "def": "Crispy chips topped with melted cheese and toppings.",
+      "clues": [
+        "Chips",
+        "Melted",
+        "Sharing"
+      ]
+    },
+    {
+      "word": "Cheesecake",
+      "emoji": "",
+      "def": "A rich creamy dessert set on a crumbly base.",
+      "clues": [
+        "Creamy",
+        "Rich",
+        "Slice"
+      ]
+    },
+    {
+      "word": "Omelette",
+      "emoji": "",
+      "def": "Beaten eggs cooked flat and folded over a filling.",
+      "clues": [
+        "Eggs",
+        "Folded",
+        "Fluffy"
+      ]
+    },
+    {
+      "word": "Milkshake",
+      "emoji": "",
+      "def": "A thick sweet cold drink made by blending ice cream.",
+      "clues": [
+        "Thick",
+        "Frothy",
+        "Straw"
+      ]
+    },
+    {
+      "word": "Sandwich",
+      "emoji": "🥪",
+      "def": "Two slices of bread with a filling tucked between them.",
+      "clues": [
+        "Layered",
+        "Handheld",
+        "Lunch"
+      ]
+    },
+    {
+      "word": "Brownie",
+      "emoji": "",
+      "def": "A dense fudgy square baked from rich chocolate batter.",
+      "clues": [
+        "Fudgy",
+        "Square",
+        "Dense"
+      ]
+    },
+    {
+      "word": "Hotdog",
+      "emoji": "🌭",
+      "def": "A sausage served inside a long soft split bun.",
+      "clues": [
+        "Bun",
+        "Sausage",
+        "Ballpark"
+      ]
+    },
+    {
+      "word": "Lemonade",
+      "emoji": "",
+      "def": "A sweet and sour cold drink made from squeezed fruit.",
+      "clues": [
+        "Tart",
+        "Refreshing",
+        "Stand"
+      ]
+    },
+    {
+      "word": "Macaron",
+      "emoji": "",
+      "def": "A small round French cookie with a creamy filling inside.",
+      "clues": [
+        "Dainty",
+        "Pastel",
+        "Sandwiched"
       ]
     }
   ],
   "Fruits & Vegetables": [
     {
-      "word": "Banana",
-      "emoji": "🍌",
-      "def": "A long yellow fruit with a soft sweet inside you peel open.",
+      "word": "Pomegranate",
+      "emoji": "",
+      "def": "A round red fruit packed with tiny juicy red seeds.",
       "clues": [
-        "Yellow",
-        "Peel",
-        "Monkey"
-      ]
-    },
-    {
-      "word": "Strawberry",
-      "emoji": "🍓",
-      "def": "A small red fruit with tiny seeds on the outside and a sweet taste.",
-      "clues": [
-        "Red",
         "Seeds",
-        "Valentine"
+        "Ruby",
+        "Juicy"
       ]
     },
     {
-      "word": "Broccoli",
-      "emoji": "🥦",
-      "def": "A dark green vegetable that looks like tiny little trees.",
+      "word": "Asparagus",
+      "emoji": "",
+      "def": "A tall green vegetable that grows in thin spears.",
       "clues": [
-        "Tree",
+        "Spears",
         "Green",
-        "Crunch"
+        "Tender"
+      ]
+    },
+    {
+      "word": "Dragonfruit",
+      "emoji": "",
+      "def": "A bright pink fruit with green spikes and speckled flesh.",
+      "clues": [
+        "Exotic",
+        "Speckled",
+        "Vivid"
+      ]
+    },
+    {
+      "word": "Artichoke",
+      "emoji": "",
+      "def": "A green vegetable with tough leaves around a soft heart.",
+      "clues": [
+        "Leaves",
+        "Layered",
+        "Heart"
       ]
     },
     {
       "word": "Pineapple",
       "emoji": "🍍",
-      "def": "A tropical fruit with a spiky outside and a sweet yellow inside.",
+      "def": "A spiky tropical fruit with sweet golden flesh inside.",
       "clues": [
         "Tropical",
         "Spiky",
-        "Controversy"
-      ]
-    },
-    {
-      "word": "Carrot",
-      "emoji": "🥕",
-      "def": "An orange vegetable that grows underground and rabbits love.",
-      "clues": [
-        "Orange",
-        "Underground",
-        "Rabbit"
-      ]
-    },
-    {
-      "word": "Watermelon",
-      "emoji": "🍉",
-      "def": "A large green fruit with sweet red flesh and black seeds.",
-      "clues": [
-        "Seed",
-        "Summertime",
-        "Juicy"
-      ]
-    },
-    {
-      "word": "Mango",
-      "emoji": "🥭",
-      "def": "A tropical fruit with a sweet orange flesh inside a smooth skin.",
-      "clues": [
-        "Tropical",
-        "Sweet",
-        "Sticky"
+        "Golden"
       ]
     },
     {
       "word": "Avocado",
       "emoji": "🥑",
-      "def": "A creamy green fruit often mashed onto toast for breakfast.",
+      "def": "A creamy green fruit with a large round pit inside.",
       "clues": [
         "Creamy",
-        "Toast",
-        "Pit"
+        "Pit",
+        "Smooth"
       ]
     },
     {
-      "word": "Grape",
-      "emoji": "🍇",
-      "def": "A small round fruit that grows in clusters on a vine.",
+      "word": "Broccoli",
+      "emoji": "🥦",
+      "def": "A green vegetable that looks like a tiny leafy tree.",
       "clues": [
+        "Florets",
+        "Green",
+        "Steamed"
+      ]
+    },
+    {
+      "word": "Watermelon",
+      "emoji": "🍉",
+      "def": "A huge juicy fruit with green skin and pink insides.",
+      "clues": [
+        "Juicy",
+        "Picnic",
+        "Refreshing"
+      ]
+    },
+    {
+      "word": "Eggplant",
+      "emoji": "🍆",
+      "def": "A glossy purple vegetable with soft spongy flesh.",
+      "clues": [
+        "Purple",
+        "Glossy",
+        "Spongy"
+      ]
+    },
+    {
+      "word": "Pumpkin",
+      "emoji": "🎃",
+      "def": "A big round orange squash often carved in autumn.",
+      "clues": [
+        "Orange",
+        "Autumn",
+        "Round"
+      ]
+    },
+    {
+      "word": "Mango",
+      "emoji": "🥭",
+      "def": "A sweet tropical fruit with soft golden flesh and a big pit.",
+      "clues": [
+        "Tropical",
+        "Sweet",
+        "Golden"
+      ]
+    },
+    {
+      "word": "Cucumber",
+      "emoji": "🥒",
+      "def": "A long green vegetable that is cool and crunchy.",
+      "clues": [
+        "Crisp",
+        "Cool",
+        "Sliced"
+      ]
+    },
+    {
+      "word": "Strawberry",
+      "emoji": "🍓",
+      "def": "A small red fruit dotted with tiny seeds on the outside.",
+      "clues": [
+        "Berry",
+        "Sweet",
+        "Dotted"
+      ]
+    },
+    {
+      "word": "Corn",
+      "emoji": "🌽",
+      "def": "A vegetable with rows of yellow kernels on a cob.",
+      "clues": [
+        "Kernels",
+        "Cob",
+        "Golden"
+      ]
+    },
+    {
+      "word": "Coconut",
+      "emoji": "🥥",
+      "def": "A hard brown tropical fruit with white flesh and water inside.",
+      "clues": [
+        "Tropical",
+        "Husk",
+        "Hard"
+      ]
+    },
+    {
+      "word": "Carrot",
+      "emoji": "🥕",
+      "def": "A long orange root vegetable that is sweet and crunchy.",
+      "clues": [
+        "Root",
+        "Orange",
+        "Crunch"
+      ]
+    },
+    {
+      "word": "Cherry",
+      "emoji": "🍒",
+      "def": "A small round red fruit that grows in pairs on a stem.",
+      "clues": [
+        "Pair",
+        "Stem",
+        "Red"
+      ]
+    },
+    {
+      "word": "Pepper",
+      "emoji": "🫑",
+      "def": "A crunchy hollow vegetable that comes in many bright colors.",
+      "clues": [
+        "Crunchy",
+        "Hollow",
+        "Colorful"
+      ]
+    },
+    {
+      "word": "Peach",
+      "emoji": "🍑",
+      "def": "A soft fuzzy fruit with sweet juicy flesh and a stone.",
+      "clues": [
+        "Fuzzy",
+        "Soft",
+        "Stone"
+      ]
+    },
+    {
+      "word": "Mushroom",
+      "emoji": "🍄",
+      "def": "A vegetable with a round cap that grows in damp places.",
+      "clues": [
+        "Cap",
+        "Earthy",
+        "Damp"
+      ]
+    },
+    {
+      "word": "Blueberry",
+      "emoji": "🫐",
+      "def": "A tiny round blue fruit that is sweet and sometimes tart.",
+      "clues": [
+        "Tiny",
         "Cluster",
-        "Vine",
-        "Ferment"
+        "Tart"
+      ]
+    },
+    {
+      "word": "Onion",
+      "emoji": "🧅",
+      "def": "A round vegetable with many layers that can make you cry.",
+      "clues": [
+        "Layers",
+        "Tears",
+        "Pungent"
+      ]
+    },
+    {
+      "word": "Kiwi",
+      "emoji": "🥝",
+      "def": "A small brown fuzzy fruit with bright green flesh and seeds.",
+      "clues": [
+        "Fuzzy",
+        "Green",
+        "Tangy"
       ]
     },
     {
       "word": "Tomato",
       "emoji": "🍅",
-      "def": "A round red fruit that people often use to make sauce.",
+      "def": "A round juicy red fruit often used like a vegetable.",
       "clues": [
-        "Sauce",
-        "Debate",
+        "Juicy",
+        "Vine",
         "Red"
       ]
     },
     {
       "word": "Lemon",
       "emoji": "🍋",
-      "def": "A bright yellow citrus fruit with a very sour juice inside.",
+      "def": "A bright yellow fruit with a very sour tangy taste.",
       "clues": [
         "Sour",
-        "Citrus",
-        "Pucker"
+        "Tangy",
+        "Zest"
       ]
     },
     {
-      "word": "Cucumber",
-      "emoji": "🥒",
-      "def": "A long green vegetable that is cool and crunchy to eat.",
+      "word": "Grape",
+      "emoji": "🍇",
+      "def": "A small round juicy fruit that grows in big bunches.",
       "clues": [
-        "Cool",
-        "Crisp",
-        "Slice"
-      ]
-    },
-    {
-      "word": "Blueberry",
-      "emoji": "🫐",
-      "def": "A tiny round dark blue fruit packed with sweet flavor.",
-      "clues": [
-        "Tiny",
-        "Muffin",
-        "Antioxidant"
-      ]
-    },
-    {
-      "word": "Peach",
-      "emoji": "🍑",
-      "def": "A soft fuzzy fruit with a sweet orange and white flesh.",
-      "clues": [
-        "Fuzzy",
-        "Velvet",
-        "Summer"
-      ]
-    },
-    {
-      "word": "Spinach",
-      "emoji": "🥬",
-      "def": "A leafy green vegetable famous for making you strong.",
-      "clues": [
-        "Popeye",
-        "Leaf",
-        "Wilt"
-      ]
-    },
-    {
-      "word": "Coconut",
-      "emoji": "🥥",
-      "def": "A large brown tropical fruit with white flesh and a milky liquid.",
-      "clues": [
-        "Tropical",
-        "Shell",
-        "Milk"
-      ]
-    },
-    {
-      "word": "Cherry",
-      "emoji": "🍒",
-      "def": "A small round red fruit that grows on trees in pairs.",
-      "clues": [
-        "Pair",
-        "Stem",
-        "Sundae"
-      ]
-    },
-    {
-      "word": "Pumpkin",
-      "emoji": "🎃",
-      "def": "A large round orange vegetable carved into faces for Halloween.",
-      "clues": [
-        "Carve",
-        "Spice",
-        "Halloween"
-      ]
-    },
-    {
-      "word": "Kiwi",
-      "emoji": "🥝",
-      "def": "A small brown fuzzy fruit with bright green flesh inside.",
-      "clues": [
-        "Fuzzy",
-        "Tart",
-        "Green"
-      ]
-    },
-    {
-      "word": "Corn",
-      "emoji": "🌽",
-      "def": "A tall yellow vegetable that grows on a cob in the summer.",
-      "clues": [
-        "Cob",
-        "Yellow",
-        "Maze"
-      ]
-    },
-    {
-      "word": "Raspberry",
-      "emoji": "🫐",
-      "def": "A small soft red berry with a bumpy surface and tart taste.",
-      "clues": [
-        "Tart",
-        "Bumpy",
-        "Jam"
+        "Bunch",
+        "Vine",
+        "Juicy"
       ]
     },
     {
       "word": "Potato",
       "emoji": "🥔",
-      "def": "A starchy underground vegetable that can be mashed or fried.",
+      "def": "A starchy brown root vegetable cooked in many ways.",
       "clues": [
         "Starchy",
-        "Underground",
-        "Mash"
+        "Root",
+        "Mashed"
       ]
     },
     {
-      "word": "Orange",
-      "emoji": "🍊",
-      "def": "A round citrus fruit with a bright peel and sweet juicy segments.",
+      "word": "Banana",
+      "emoji": "🍌",
+      "def": "A long curved tropical fruit with soft sweet flesh.",
       "clues": [
-        "Citrus",
-        "Peel",
-        "Vitamin"
+        "Curved",
+        "Bunch",
+        "Tropical"
       ]
     },
     {
-      "word": "Garlic",
-      "emoji": "🧄",
-      "def": "A small bulb with a very strong smell used to flavor cooking.",
+      "word": "Radish",
+      "emoji": "",
+      "def": "A small crunchy root vegetable with a sharp peppery bite.",
       "clues": [
-        "Pungent",
-        "Bulb",
-        "Vampire"
+        "Peppery",
+        "Crisp",
+        "Root"
       ]
     },
     {
-      "word": "Eggplant",
-      "emoji": "🍆",
-      "def": "A shiny dark purple vegetable used in many cooked dishes.",
+      "word": "Cauliflower",
+      "emoji": "",
+      "def": "A pale vegetable made of tight bumpy florets like a cloud.",
       "clues": [
-        "Purple",
-        "Shiny",
-        "Roast"
-      ]
-    },
-    {
-      "word": "Onion",
-      "emoji": "🧅",
-      "def": "A round vegetable with layers that makes your eyes water when cut.",
-      "clues": [
-        "Layer",
-        "Tears",
-        "Pungent"
-      ]
-    },
-    {
-      "word": "Papaya",
-      "emoji": "🍈",
-      "def": "A large tropical fruit with orange flesh and small black seeds.",
-      "clues": [
-        "Tropical",
-        "Orange",
-        "Seeds"
-      ]
-    },
-    {
-      "word": "Celery",
-      "emoji": "🥬",
-      "def": "A crunchy green vegetable stalk often eaten with dip.",
-      "clues": [
-        "Stalk",
-        "Crunch",
-        "Dip"
-      ]
-    },
-    {
-      "word": "Pear",
-      "emoji": "🍐",
-      "def": "A teardrop-shaped fruit with a sweet grainy texture inside.",
-      "clues": [
-        "Teardrop",
-        "Grainy",
-        "Autumn"
-      ]
-    },
-    {
-      "word": "Zucchini",
-      "emoji": "🥒",
-      "def": "A long green summer vegetable often used in baking or stir-fries.",
-      "clues": [
-        "Summer",
-        "Green",
-        "Grate"
+        "Florets",
+        "Pale",
+        "Cloud"
       ]
     }
   ],
   "Places": [
     {
-      "word": "Library",
-      "emoji": "📚",
-      "def": "A building where you borrow books to read at home.",
+      "word": "Lighthouse",
+      "emoji": "",
+      "def": "A tall tower by the sea that warns ships at night.",
       "clues": [
-        "Quiet",
+        "Coast",
+        "Spiral",
+        "Lonely"
+      ]
+    },
+    {
+      "word": "Observatory",
+      "emoji": "",
+      "def": "A building where people look at stars through a giant telescope.",
+      "clues": [
+        "Dome",
+        "Distant",
+        "Hilltop"
+      ]
+    },
+    {
+      "word": "Vineyard",
+      "emoji": "",
+      "def": "A field of rows where grapes are grown to make wine.",
+      "clues": [
+        "Rows",
+        "Harvest",
+        "Hillside"
+      ]
+    },
+    {
+      "word": "Aquarium",
+      "emoji": "",
+      "def": "A place where you walk past big tanks full of fish.",
+      "clues": [
+        "Glass",
+        "Bubbles",
+        "Blue"
+      ]
+    },
+    {
+      "word": "Greenhouse",
+      "emoji": "",
+      "def": "A glass building that stays warm so plants can grow inside.",
+      "clues": [
+        "Humid",
+        "Panes",
+        "Sprout"
+      ]
+    },
+    {
+      "word": "Library",
+      "emoji": "",
+      "def": "A quiet place full of books you can borrow.",
+      "clues": [
+        "Hush",
         "Shelves",
-        "Borrow"
+        "Cards"
       ]
     },
     {
       "word": "Airport",
-      "emoji": "✈️",
-      "def": "A place where airplanes take off and land for travelers.",
+      "emoji": "",
+      "def": "A place where planes take off and land with travelers.",
       "clues": [
-        "Departure",
+        "Waiting",
         "Luggage",
-        "Terminal"
+        "Gates"
       ]
     },
     {
       "word": "Museum",
-      "emoji": "🏛️",
-      "def": "A building full of interesting objects and art to look at.",
+      "emoji": "",
+      "def": "A building where old and rare things are put on display.",
       "clues": [
-        "Ancient",
         "Display",
-        "Exhibit"
+        "Hushed",
+        "History"
       ]
     },
     {
       "word": "Stadium",
-      "emoji": "🏟️",
-      "def": "A large outdoor area where crowds watch sports games.",
+      "emoji": "",
+      "def": "A huge open arena where crowds watch games and concerts.",
       "clues": [
-        "Crowd",
-        "Cheer",
-        "Bleachers"
+        "Roar",
+        "Tiered",
+        "Tickets"
       ]
     },
     {
       "word": "Hospital",
-      "emoji": "🏥",
-      "def": "A building where doctors and nurses help sick people get better.",
+      "emoji": "",
+      "def": "A place where doctors and nurses help sick people get better.",
       "clues": [
-        "Healing",
+        "Beds",
         "Sterile",
-        "Scrubs"
+        "Waiting"
       ]
     },
     {
       "word": "Bakery",
-      "emoji": "🥐",
-      "def": "A shop where fresh bread and pastries are made and sold.",
+      "emoji": "",
+      "def": "A shop where bread and cakes are baked fresh each day.",
       "clues": [
-        "Dough",
-        "Oven",
-        "Warm"
-      ]
-    },
-    {
-      "word": "Zoo",
-      "emoji": "🦁",
-      "def": "A park where many wild animals are kept for people to visit.",
-      "clues": [
-        "Caged",
-        "Safari",
-        "Keeper"
-      ]
-    },
-    {
-      "word": "Lighthouse",
-      "emoji": "🗼",
-      "def": "A tall tower near the coast that flashes light to guide ships.",
-      "clues": [
-        "Beam",
-        "Coastal",
-        "Warning"
+        "Warm",
+        "Counter",
+        "Morning"
       ]
     },
     {
       "word": "Castle",
       "emoji": "🏰",
-      "def": "A large old stone building where kings and queens once lived.",
+      "def": "A huge old stone home with thick walls and towers.",
       "clues": [
-        "Moat",
-        "Knight",
-        "Turret"
+        "Stone",
+        "Royal",
+        "Ancient"
       ]
     },
     {
-      "word": "Farm",
-      "emoji": "🚜",
-      "def": "A piece of land where crops are grown and animals are raised.",
+      "word": "Aquapark",
+      "emoji": "",
+      "def": "An outdoor park full of pools and giant water slides.",
       "clues": [
-        "Harvest",
-        "Barn",
-        "Rooster"
-      ]
-    },
-    {
-      "word": "Market",
-      "emoji": "🛒",
-      "def": "A busy place where people buy and sell food and goods.",
-      "clues": [
-        "Stall",
-        "Bargain",
-        "Vendor"
+        "Splash",
+        "Slides",
+        "Summer"
       ]
     },
     {
       "word": "Playground",
-      "emoji": "🛝",
-      "def": "An outdoor area with swings and slides where kids play.",
+      "emoji": "",
+      "def": "An outdoor spot where children play on swings and slides.",
       "clues": [
-        "Swings",
         "Laughter",
+        "Sand",
         "Recess"
       ]
     },
     {
       "word": "Cinema",
-      "emoji": "🎬",
-      "def": "A place where people sit in the dark to watch movies together.",
+      "emoji": "",
+      "def": "A dark room with big screens where you watch films.",
       "clues": [
-        "Popcorn",
-        "Screen",
-        "Credits"
+        "Dark",
+        "Seats",
+        "Tickets"
       ]
     },
     {
       "word": "Supermarket",
-      "emoji": "🏪",
-      "def": "A large store with many aisles selling all kinds of food.",
+      "emoji": "",
+      "def": "A big shop with rows of food and a checkout line.",
       "clues": [
-        "Aisle",
         "Trolley",
-        "Checkout"
+        "Aisles",
+        "Queue"
       ]
     },
     {
       "word": "School",
       "emoji": "🏫",
-      "def": "A building where children go every day to learn from teachers.",
+      "def": "A place where children go to learn from teachers.",
       "clues": [
-        "Homework",
-        "Classroom",
-        "Bell"
+        "Lessons",
+        "Bell",
+        "Desks"
       ]
     },
     {
       "word": "Restaurant",
-      "emoji": "🍽️",
-      "def": "A place where people sit down and order food cooked by a chef.",
+      "emoji": "",
+      "def": "A place where you sit down and order a meal to eat.",
       "clues": [
         "Menu",
-        "Waiter",
-        "Reservation"
-      ]
-    },
-    {
-      "word": "Park",
-      "emoji": "🌳",
-      "def": "A grassy outdoor area in a city where people relax and play.",
-      "clues": [
-        "Picnic",
-        "Fountain",
-        "Stroll"
+        "Tables",
+        "Tip"
       ]
     },
     {
       "word": "Beach",
       "emoji": "🏖️",
-      "def": "A strip of sand next to the sea where people swim and sunbathe.",
+      "def": "A sandy edge by the sea where people swim and relax.",
       "clues": [
-        "Waves",
-        "Sunscreen",
-        "Sandy"
+        "Sandy",
+        "Towels",
+        "Summer"
       ]
     },
     {
       "word": "Hotel",
-      "emoji": "🏨",
-      "def": "A building where travelers pay to sleep in comfortable rooms.",
+      "emoji": "",
+      "def": "A place travelers pay to sleep in a room for the night.",
       "clues": [
-        "Concierge",
-        "Keycard",
-        "Pillow"
+        "Rooms",
+        "Stay",
+        "Lobby"
       ]
     },
     {
       "word": "Church",
       "emoji": "⛪",
-      "def": "A building where Christians gather to worship and pray together.",
+      "def": "A building where people gather to pray and sing together.",
       "clues": [
-        "Bells",
-        "Steeple",
-        "Hymn"
+        "Pews",
+        "Sunday",
+        "Quiet"
       ]
     },
     {
       "word": "Theatre",
       "emoji": "🎭",
-      "def": "A building where actors perform plays on a stage for an audience.",
+      "def": "A place with a stage where actors perform live for an audience.",
       "clues": [
-        "Curtain",
+        "Stage",
         "Applause",
-        "Script"
+        "Seats"
       ]
     },
     {
       "word": "Bank",
       "emoji": "🏦",
-      "def": "A place where people keep their money safe and borrow loans.",
+      "def": "A place where people keep their money safe and borrow more.",
       "clues": [
-        "Vault",
-        "Teller",
-        "Interest"
+        "Counter",
+        "Queue",
+        "Secure"
       ]
     },
     {
       "word": "Gym",
-      "emoji": "🏋️",
-      "def": "A place with exercise machines where people go to get fit.",
+      "emoji": "",
+      "def": "A place full of machines where people go to exercise.",
       "clues": [
-        "Weights",
         "Sweat",
-        "Treadmill"
+        "Mirrors",
+        "Routine"
       ]
     },
     {
       "word": "Office",
-      "emoji": "🏢",
-      "def": "A room or building where adults do their work jobs every day.",
+      "emoji": "",
+      "def": "A workplace with desks where people do their jobs.",
       "clues": [
-        "Desk",
-        "Meeting",
-        "Printer"
-      ]
-    },
-    {
-      "word": "Aquarium",
-      "emoji": "🐠",
-      "def": "A building full of huge tanks where you can watch fish and sea creatures.",
-      "clues": [
-        "Tank",
-        "Glow",
-        "Coral"
+        "Desks",
+        "Coffee",
+        "Meetings"
       ]
     },
     {
       "word": "Harbour",
       "emoji": "⚓",
-      "def": "A sheltered area of water where boats and ships anchor safely.",
+      "def": "A sheltered spot by the water where boats are tied up.",
       "clues": [
-        "Anchor",
-        "Dock",
-        "Tides"
-      ]
-    },
-    {
-      "word": "Garden",
-      "emoji": "🌷",
-      "def": "An outdoor space at home where flowers and vegetables are grown.",
-      "clues": [
-        "Bloom",
-        "Soil",
-        "Hedge"
+        "Boats",
+        "Salty",
+        "Ropes"
       ]
     },
     {
       "word": "Temple",
       "emoji": "🛕",
-      "def": "A holy building where people go to worship their god or gods.",
+      "def": "A sacred building where people worship and leave offerings.",
       "clues": [
-        "Incense",
-        "Ritual",
-        "Sacred"
+        "Sacred",
+        "Quiet",
+        "Offering"
       ]
     },
     {
       "word": "Factory",
       "emoji": "🏭",
-      "def": "A big building where machines make goods in large amounts.",
+      "def": "A big building where workers and machines make products.",
       "clues": [
-        "Conveyor",
-        "Shift",
-        "Machinery"
+        "Shifts",
+        "Noisy",
+        "Output"
       ]
     },
     {
       "word": "Campsite",
       "emoji": "⛺",
-      "def": "An outdoor spot in nature where people sleep in tents overnight.",
+      "def": "An outdoor spot where people pitch tents and sleep under stars.",
       "clues": [
-        "Tent",
-        "Campfire",
-        "Lantern"
+        "Tents",
+        "Firewood",
+        "Outdoors"
+      ]
+    },
+    {
+      "word": "Bookshop",
+      "emoji": "",
+      "def": "A store that sells brand-new books off the shelves.",
+      "clues": [
+        "Browse",
+        "Pages",
+        "Quiet"
       ]
     }
   ],
@@ -1217,39 +1217,39 @@ const WORD_PACK = {
     {
       "word": "Volcano",
       "emoji": "🌋",
-      "def": "A mountain that can shoot out hot melted rock called lava.",
+      "def": "A mountain that can blast out hot molten rock and smoke.",
       "clues": [
-        "Erupt",
-        "Ash",
-        "Magma"
+        "Pressure",
+        "Smoke",
+        "Island"
       ]
     },
     {
       "word": "Rainbow",
       "emoji": "🌈",
-      "def": "A colorful arc that appears in the sky after rain and sunshine.",
+      "def": "A colorful arc in the sky after the rain.",
       "clues": [
-        "Spectrum",
-        "Arc",
-        "Droplets"
+        "Colors",
+        "Sky",
+        "Fleeting"
       ]
     },
     {
       "word": "Glacier",
-      "emoji": "🧊",
-      "def": "A huge slow-moving river of ice found high up in cold mountains.",
+      "emoji": "",
+      "def": "A giant river of ice that slides very slowly downhill.",
       "clues": [
         "Frozen",
-        "Creeping",
-        "Melt"
+        "Slow",
+        "Ancient"
       ]
     },
     {
       "word": "Waterfall",
-      "emoji": "💧",
-      "def": "A stream of water that drops down over a steep cliff or rock.",
+      "emoji": "",
+      "def": "A place where a river drops straight down over a cliff.",
       "clues": [
-        "Cascade",
+        "Drop",
         "Mist",
         "Roar"
       ]
@@ -1257,261 +1257,261 @@ const WORD_PACK = {
     {
       "word": "Desert",
       "emoji": "🏜️",
-      "def": "A very dry land with lots of sand where little rain ever falls.",
+      "def": "A huge dry land of sand where almost no rain falls.",
       "clues": [
-        "Dune",
-        "Mirage",
-        "Scorching"
+        "Dry",
+        "Endless",
+        "Harsh"
       ]
     },
     {
       "word": "Forest",
-      "emoji": "🌲",
-      "def": "A large area of land covered with many tall trees and wildlife.",
+      "emoji": "",
+      "def": "A large area thickly covered with trees.",
       "clues": [
-        "Canopy",
-        "Undergrowth",
-        "Birdsong"
+        "Shade",
+        "Trail",
+        "Green"
       ]
     },
     {
       "word": "Ocean",
       "emoji": "🌊",
-      "def": "The huge body of salty water that covers most of the Earth.",
+      "def": "A vast body of salty water covering most of the planet.",
       "clues": [
-        "Depth",
-        "Current",
-        "Endless"
+        "Deep",
+        "Salty",
+        "Vast"
       ]
     },
     {
       "word": "Cave",
-      "emoji": "🦇",
-      "def": "A dark hollow space inside a mountain or underground rock.",
+      "emoji": "",
+      "def": "A dark hollow space underground or inside a hill.",
       "clues": [
-        "Stalactite",
+        "Dark",
         "Echo",
-        "Darkness"
+        "Hidden"
       ]
     },
     {
       "word": "Coral Reef",
       "emoji": "🪸",
-      "def": "A colorful underwater structure built by tiny sea creatures called coral.",
+      "def": "A colorful underwater world built by tiny sea creatures.",
       "clues": [
-        "Tropical",
+        "Underwater",
         "Colorful",
-        "Teeming"
+        "Fragile"
       ]
     },
     {
       "word": "Thunderstorm",
       "emoji": "⛈️",
-      "def": "A powerful storm with heavy rain, lightning, and loud thunder.",
+      "def": "A storm with heavy rain, loud booms, and bright flashes.",
       "clues": [
-        "Rumble",
         "Flash",
-        "Downpour"
+        "Rumble",
+        "Sudden"
       ]
     },
     {
       "word": "Swamp",
-      "emoji": "🐊",
-      "def": "A wet muddy area of land with shallow water and many plants.",
+      "emoji": "",
+      "def": "Soft wet ground where shallow water sits among the trees.",
       "clues": [
         "Murky",
-        "Muddy",
-        "Humid"
+        "Wet",
+        "Sticky"
       ]
     },
     {
       "word": "Avalanche",
-      "emoji": "🏔️",
-      "def": "A sudden rush of snow sliding fast down the side of a mountain.",
+      "emoji": "",
+      "def": "A sudden rush of snow sliding fast down a mountain.",
       "clues": [
-        "Rumble",
-        "Buried",
-        "Slope"
+        "Sudden",
+        "Slope",
+        "Burying"
       ]
     },
     {
       "word": "Meadow",
-      "emoji": "🌾",
-      "def": "A flat open field covered in green grass and wildflowers.",
+      "emoji": "",
+      "def": "An open grassy field dotted with wildflowers.",
       "clues": [
-        "Wildflowers",
+        "Grassy",
         "Breeze",
-        "Pastoral"
+        "Open"
       ]
     },
     {
       "word": "Aurora",
-      "emoji": "🌌",
-      "def": "Colorful lights that dance across the night sky near the poles.",
+      "emoji": "",
+      "def": "Glowing curtains of color that dance in polar night skies.",
       "clues": [
-        "Ribbons",
-        "Arctic",
+        "Glow",
+        "Polar",
         "Shimmer"
       ]
     },
     {
       "word": "Tornado",
       "emoji": "🌪️",
-      "def": "A spinning column of fast air that touches the ground and destroys things.",
+      "def": "A violent spinning column of wind that touches the ground.",
       "clues": [
-        "Funnel",
         "Spinning",
-        "Debris"
-      ]
-    },
-    {
-      "word": "Tide Pool",
-      "emoji": "🦀",
-      "def": "A small pool of seawater left on rocks when the ocean tide goes out.",
-      "clues": [
-        "Rockpool",
-        "Stranded",
-        "Starfish"
-      ]
-    },
-    {
-      "word": "River",
-      "emoji": "🏞️",
-      "def": "A long flowing body of fresh water that moves toward the sea.",
-      "clues": [
-        "Current",
-        "Banks",
-        "Flowing"
-      ]
-    },
-    {
-      "word": "Jungle",
-      "emoji": "🌿",
-      "def": "A dense tropical forest full of wild animals and thick green plants.",
-      "clues": [
-        "Vines",
-        "Humid",
-        "Dense"
-      ]
-    },
-    {
-      "word": "Earthquake",
-      "emoji": "💥",
-      "def": "A sudden shaking of the ground caused by movement deep inside the Earth.",
-      "clues": [
-        "Tremor",
-        "Fault",
-        "Rubble"
-      ]
-    },
-    {
-      "word": "Iceberg",
-      "emoji": "🧊",
-      "def": "A giant floating chunk of ice drifting slowly in the cold sea.",
-      "clues": [
-        "Submerged",
-        "Titanic",
-        "Drift"
-      ]
-    },
-    {
-      "word": "Savanna",
-      "emoji": "🦒",
-      "def": "A flat grassy plain in Africa where lions and giraffes roam.",
-      "clues": [
-        "Grassland",
-        "Drought",
-        "Wildlife"
+        "Sudden",
+        "Destructive"
       ]
     },
     {
       "word": "Geyser",
       "emoji": "♨️",
-      "def": "A hot spring that shoots a jet of boiling water high into the air.",
+      "def": "A hot spring that shoots boiling water high into the air.",
       "clues": [
-        "Spout",
         "Steam",
-        "Underground"
+        "Sudden",
+        "Hot"
+      ]
+    },
+    {
+      "word": "River",
+      "emoji": "",
+      "def": "A long stream of water that flows toward the sea.",
+      "clues": [
+        "Flowing",
+        "Banks",
+        "Winding"
+      ]
+    },
+    {
+      "word": "Jungle",
+      "emoji": "",
+      "def": "A hot, wet forest packed thick with plants and animals.",
+      "clues": [
+        "Dense",
+        "Humid",
+        "Wild"
+      ]
+    },
+    {
+      "word": "Earthquake",
+      "emoji": "",
+      "def": "A sudden shaking of the ground beneath your feet.",
+      "clues": [
+        "Shaking",
+        "Sudden",
+        "Cracks"
+      ]
+    },
+    {
+      "word": "Iceberg",
+      "emoji": "",
+      "def": "A huge floating chunk of ice mostly hidden under water.",
+      "clues": [
+        "Floating",
+        "Frozen",
+        "Hidden"
+      ]
+    },
+    {
+      "word": "Savanna",
+      "emoji": "",
+      "def": "A wide grassy plain dotted with a few scattered trees.",
+      "clues": [
+        "Grassland",
+        "Wildlife",
+        "Dry"
+      ]
+    },
+    {
+      "word": "Whirlpool",
+      "emoji": "",
+      "def": "A swirling pull of water that spins things downward.",
+      "clues": [
+        "Swirling",
+        "Pull",
+        "Spinning"
       ]
     },
     {
       "word": "Cliff",
-      "emoji": "🏔️",
-      "def": "A steep tall face of rock that drops sharply down to the ground or sea.",
+      "emoji": "",
+      "def": "A tall, steep rock face that drops down sharply.",
       "clues": [
-        "Sheer",
+        "Steep",
         "Edge",
-        "Crumble"
+        "Drop"
       ]
     },
     {
       "word": "Mushroom",
       "emoji": "🍄",
-      "def": "A small fungus with a round cap that grows in damp forests.",
+      "def": "A small umbrella-shaped growth that pops up in damp places.",
       "clues": [
-        "Spores",
+        "Damp",
         "Cap",
-        "Fungi"
+        "Forest"
       ]
     },
     {
       "word": "Dune",
-      "emoji": "🏜️",
-      "def": "A hill of sand shaped by the wind in a desert or on a beach.",
+      "emoji": "",
+      "def": "A hill of sand piled up and shaped by the wind.",
       "clues": [
-        "Sand",
-        "Wind",
-        "Shift"
+        "Windswept",
+        "Shifting",
+        "Golden"
       ]
     },
     {
       "word": "Lagoon",
-      "emoji": "🌴",
-      "def": "A shallow body of calm water separated from the sea by land or reef.",
+      "emoji": "",
+      "def": "A calm pool of shallow water cut off from the sea.",
       "clues": [
+        "Calm",
         "Sheltered",
-        "Turquoise",
-        "Barrier"
+        "Shallow"
       ]
     },
     {
       "word": "Tundra",
       "emoji": "❄️",
-      "def": "A cold flat treeless land near the North Pole that stays mostly frozen.",
+      "def": "A cold, treeless land where the ground stays frozen.",
       "clues": [
-        "Permafrost",
+        "Frozen",
         "Bleak",
-        "Arctic"
+        "Treeless"
       ]
     },
     {
       "word": "Mangrove",
-      "emoji": "🌱",
-      "def": "A tree that grows with its roots in shallow salty coastal water.",
+      "emoji": "",
+      "def": "Trees that grow in salty water with roots above the surface.",
       "clues": [
-        "Stilts",
+        "Roots",
         "Coastal",
-        "Brackish"
+        "Tangled"
       ]
     },
     {
       "word": "Fog",
       "emoji": "🌫️",
-      "def": "A thick cloud of tiny water drops that floats close to the ground.",
+      "def": "A thick cloud near the ground that hides what is ahead.",
       "clues": [
-        "Misty",
-        "Visibility",
-        "Damp"
+        "Hazy",
+        "Damp",
+        "Hiding"
       ]
     },
     {
       "word": "Canyon",
-      "emoji": "🏕️",
-      "def": "A deep narrow valley carved into rock by a river over millions of years.",
+      "emoji": "",
+      "def": "A deep narrow valley with steep rocky walls.",
       "clues": [
-        "Gorge",
-        "Layered",
-        "Eroded"
+        "Deep",
+        "Carved",
+        "Layered"
       ]
     }
   ],
@@ -1519,2113 +1519,2113 @@ const WORD_PACK = {
     {
       "word": "France",
       "emoji": "🇫🇷",
-      "def": "A country in Europe known for its great food and tall iron tower.",
+      "def": "A European country known for art, fashion, and fine food.",
       "clues": [
-        "Wine",
-        "Baguette",
-        "Romance"
+        "Chic",
+        "Revolution",
+        "Riviera"
       ]
     },
     {
       "word": "Japan",
       "emoji": "🇯🇵",
-      "def": "An island country in Asia famous for sushi and cherry blossoms.",
+      "def": "An island nation in Asia famous for technology and tradition.",
       "clues": [
-        "Sushi",
-        "Blossom",
-        "Zen"
+        "Islands",
+        "Tradition",
+        "Tidy"
       ]
     },
     {
       "word": "Brazil",
       "emoji": "🇧🇷",
-      "def": "The largest country in South America with a huge tropical rainforest.",
+      "def": "The largest country in South America, full of forests and football.",
       "clues": [
-        "Carnival",
-        "Samba",
-        "Jungle"
+        "Tropical",
+        "Festive",
+        "Rhythm"
       ]
     },
     {
       "word": "Egypt",
       "emoji": "🇪🇬",
-      "def": "A country in Africa known for its ancient pyramids and the Nile River.",
+      "def": "An ancient North African country along a great river.",
       "clues": [
-        "Pyramid",
-        "Pharaoh",
-        "Nile"
+        "Ancient",
+        "Sandy",
+        "Tombs"
       ]
     },
     {
       "word": "Australia",
       "emoji": "🇦🇺",
-      "def": "A huge island continent in the Pacific where kangaroos live.",
+      "def": "A huge island country known for unusual animals and beaches.",
       "clues": [
-        "Outback",
-        "Marsupial",
-        "Reef"
+        "Remote",
+        "Sunny",
+        "Wildlife"
       ]
     },
     {
       "word": "India",
       "emoji": "🇮🇳",
-      "def": "A large country in Asia famous for colorful spices and the Taj Mahal.",
+      "def": "A huge South Asian country with many languages and spices.",
       "clues": [
+        "Crowded",
         "Spice",
-        "Monsoon",
-        "Bollywood"
+        "Colorful"
       ]
     },
     {
       "word": "Italy",
       "emoji": "🇮🇹",
-      "def": "A boot-shaped country in Europe famous for pizza and ancient ruins.",
+      "def": "A boot-shaped European country famous for food and old ruins.",
       "clues": [
-        "Pasta",
-        "Colosseum",
-        "Gondola"
+        "Romantic",
+        "Ruins",
+        "Coastal"
       ]
     },
     {
       "word": "China",
       "emoji": "🇨🇳",
-      "def": "The world's most populous country in Asia with a very long wall.",
+      "def": "A vast Asian country with the most people in the world.",
       "clues": [
-        "Dragon",
-        "Panda",
-        "Dynasty"
+        "Ancient",
+        "Vast",
+        "Crowded"
       ]
     },
     {
       "word": "Mexico",
       "emoji": "🇲🇽",
-      "def": "A country in North America known for tacos and ancient Aztec temples.",
+      "def": "A North American country known for spicy food and lively music.",
       "clues": [
-        "Taco",
-        "Mariachi",
-        "Cactus"
+        "Spicy",
+        "Festive",
+        "Sunny"
       ]
     },
     {
       "word": "Canada",
       "emoji": "🇨🇦",
-      "def": "A very large country north of the USA famous for maple syrup and moose.",
+      "def": "A huge northern country with forests, lakes, and cold winters.",
       "clues": [
-        "Maple",
-        "Moose",
-        "Hockey"
+        "Northern",
+        "Polite",
+        "Snowy"
       ]
     },
     {
       "word": "Russia",
       "emoji": "🇷🇺",
-      "def": "The biggest country in the world, stretching across Europe and Asia.",
+      "def": "The biggest country in the world, stretching across two continents.",
       "clues": [
         "Vast",
-        "Tsar",
-        "Taiga"
+        "Cold",
+        "Bears"
       ]
     },
     {
       "word": "Kenya",
       "emoji": "🇰🇪",
-      "def": "An African country famous for wildlife safaris on the open savanna.",
+      "def": "An East African country famous for wildlife and great runners.",
       "clues": [
-        "Safari",
-        "Cheetah",
-        "Maasai"
+        "Wildlife",
+        "Plains",
+        "Runners"
       ]
     },
     {
       "word": "Greece",
       "emoji": "🇬🇷",
-      "def": "A country in Europe where the Olympic Games and democracy were invented.",
+      "def": "A sunny European country of islands and ancient myths.",
       "clues": [
-        "Olive",
-        "Column",
-        "Mythology"
+        "Islands",
+        "Myths",
+        "Ruins"
       ]
     },
     {
       "word": "Peru",
       "emoji": "🇵🇪",
-      "def": "A South American country home to the ancient Machu Picchu ruins.",
+      "def": "A South American country with high mountains and old ruins.",
       "clues": [
-        "Inca",
-        "Llama",
+        "Mountains",
+        "Ancient",
         "Altitude"
       ]
     },
     {
       "word": "Norway",
       "emoji": "🇳🇴",
-      "def": "A cold northern country in Europe famous for fjords and the midnight sun.",
+      "def": "A northern European country with deep coastal valleys.",
       "clues": [
-        "Fjord",
-        "Viking",
-        "Trolls"
+        "Northern",
+        "Coastal",
+        "Chilly"
       ]
     },
     {
       "word": "Thailand",
       "emoji": "🇹🇭",
-      "def": "A country in Southeast Asia known for golden temples and spicy food.",
+      "def": "A Southeast Asian country known for temples and street food.",
       "clues": [
-        "Temple",
-        "Elephant",
-        "Orchid"
+        "Tropical",
+        "Spicy",
+        "Beaches"
       ]
     },
     {
       "word": "South Africa",
       "emoji": "🇿🇦",
-      "def": "A country at the tip of Africa known for lions and Nelson Mandela.",
+      "def": "A country at the tip of Africa with safaris and gold.",
       "clues": [
-        "Mandela",
-        "Kruger",
-        "Rainbow"
+        "Safari",
+        "Mining",
+        "Diverse"
       ]
     },
     {
       "word": "Argentina",
       "emoji": "🇦🇷",
-      "def": "A country in South America famous for the tango dance and beef.",
+      "def": "A South American country famous for beef and a passionate dance.",
       "clues": [
-        "Tango",
-        "Pampas",
-        "Gaucho"
+        "Beef",
+        "Passionate",
+        "Plains"
       ]
     },
     {
       "word": "Morocco",
       "emoji": "🇲🇦",
-      "def": "A country in North Africa with colorful markets and desert dunes.",
+      "def": "A North African country with busy markets and desert dunes.",
       "clues": [
-        "Souk",
-        "Tagine",
-        "Dunes"
+        "Markets",
+        "Desert",
+        "Spices"
       ]
     },
     {
       "word": "Iceland",
       "emoji": "🇮🇸",
-      "def": "A small island country near the Arctic famous for geysers and volcanoes.",
+      "def": "A small northern island full of volcanoes and hot springs.",
       "clues": [
-        "Geyser",
-        "Geothermal",
-        "Puffin"
+        "Volcanic",
+        "Remote",
+        "Chilly"
       ]
     },
     {
       "word": "New Zealand",
       "emoji": "🇳🇿",
-      "def": "An island country near Australia known for mountains and hobbit films.",
+      "def": "A green pair of islands famous for sheep and movie scenery.",
       "clues": [
-        "Hobbit",
-        "Kiwi",
-        "Haka"
+        "Islands",
+        "Sheep",
+        "Scenic"
       ]
     },
     {
       "word": "Germany",
       "emoji": "🇩🇪",
-      "def": "A large European country famous for castles and huge October beer festivals.",
+      "def": "A central European country known for cars and engineering.",
       "clues": [
-        "Bratwurst",
-        "Autobahn",
-        "Oktoberfest"
+        "Engineering",
+        "Sausage",
+        "Efficient"
       ]
     },
     {
       "word": "Indonesia",
       "emoji": "🇮🇩",
-      "def": "The world's largest island nation in Southeast Asia with over 17,000 islands.",
+      "def": "A tropical country made of thousands of scattered islands.",
       "clues": [
-        "Batik",
-        "Gamelan",
+        "Islands",
+        "Tropical",
         "Volcanic"
       ]
     },
     {
       "word": "Colombia",
       "emoji": "🇨🇴",
-      "def": "A South American country famous for coffee, flowers, and salsa dancing.",
+      "def": "A South American country famous for coffee and lush jungle.",
       "clues": [
         "Coffee",
-        "Salsa",
-        "Emerald"
+        "Lush",
+        "Rhythm"
       ]
     },
     {
       "word": "Turkey",
       "emoji": "🇹🇷",
-      "def": "A country between Europe and Asia known for grand mosques and bazaars.",
+      "def": "A country that bridges Europe and Asia with grand bazaars.",
       "clues": [
-        "Bazaar",
-        "Hammam",
-        "Tulip"
+        "Bridging",
+        "Markets",
+        "Ancient"
       ]
     },
     {
       "word": "Spain",
       "emoji": "🇪🇸",
-      "def": "A sunny country in Europe famous for flamenco dancing and bullfighting.",
+      "def": "A sunny European country known for dance and afternoon naps.",
       "clues": [
-        "Flamenco",
-        "Siesta",
-        "Bullfight"
+        "Sunny",
+        "Passionate",
+        "Coastal"
       ]
     },
     {
       "word": "Nigeria",
       "emoji": "🇳🇬",
-      "def": "The most populated country in Africa known for vibrant music and Nollywood.",
+      "def": "The most populous country in Africa with a huge music scene.",
       "clues": [
-        "Afrobeats",
-        "Nollywood",
-        "Lagos"
+        "Populous",
+        "Rhythm",
+        "Bustling"
       ]
     },
     {
       "word": "Vietnam",
       "emoji": "🇻🇳",
-      "def": "A long thin country in Southeast Asia famous for pho soup and rice fields.",
+      "def": "A Southeast Asian country with rice fields and noodle soups.",
       "clues": [
-        "Pho",
-        "Lanterns",
-        "Rickshaw"
+        "Tropical",
+        "Noodles",
+        "Riverside"
       ]
     },
     {
-      "word": "Saudi Arabia",
-      "emoji": "🇸🇦",
-      "def": "A large desert country in the Middle East home to the holy city of Mecca.",
+      "word": "Switzerland",
+      "emoji": "🇨🇭",
+      "def": "A small mountain country known for chocolate and banks.",
       "clues": [
-        "Desert",
-        "Mosque",
-        "Pilgrimage"
+        "Mountains",
+        "Neutral",
+        "Precise"
       ]
     },
     {
       "word": "Cuba",
       "emoji": "🇨🇺",
-      "def": "A tropical island country in the Caribbean known for salsa and old cars.",
+      "def": "A Caribbean island known for old cars, cigars, and dance.",
       "clues": [
-        "Salsa",
-        "Cigars",
-        "Vintage"
+        "Island",
+        "Vintage",
+        "Rhythm"
       ]
     }
   ],
   "Sports": [
     {
-      "word": "Soccer",
-      "emoji": "⚽",
-      "def": "A team sport where players kick a ball into a goal.",
+      "word": "Fencing",
+      "emoji": "🤺",
+      "def": "Two players duel using thin pointed swords.",
       "clues": [
-        "Kick",
-        "Pitch",
-        "Cleats"
-      ]
-    },
-    {
-      "word": "Basketball",
-      "emoji": "🏀",
-      "def": "Players shoot a round ball through a high hoop to score.",
-      "clues": [
-        "Dribble",
-        "Hoop",
-        "Court"
-      ]
-    },
-    {
-      "word": "Baseball",
-      "emoji": "⚾",
-      "def": "Players hit a ball with a bat and run around bases.",
-      "clues": [
-        "Inning",
-        "Diamond",
-        "Pitcher"
-      ]
-    },
-    {
-      "word": "Tennis",
-      "emoji": "🎾",
-      "def": "Players use rackets to hit a ball back and forth over a net.",
-      "clues": [
-        "Net",
-        "Love",
-        "Serve"
-      ]
-    },
-    {
-      "word": "Swimming",
-      "emoji": "🏊",
-      "def": "Athletes race through water using different strokes.",
-      "clues": [
-        "Lane",
-        "Goggles",
-        "Splash"
-      ]
-    },
-    {
-      "word": "Gymnastics",
-      "emoji": "🤸",
-      "def": "Athletes flip and balance to show off amazing body control.",
-      "clues": [
-        "Vault",
-        "Beam",
-        "Tumble"
-      ]
-    },
-    {
-      "word": "Boxing",
-      "emoji": "🥊",
-      "def": "Two fighters punch each other inside a roped square ring.",
-      "clues": [
-        "Gloves",
-        "Ring",
-        "Jab"
-      ]
-    },
-    {
-      "word": "Golf",
-      "emoji": "⛳",
-      "def": "Players use clubs to hit a small ball into tiny holes.",
-      "clues": [
-        "Birdie",
-        "Fairway",
-        "Putt"
-      ]
-    },
-    {
-      "word": "Volleyball",
-      "emoji": "🏐",
-      "def": "Teams hit a ball over a tall net without letting it drop.",
-      "clues": [
-        "Spike",
-        "Rally",
-        "Bump"
-      ]
-    },
-    {
-      "word": "Hockey",
-      "emoji": "🏒",
-      "def": "Players skate on ice and use sticks to score with a puck.",
-      "clues": [
-        "Puck",
-        "Skate",
-        "Penalty"
-      ]
-    },
-    {
-      "word": "Cycling",
-      "emoji": "🚴",
-      "def": "Riders race on bikes over roads or special tracks.",
-      "clues": [
-        "Pedal",
-        "Gear",
-        "Sprint"
+        "Lunge",
+        "Mask",
+        "Duel"
       ]
     },
     {
       "word": "Archery",
       "emoji": "🏹",
-      "def": "Competitors shoot arrows at a round target to score points.",
+      "def": "You shoot arrows at a faraway round target.",
       "clues": [
-        "Bullseye",
-        "Draw",
-        "Quiver"
-      ]
-    },
-    {
-      "word": "Wrestling",
-      "emoji": "🤼",
-      "def": "Two athletes try to pin each other to the mat to win.",
-      "clues": [
-        "Pin",
-        "Grip",
-        "Mat"
-      ]
-    },
-    {
-      "word": "Skiing",
-      "emoji": "⛷️",
-      "def": "Athletes glide down snowy mountain slopes on long planks.",
-      "clues": [
-        "Slope",
-        "Poles",
-        "Powder"
-      ]
-    },
-    {
-      "word": "Surfing",
-      "emoji": "🏄",
-      "def": "Riders stand on boards and glide along ocean waves.",
-      "clues": [
-        "Wave",
-        "Barrel",
-        "Wipeout"
-      ]
-    },
-    {
-      "word": "Rowing",
-      "emoji": "🚣",
-      "def": "Teams in long narrow boats race by pulling oars through water.",
-      "clues": [
-        "Oar",
-        "Stroke",
-        "Coxswain"
-      ]
-    },
-    {
-      "word": "Badminton",
-      "emoji": "🏸",
-      "def": "Players use rackets to hit a feathered shuttlecock over a net.",
-      "clues": [
-        "Shuttle",
-        "Smash",
-        "Feather"
-      ]
-    },
-    {
-      "word": "Fencing",
-      "emoji": "🤺",
-      "def": "Two athletes in protective masks duel using long thin swords.",
-      "clues": [
-        "Lunge",
-        "Blade",
-        "Parry"
-      ]
-    },
-    {
-      "word": "Snowboarding",
-      "emoji": "🏂",
-      "def": "Riders strap both feet to one board and slide down snowy hills.",
-      "clues": [
-        "Halfpipe",
-        "Grab",
-        "Powder"
-      ]
-    },
-    {
-      "word": "Judo",
-      "emoji": "🥋",
-      "def": "Athletes in white uniforms throw each other onto a mat.",
-      "clues": [
-        "Throw",
-        "Belt",
-        "Grip"
-      ]
-    },
-    {
-      "word": "Rugby",
-      "emoji": "🏉",
-      "def": "Teams carry and pass an oval ball to score tries.",
-      "clues": [
-        "Scrum",
-        "Try",
-        "Tackle"
-      ]
-    },
-    {
-      "word": "Track",
-      "emoji": "🏃",
-      "def": "Runners race around an oval to see who is fastest.",
-      "clues": [
-        "Hurdle",
-        "Lane",
-        "Baton"
-      ]
-    },
-    {
-      "word": "Weightlifting",
-      "emoji": "🏋️",
-      "def": "Athletes lift heavy barbells above their heads to win.",
-      "clues": [
-        "Barbell",
-        "Snatch",
-        "Plates"
-      ]
-    },
-    {
-      "word": "Diving",
-      "emoji": "🤽",
-      "def": "Athletes jump off a high board and flip into a pool.",
-      "clues": [
-        "Springboard",
-        "Tuck",
-        "Splash"
-      ]
-    },
-    {
-      "word": "Polo",
-      "emoji": "",
-      "def": "Riders on horses use long mallets to hit a ball into a goal.",
-      "clues": [
-        "Mallet",
-        "Pony",
-        "Chukker"
-      ]
-    },
-    {
-      "word": "Triathlon",
-      "emoji": "🏊",
-      "def": "Athletes swim, bike, and run all in one long race.",
-      "clues": [
-        "Transition",
-        "Endurance",
-        "Multisport"
-      ]
-    },
-    {
-      "word": "Skateboarding",
-      "emoji": "🛹",
-      "def": "Riders roll on a board and perform tricks at a skate park.",
-      "clues": [
-        "Ollie",
-        "Grind",
-        "Deck"
-      ]
-    },
-    {
-      "word": "Table Tennis",
-      "emoji": "🏓",
-      "def": "Two players paddle a tiny ball back and forth across a small table.",
-      "clues": [
-        "Paddle",
-        "Spin",
-        "Rally"
+        "Aim",
+        "Steady",
+        "Pull"
       ]
     },
     {
       "word": "Curling",
       "emoji": "🥌",
-      "def": "Teams slide heavy stones on ice and sweep the path ahead.",
+      "def": "Players slide heavy stones across smooth ice.",
       "clues": [
-        "Stone",
         "Sweep",
-        "House"
+        "Slide",
+        "Frozen"
       ]
     },
     {
-      "word": "Equestrian",
-      "emoji": "🏇",
-      "def": "Riders guide horses through jumps or dressage patterns to score.",
+      "word": "Water Polo",
+      "emoji": "🤽",
+      "def": "Teams toss a ball while swimming in a pool.",
       "clues": [
+        "Splash",
+        "Tread",
+        "Wet"
+      ]
+    },
+    {
+      "word": "Badminton",
+      "emoji": "🏸",
+      "def": "Players hit a feathered birdie over a net.",
+      "clues": [
+        "Net",
+        "Swing",
+        "Light"
+      ]
+    },
+    {
+      "word": "Boxing",
+      "emoji": "🥊",
+      "def": "Two fighters punch wearing big padded gloves.",
+      "clues": [
+        "Gloves",
+        "Round",
+        "Jab"
+      ]
+    },
+    {
+      "word": "Surfing",
+      "emoji": "🏄",
+      "def": "You ride ocean waves standing on a board.",
+      "clues": [
+        "Wave",
+        "Balance",
+        "Salty"
+      ]
+    },
+    {
+      "word": "Bowling",
+      "emoji": "🎳",
+      "def": "You roll a heavy ball to knock down pins.",
+      "clues": [
+        "Roll",
+        "Lane",
+        "Aim"
+      ]
+    },
+    {
+      "word": "Skiing",
+      "emoji": "⛷️",
+      "def": "You glide down snowy mountains on two boards.",
+      "clues": [
+        "Slope",
+        "Cold",
+        "Glide"
+      ]
+    },
+    {
+      "word": "Gymnastics",
+      "emoji": "🤸",
+      "def": "Athletes flip and balance with amazing body control.",
+      "clues": [
+        "Flip",
+        "Bend",
+        "Balance"
+      ]
+    },
+    {
+      "word": "Rowing",
+      "emoji": "🚣",
+      "def": "A team pulls oars to move a long boat.",
+      "clues": [
+        "Pull",
+        "Stroke",
+        "Water"
+      ]
+    },
+    {
+      "word": "Wrestling",
+      "emoji": "🤼",
+      "def": "Two people grapple to pin each other down.",
+      "clues": [
+        "Grip",
+        "Mat",
+        "Pin"
+      ]
+    },
+    {
+      "word": "Cycling",
+      "emoji": "🚴",
+      "def": "Riders race on bikes over long distances.",
+      "clues": [
+        "Pedal",
+        "Wheels",
+        "Race"
+      ]
+    },
+    {
+      "word": "Diving",
+      "emoji": "🤿",
+      "def": "You leap off a high board into deep water.",
+      "clues": [
+        "Plunge",
+        "Twist",
+        "Splash"
+      ]
+    },
+    {
+      "word": "Karate",
+      "emoji": "🥋",
+      "def": "A fighting style using sharp kicks and chops.",
+      "clues": [
+        "Kick",
+        "Belt",
+        "Chop"
+      ]
+    },
+    {
+      "word": "Volleyball",
+      "emoji": "🏐",
+      "def": "Teams bump a ball back over a tall net.",
+      "clues": [
+        "Spike",
+        "Net",
+        "Bump"
+      ]
+    },
+    {
+      "word": "Basketball",
+      "emoji": "🏀",
+      "def": "Players throw a ball through a high hoop.",
+      "clues": [
+        "Hoop",
+        "Dribble",
+        "Court"
+      ]
+    },
+    {
+      "word": "Skateboarding",
+      "emoji": "🛹",
+      "def": "You ride and do tricks on a wheeled board.",
+      "clues": [
+        "Ramp",
+        "Trick",
+        "Roll"
+      ]
+    },
+    {
+      "word": "Hockey",
+      "emoji": "🏒",
+      "def": "Players use sticks to drive a puck into goals.",
+      "clues": [
+        "Stick",
+        "Rink",
+        "Goal"
+      ]
+    },
+    {
+      "word": "Golf",
+      "emoji": "⛳",
+      "def": "You hit a small ball into faraway holes.",
+      "clues": [
+        "Swing",
+        "Hole",
+        "Green"
+      ]
+    },
+    {
+      "word": "Sailing",
+      "emoji": "⛵",
+      "def": "You steer a boat pushed by the wind.",
+      "clues": [
+        "Wind",
+        "Mast",
+        "Breeze"
+      ]
+    },
+    {
+      "word": "Snowboarding",
+      "emoji": "🏂",
+      "def": "You ride one wide board down snowy hills.",
+      "clues": [
+        "Slope",
+        "Carve",
+        "Cold"
+      ]
+    },
+    {
+      "word": "Rugby",
+      "emoji": "🏉",
+      "def": "A rough team game carrying an oval ball.",
+      "clues": [
+        "Tackle",
+        "Oval",
+        "Mud"
+      ]
+    },
+    {
+      "word": "Baseball",
+      "emoji": "⚾",
+      "def": "Players hit a ball and run around bases.",
+      "clues": [
+        "Bat",
+        "Base",
+        "Pitch"
+      ]
+    },
+    {
+      "word": "Climbing",
+      "emoji": "🧗",
+      "def": "You scale steep rocks or walls using grips.",
+      "clues": [
+        "Rope",
+        "Grip",
+        "Wall"
+      ]
+    },
+    {
+      "word": "Skating",
+      "emoji": "⛸️",
+      "def": "You glide gracefully on ice wearing blades.",
+      "clues": [
+        "Glide",
+        "Spin",
+        "Blade"
+      ]
+    },
+    {
+      "word": "Soccer",
+      "emoji": "⚽",
+      "def": "Players kick a ball into the other team's goal.",
+      "clues": [
+        "Kick",
+        "Goal",
+        "Field"
+      ]
+    },
+    {
+      "word": "Polo",
+      "emoji": "🐎",
+      "def": "Riders on horses swing mallets at a ball.",
+      "clues": [
+        "Mallet",
         "Saddle",
-        "Canter",
-        "Jump"
+        "Gallop"
+      ]
+    },
+    {
+      "word": "Triathlon",
+      "emoji": "",
+      "def": "A race that mixes swimming biking and running.",
+      "clues": [
+        "Endure",
+        "Three",
+        "Race"
+      ]
+    },
+    {
+      "word": "Lacrosse",
+      "emoji": "🥍",
+      "def": "Players catch a ball using netted sticks.",
+      "clues": [
+        "Stick",
+        "Cradle",
+        "Catch"
       ]
     }
   ],
   "Vehicles": [
     {
-      "word": "Car",
-      "emoji": "🚗",
-      "def": "A four-wheeled vehicle that people drive on roads every day.",
+      "word": "Ambulance",
+      "emoji": "🚑",
+      "def": "It rushes sick people quickly to the hospital.",
       "clues": [
-        "Wheel",
-        "Highway",
-        "Honk"
+        "Urgent",
+        "Rush",
+        "White"
       ]
     },
     {
-      "word": "Airplane",
-      "emoji": "✈️",
-      "def": "A winged machine that carries passengers high through the sky.",
+      "word": "Submarine",
+      "emoji": "",
+      "def": "A boat that travels deep beneath the ocean.",
       "clues": [
-        "Turbine",
-        "Altitude",
-        "Runway"
-      ]
-    },
-    {
-      "word": "Bicycle",
-      "emoji": "🚲",
-      "def": "A two-wheeled vehicle you power by pedaling with your feet.",
-      "clues": [
-        "Pedal",
-        "Handlebar",
-        "Chain"
-      ]
-    },
-    {
-      "word": "Motorcycle",
-      "emoji": "🏍️",
-      "def": "A two-wheeled motorized vehicle that riders steer on roads.",
-      "clues": [
-        "Throttle",
-        "Helmet",
-        "Lean"
-      ]
-    },
-    {
-      "word": "Train",
-      "emoji": "🚆",
-      "def": "A long line of cars that rolls along metal rails.",
-      "clues": [
-        "Rail",
-        "Whistle",
-        "Cargo"
+        "Deep",
+        "Dive",
+        "Sealed"
       ]
     },
     {
       "word": "Helicopter",
       "emoji": "🚁",
-      "def": "A flying machine with spinning blades on top that let it hover.",
+      "def": "It flies using spinning blades on top.",
       "clues": [
-        "Rotor",
         "Hover",
-        "Rescue"
-      ]
-    },
-    {
-      "word": "Boat",
-      "emoji": "⛵",
-      "def": "A small vessel that floats and moves across water.",
-      "clues": [
-        "Anchor",
-        "Hull",
-        "Wake"
-      ]
-    },
-    {
-      "word": "Submarine",
-      "emoji": "🤿",
-      "def": "A vessel that travels underwater and can dive very deep.",
-      "clues": [
-        "Periscope",
-        "Depth",
-        "Torpedo"
-      ]
-    },
-    {
-      "word": "Bus",
-      "emoji": "🚌",
-      "def": "A big vehicle that carries many passengers along set routes.",
-      "clues": [
-        "Stop",
-        "Fare",
-        "Route"
-      ]
-    },
-    {
-      "word": "Truck",
-      "emoji": "🚚",
-      "def": "A large vehicle used to haul heavy loads across long distances.",
-      "clues": [
-        "Cargo",
-        "Diesel",
-        "Haul"
+        "Blades",
+        "Sky"
       ]
     },
     {
       "word": "Tractor",
       "emoji": "🚜",
-      "def": "A powerful farm vehicle used to pull plows and other equipment.",
+      "def": "A strong machine that pulls tools on farms.",
       "clues": [
+        "Farm",
         "Plow",
-        "Field",
-        "Harvest"
+        "Field"
       ]
     },
     {
-      "word": "Rocket",
-      "emoji": "🚀",
-      "def": "A vehicle that shoots into space by burning powerful fuel.",
-      "clues": [
-        "Thrust",
-        "Orbit",
-        "Launch"
-      ]
-    },
-    {
-      "word": "Canoe",
-      "emoji": "🛶",
-      "def": "A narrow open boat moved through water with paddles.",
-      "clues": [
-        "Paddle",
-        "River",
-        "Portage"
-      ]
-    },
-    {
-      "word": "Ambulance",
-      "emoji": "🚑",
-      "def": "A fast vehicle that rushes sick or hurt people to the hospital.",
-      "clues": [
-        "Siren",
-        "Stretcher",
-        "Emergency"
-      ]
-    },
-    {
-      "word": "Fire Truck",
-      "emoji": "🚒",
-      "def": "A red vehicle that carries firefighters and hoses to put out fires.",
-      "clues": [
-        "Hose",
-        "Ladder",
-        "Blaze"
-      ]
-    },
-    {
-      "word": "Scooter",
-      "emoji": "🛵",
-      "def": "A small motorized vehicle with a platform to stand on.",
-      "clues": [
-        "Kickstand",
-        "Zip",
-        "Urban"
-      ]
-    },
-    {
-      "word": "Sailboat",
-      "emoji": "⛵",
-      "def": "A boat pushed across water by the wind filling its sails.",
-      "clues": [
-        "Mast",
-        "Wind",
-        "Tack"
-      ]
-    },
-    {
-      "word": "Hovercraft",
+      "word": "Convertible",
       "emoji": "",
-      "def": "A vehicle that glides over land or water on a cushion of air.",
+      "def": "A car whose roof folds down for open driving.",
       "clues": [
-        "Cushion",
-        "Glide",
-        "Propeller"
+        "Roofless",
+        "Breezy",
+        "Sleek"
       ]
     },
     {
-      "word": "Kayak",
-      "emoji": "🛶",
-      "def": "A small enclosed boat paddled with a double-bladed oar.",
-      "clues": [
-        "Roll",
-        "Rapids",
-        "Cockpit"
-      ]
-    },
-    {
-      "word": "Spaceship",
-      "emoji": "🛸",
-      "def": "A vehicle built to travel between planets and stars in outer space.",
-      "clues": [
-        "Galaxy",
-        "Docking",
-        "Gravity"
-      ]
-    },
-    {
-      "word": "Forklift",
+      "word": "Limousine",
       "emoji": "",
-      "def": "A warehouse vehicle with metal forks that lifts heavy pallets.",
+      "def": "A very long fancy car for special guests.",
       "clues": [
-        "Pallet",
-        "Lift",
-        "Warehouse"
+        "Long",
+        "Fancy",
+        "Stretch"
       ]
     },
     {
-      "word": "Gondola",
-      "emoji": "🚡",
-      "def": "A long narrow boat steered with a pole through Venice's canals.",
+      "word": "Motorcycle",
+      "emoji": "🏍️",
+      "def": "A fast two-wheeled ride you sit astride.",
       "clues": [
-        "Canal",
-        "Pole",
-        "Venice"
+        "Helmet",
+        "Rev",
+        "Lean"
       ]
     },
     {
-      "word": "Hot Air Balloon",
-      "emoji": "🎈",
-      "def": "A giant fabric bag filled with hot air that floats people into the sky.",
+      "word": "Bicycle",
+      "emoji": "🚲",
+      "def": "You pedal this two-wheeled ride yourself.",
       "clues": [
-        "Basket",
-        "Burner",
-        "Drift"
-      ]
-    },
-    {
-      "word": "Cable Car",
-      "emoji": "🚠",
-      "def": "A cabin pulled by steel cables up and over steep mountains.",
-      "clues": [
-        "Cable",
-        "Gondola",
-        "Mountain"
-      ]
-    },
-    {
-      "word": "Snowmobile",
-      "emoji": "",
-      "def": "A motorized sled that zooms across snow and ice.",
-      "clues": [
-        "Sled",
-        "Tundra",
-        "Track"
-      ]
-    },
-    {
-      "word": "Jet Ski",
-      "emoji": "🏄",
-      "def": "A small motorized watercraft that riders straddle to zoom across water.",
-      "clues": [
-        "Wake",
-        "Throttle",
-        "Spray"
-      ]
-    },
-    {
-      "word": "Tank",
-      "emoji": "",
-      "def": "A heavily armored military vehicle that rolls on wide metal tracks.",
-      "clues": [
-        "Armor",
-        "Turret",
-        "Tracks"
-      ]
-    },
-    {
-      "word": "Rickshaw",
-      "emoji": "",
-      "def": "A small carriage pulled by a person or bicycle carrying passengers.",
-      "clues": [
-        "Carriage",
-        "Pull",
-        "Asia"
-      ]
-    },
-    {
-      "word": "Ferry",
-      "emoji": "⛴️",
-      "def": "A large boat that carries people and cars across a body of water.",
-      "clues": [
-        "Crossing",
-        "Dock",
-        "Ramp"
+        "Pedal",
+        "Chain",
+        "Spokes"
       ]
     },
     {
       "word": "Bulldozer",
       "emoji": "",
-      "def": "A big construction machine with a wide metal blade on the front.",
+      "def": "A machine that pushes dirt with a big blade.",
       "clues": [
-        "Blade",
-        "Earthmover",
-        "Rumble"
+        "Push",
+        "Dirt",
+        "Blade"
+      ]
+    },
+    {
+      "word": "Sailboat",
+      "emoji": "⛵",
+      "def": "A boat moved by wind caught in cloth.",
+      "clues": [
+        "Wind",
+        "Mast",
+        "Drift"
+      ]
+    },
+    {
+      "word": "Rocket",
+      "emoji": "🚀",
+      "def": "It blasts up through the sky toward space.",
+      "clues": [
+        "Launch",
+        "Blast",
+        "Space"
+      ]
+    },
+    {
+      "word": "Canoe",
+      "emoji": "🛶",
+      "def": "A narrow boat you paddle on calm water.",
+      "clues": [
+        "Paddle",
+        "Narrow",
+        "River"
+      ]
+    },
+    {
+      "word": "Scooter",
+      "emoji": "🛵",
+      "def": "A small motor ride with a flat standing deck.",
+      "clues": [
+        "Zip",
+        "Buzz",
+        "Compact"
+      ]
+    },
+    {
+      "word": "Train",
+      "emoji": "🚆",
+      "def": "Long linked cars rolling along two metal rails.",
+      "clues": [
+        "Rails",
+        "Cars",
+        "Whistle"
+      ]
+    },
+    {
+      "word": "Fire Truck",
+      "emoji": "🚒",
+      "def": "It carries hoses and ladders to fight flames.",
+      "clues": [
+        "Hose",
+        "Ladder",
+        "Red"
+      ]
+    },
+    {
+      "word": "Tank",
+      "emoji": "",
+      "def": "An armored war machine that rolls on tracks.",
+      "clues": [
+        "Armor",
+        "Tracks",
+        "Battle"
+      ]
+    },
+    {
+      "word": "Forklift",
+      "emoji": "",
+      "def": "It lifts heavy crates using two metal prongs.",
+      "clues": [
+        "Lift",
+        "Prongs",
+        "Warehouse"
+      ]
+    },
+    {
+      "word": "Tram",
+      "emoji": "🚊",
+      "def": "A street car that runs on rails through cities.",
+      "clues": [
+        "Rails",
+        "Street",
+        "City"
+      ]
+    },
+    {
+      "word": "Jeep",
+      "emoji": "",
+      "def": "A rugged car built for bumpy off-road trails.",
+      "clues": [
+        "Rugged",
+        "Trail",
+        "Open"
+      ]
+    },
+    {
+      "word": "Yacht",
+      "emoji": "🛥️",
+      "def": "A large fancy boat for cruising in style.",
+      "clues": [
+        "Luxury",
+        "Deck",
+        "Cruise"
+      ]
+    },
+    {
+      "word": "Hot Air Balloon",
+      "emoji": "🎈",
+      "def": "A giant balloon that floats people through the sky.",
+      "clues": [
+        "Float",
+        "Basket",
+        "Drift"
+      ]
+    },
+    {
+      "word": "Bus",
+      "emoji": "🚌",
+      "def": "A long vehicle carrying many riders together.",
+      "clues": [
+        "Riders",
+        "Stop",
+        "Route"
+      ]
+    },
+    {
+      "word": "Van",
+      "emoji": "🚐",
+      "def": "A boxy vehicle with lots of room inside.",
+      "clues": [
+        "Boxy",
+        "Cargo",
+        "Roomy"
+      ]
+    },
+    {
+      "word": "Kayak",
+      "emoji": "",
+      "def": "A slim boat paddled with a double-bladed oar.",
+      "clues": [
+        "Paddle",
+        "Slim",
+        "Rapids"
+      ]
+    },
+    {
+      "word": "Snowmobile",
+      "emoji": "",
+      "def": "A machine that zooms across deep snow.",
+      "clues": [
+        "Snow",
+        "Zoom",
+        "Tracks"
+      ]
+    },
+    {
+      "word": "Taxi",
+      "emoji": "🚕",
+      "def": "A car you pay to drive you somewhere.",
+      "clues": [
+        "Fare",
+        "Yellow",
+        "Hail"
+      ]
+    },
+    {
+      "word": "Tugboat",
+      "emoji": "",
+      "def": "A small strong boat that pushes bigger ships.",
+      "clues": [
+        "Pull",
+        "Harbor",
+        "Sturdy"
+      ]
+    },
+    {
+      "word": "Glider",
+      "emoji": "",
+      "def": "A wing that soars quietly with no engine.",
+      "clues": [
+        "Soar",
+        "Silent",
+        "Wings"
+      ]
+    },
+    {
+      "word": "Wheelbarrow",
+      "emoji": "",
+      "def": "A one-wheeled cart you push by hand.",
+      "clues": [
+        "Push",
+        "Cart",
+        "Garden"
+      ]
+    },
+    {
+      "word": "Pickup",
+      "emoji": "🛻",
+      "def": "A truck with an open bed for hauling things.",
+      "clues": [
+        "Bed",
+        "Haul",
+        "Sturdy"
       ]
     }
   ],
   "Musical Instruments": [
     {
-      "word": "Guitar",
-      "emoji": "🎸",
-      "def": "A stringed instrument you strum or pluck to make music.",
-      "clues": [
-        "Strings",
-        "Chord",
-        "Fret"
-      ]
-    },
-    {
-      "word": "Piano",
-      "emoji": "🎹",
-      "def": "A large keyboard instrument with black and white keys you press.",
-      "clues": [
-        "Keys",
-        "Pedal",
-        "Ivory"
-      ]
-    },
-    {
-      "word": "Drums",
-      "emoji": "🥁",
-      "def": "A set of round shells and cymbals you hit with sticks to keep the beat.",
-      "clues": [
-        "Stick",
-        "Cymbal",
-        "Beat"
-      ]
-    },
-    {
-      "word": "Trumpet",
-      "emoji": "🎺",
-      "def": "A shiny brass instrument you blow into while pressing buttons.",
-      "clues": [
-        "Valve",
-        "Brass",
-        "Fanfare"
-      ]
-    },
-    {
-      "word": "Violin",
-      "emoji": "🎻",
-      "def": "A small wooden instrument played by drawing a bow across strings.",
-      "clues": [
-        "Bow",
-        "Rosin",
-        "Strings"
-      ]
-    },
-    {
-      "word": "Flute",
-      "emoji": "🪈",
-      "def": "A thin metal tube you blow across to make a high clear sound.",
-      "clues": [
-        "Breath",
-        "Woodwind",
-        "Trill"
-      ]
-    },
-    {
-      "word": "Saxophone",
-      "emoji": "🎷",
-      "def": "A curved brass instrument with a reed that makes a jazzy sound.",
-      "clues": [
-        "Reed",
-        "Jazz",
-        "Honk"
-      ]
-    },
-    {
       "word": "Cello",
       "emoji": "🎻",
-      "def": "A large stringed instrument held between the knees and played with a bow.",
+      "def": "A big string instrument played while seated.",
       "clues": [
-        "Bow",
-        "Deep",
-        "Endpin"
-      ]
-    },
-    {
-      "word": "Harp",
-      "emoji": "",
-      "def": "A tall instrument with many strings you pluck with your fingers.",
-      "clues": [
-        "Pluck",
-        "Angelic",
-        "Glissando"
-      ]
-    },
-    {
-      "word": "Trombone",
-      "emoji": "",
-      "def": "A brass instrument with a sliding tube that changes the pitch.",
-      "clues": [
-        "Slide",
-        "Brass",
-        "Blare"
-      ]
-    },
-    {
-      "word": "Clarinet",
-      "emoji": "",
-      "def": "A long black woodwind instrument with a reed that you blow to play.",
-      "clues": [
-        "Reed",
-        "Woodwind",
-        "Squeak"
-      ]
-    },
-    {
-      "word": "Ukulele",
-      "emoji": "🪕",
-      "def": "A small four-stringed instrument from Hawaii that sounds cheerful.",
-      "clues": [
-        "Hawaii",
-        "Strum",
-        "Tiny"
-      ]
-    },
-    {
-      "word": "Banjo",
-      "emoji": "🪕",
-      "def": "A round-bodied stringed instrument with a twangy country sound.",
-      "clues": [
-        "Twang",
-        "Bluegrass",
-        "Pick"
-      ]
-    },
-    {
-      "word": "Accordion",
-      "emoji": "",
-      "def": "A box instrument you squeeze in and out while pressing keys.",
-      "clues": [
-        "Bellows",
-        "Squeeze",
-        "Polka"
-      ]
-    },
-    {
-      "word": "Bagpipes",
-      "emoji": "",
-      "def": "A Scottish instrument with a bag you squeeze to push air through pipes.",
-      "clues": [
-        "Drone",
-        "Scotland",
-        "Plaid"
-      ]
-    },
-    {
-      "word": "Xylophone",
-      "emoji": "",
-      "def": "A row of wooden bars you strike with mallets to play a melody.",
-      "clues": [
-        "Mallet",
-        "Bar",
-        "Tap"
+        "Seated",
+        "Wooden",
+        "Mellow"
       ]
     },
     {
       "word": "Harmonica",
       "emoji": "",
-      "def": "A tiny instrument you hold to your mouth and blow or draw air through.",
+      "def": "A small instrument you blow into with your mouth.",
+      "clues": [
+        "Blow",
+        "Pocket",
+        "Breath"
+      ]
+    },
+    {
+      "word": "Bagpipes",
+      "emoji": "",
+      "def": "Air-filled pipes that make a loud droning sound.",
+      "clues": [
+        "Air",
+        "Drone",
+        "Squeeze"
+      ]
+    },
+    {
+      "word": "Accordion",
+      "emoji": "🪗",
+      "def": "You squeeze its folds and press keys for sound.",
+      "clues": [
+        "Squeeze",
+        "Folds",
+        "Bellows"
+      ]
+    },
+    {
+      "word": "Xylophone",
+      "emoji": "",
+      "def": "Wooden bars you strike with little mallets.",
+      "clues": [
+        "Mallet",
+        "Bars",
+        "Tap"
+      ]
+    },
+    {
+      "word": "Trumpet",
+      "emoji": "🎺",
+      "def": "A shiny brass horn with three press buttons.",
+      "clues": [
+        "Brass",
+        "Blow",
+        "Shiny"
+      ]
+    },
+    {
+      "word": "Drums",
+      "emoji": "🥁",
+      "def": "You hit these to keep a steady beat.",
+      "clues": [
+        "Beat",
+        "Sticks",
+        "Pound"
+      ]
+    },
+    {
+      "word": "Flute",
+      "emoji": "🪈",
+      "def": "A slim metal tube you blow across sideways.",
       "clues": [
         "Breath",
-        "Blues",
-        "Pocket"
+        "Slim",
+        "Airy"
       ]
     },
     {
-      "word": "Mandolin",
-      "emoji": "",
-      "def": "A small round-backed stringed instrument popular in folk music.",
+      "word": "Violin",
+      "emoji": "🎻",
+      "def": "A small string instrument held under the chin.",
       "clues": [
-        "Pick",
-        "Folk",
-        "Pairs"
+        "Chin",
+        "Tune",
+        "Wooden"
       ]
     },
     {
-      "word": "Oboe",
-      "emoji": "",
-      "def": "A slender woodwind with a double reed that has a piercing sound.",
+      "word": "Piano",
+      "emoji": "🎹",
+      "def": "You press black and white keys to make music.",
+      "clues": [
+        "Keys",
+        "Pedal",
+        "Bench"
+      ]
+    },
+    {
+      "word": "Saxophone",
+      "emoji": "🎷",
+      "def": "A curved brass instrument used a lot in jazz.",
       "clues": [
         "Reed",
-        "Orchestra",
-        "Nasal"
+        "Curved",
+        "Jazzy"
       ]
     },
     {
-      "word": "Sitar",
-      "emoji": "",
-      "def": "A long-necked Indian stringed instrument with a buzzy twang.",
+      "word": "Guitar",
+      "emoji": "🎸",
+      "def": "You strum its strings to play songs.",
       "clues": [
-        "India",
-        "Drone",
-        "Raga"
-      ]
-    },
-    {
-      "word": "Bongo",
-      "emoji": "",
-      "def": "A pair of small drums you tap with your hands to make rhythm.",
-      "clues": [
-        "Hand",
-        "Pair",
-        "Latin"
-      ]
-    },
-    {
-      "word": "Didgeridoo",
-      "emoji": "",
-      "def": "A very long wooden tube from Australia that makes a deep droning sound.",
-      "clues": [
-        "Australia",
-        "Drone",
-        "Circular"
-      ]
-    },
-    {
-      "word": "Maracas",
-      "emoji": "",
-      "def": "Handheld rattles you shake to add rhythm to music.",
-      "clues": [
-        "Shake",
-        "Rattle",
-        "Salsa"
-      ]
-    },
-    {
-      "word": "Tuba",
-      "emoji": "",
-      "def": "The biggest brass instrument with the lowest booming sound in a band.",
-      "clues": [
-        "Bass",
-        "Bell",
-        "Oom"
+        "Strum",
+        "Frets",
+        "Pick"
       ]
     },
     {
       "word": "Tambourine",
       "emoji": "🪘",
-      "def": "A small frame drum with tiny metal discs around the edge you jingle.",
+      "def": "A round frame you shake with jingling discs.",
       "clues": [
-        "Jingle",
         "Shake",
-        "Frame"
+        "Jingle",
+        "Round"
       ]
     },
     {
-      "word": "Bass Guitar",
-      "emoji": "🎸",
-      "def": "A long-necked stringed instrument that plays the low thumping groove in a band.",
+      "word": "Banjo",
+      "emoji": "🪕",
+      "def": "A twangy round string instrument used in folk.",
       "clues": [
-        "Low",
-        "Groove",
-        "Thump"
+        "Twang",
+        "Pluck",
+        "Round"
+      ]
+    },
+    {
+      "word": "Clarinet",
+      "emoji": "",
+      "def": "A slim black woodwind played with a reed.",
+      "clues": [
+        "Reed",
+        "Black",
+        "Woodwind"
+      ]
+    },
+    {
+      "word": "Trombone",
+      "emoji": "",
+      "def": "A brass horn with a long sliding tube.",
+      "clues": [
+        "Slide",
+        "Brass",
+        "Stretch"
+      ]
+    },
+    {
+      "word": "Harp",
+      "emoji": "",
+      "def": "A tall instrument with many strings to pluck.",
+      "clues": [
+        "Pluck",
+        "Tall",
+        "Gentle"
+      ]
+    },
+    {
+      "word": "Tuba",
+      "emoji": "",
+      "def": "A huge brass horn with very deep notes.",
+      "clues": [
+        "Brass",
+        "Deep",
+        "Heavy"
+      ]
+    },
+    {
+      "word": "Maracas",
+      "emoji": "",
+      "def": "Shakers full of beads that rattle when moved.",
+      "clues": [
+        "Shake",
+        "Rattle",
+        "Pair"
+      ]
+    },
+    {
+      "word": "Organ",
+      "emoji": "",
+      "def": "A keyboard that pumps air through many pipes.",
+      "clues": [
+        "Pipes",
+        "Keys",
+        "Air"
+      ]
+    },
+    {
+      "word": "Triangle",
+      "emoji": "",
+      "def": "A bent metal bar you tap for a ring.",
+      "clues": [
+        "Ring",
+        "Metal",
+        "Tap"
+      ]
+    },
+    {
+      "word": "Ukulele",
+      "emoji": "",
+      "def": "A tiny four-string instrument that sounds cheerful.",
+      "clues": [
+        "Tiny",
+        "Strum",
+        "Cheerful"
+      ]
+    },
+    {
+      "word": "Bongos",
+      "emoji": "",
+      "def": "Small paired drums you tap with your hands.",
+      "clues": [
+        "Tap",
+        "Pair",
+        "Hands"
+      ]
+    },
+    {
+      "word": "Oboe",
+      "emoji": "",
+      "def": "A slim woodwind with a high reedy voice.",
+      "clues": [
+        "Reed",
+        "Slim",
+        "Woodwind"
+      ]
+    },
+    {
+      "word": "Cymbals",
+      "emoji": "",
+      "def": "Two metal plates you crash together loudly.",
+      "clues": [
+        "Crash",
+        "Metal",
+        "Clang"
+      ]
+    },
+    {
+      "word": "Bell",
+      "emoji": "🔔",
+      "def": "A hollow shape that rings when it is struck.",
+      "clues": [
+        "Ring",
+        "Chime",
+        "Hollow"
+      ]
+    },
+    {
+      "word": "Mandolin",
+      "emoji": "",
+      "def": "A small round string instrument with paired strings.",
+      "clues": [
+        "Pluck",
+        "Round",
+        "Folk"
       ]
     },
     {
       "word": "Recorder",
       "emoji": "",
-      "def": "A simple plastic flute-like instrument often played by young students.",
+      "def": "A simple pipe many kids learn first in school.",
       "clues": [
-        "School",
-        "Hole",
-        "Blow"
+        "Pipe",
+        "Breath",
+        "School"
       ]
     },
     {
-      "word": "Steel Drum",
+      "word": "Sitar",
       "emoji": "",
-      "def": "A Caribbean percussion instrument made from oil barrels with a bright ringing tone.",
+      "def": "A long string instrument with a buzzy twang.",
       "clues": [
-        "Caribbean",
-        "Pan",
-        "Ding"
-      ]
-    },
-    {
-      "word": "Lute",
-      "emoji": "",
-      "def": "An ancient pear-shaped stringed instrument plucked in medieval music.",
-      "clues": [
-        "Medieval",
         "Pluck",
-        "Pear"
+        "Long",
+        "Twang"
       ]
     },
     {
-      "word": "Zither",
+      "word": "Kazoo",
       "emoji": "",
-      "def": "A flat box instrument with many strings you pluck while it rests on a table.",
+      "def": "A tiny toy you hum into to buzz.",
       "clues": [
-        "Alpine",
-        "Flat",
-        "Pluck"
+        "Hum",
+        "Buzz",
+        "Toy"
       ]
     }
   ],
   "Jobs": [
     {
-      "word": "Doctor",
-      "emoji": "🧑‍⚕️",
-      "def": "A person who helps sick people feel better",
-      "clues": [
-        "Checkup",
-        "Clinic",
-        "Apple"
-      ]
-    },
-    {
-      "word": "Teacher",
-      "emoji": "🧑‍🏫",
-      "def": "A person who helps students learn new things",
-      "clues": [
-        "Chalkboard",
-        "Homework",
-        "Grade"
-      ]
-    },
-    {
-      "word": "Firefighter",
-      "emoji": "🧑‍🚒",
-      "def": "A person who puts out dangerous fires",
-      "clues": [
-        "Hose",
-        "Alarm",
-        "Brave"
-      ]
-    },
-    {
-      "word": "Chef",
-      "emoji": "🧑‍🍳",
-      "def": "A person who cooks delicious food at a restaurant",
-      "clues": [
-        "Apron",
-        "Sauté",
-        "Toque"
-      ]
-    },
-    {
-      "word": "Pilot",
-      "emoji": "🧑‍✈️",
-      "def": "A person who flies an airplane through the sky",
-      "clues": [
-        "Altitude",
-        "Cockpit",
-        "Runway"
-      ]
-    },
-    {
-      "word": "Police Officer",
-      "emoji": "🧑‍✈️",
-      "def": "A person who keeps neighborhoods safe and enforces laws",
-      "clues": [
-        "Badge",
-        "Patrol",
-        "Siren"
-      ]
-    },
-    {
-      "word": "Nurse",
-      "emoji": "🧑‍⚕️",
-      "def": "A person who takes care of patients in a hospital",
-      "clues": [
-        "Bandage",
-        "Scrubs",
-        "Vitals"
-      ]
-    },
-    {
-      "word": "Dentist",
-      "emoji": "🦷",
-      "def": "A person who cleans and fixes your teeth",
-      "clues": [
-        "Cavity",
-        "Floss",
-        "Drill"
-      ]
-    },
-    {
-      "word": "Farmer",
-      "emoji": "🧑‍🌾",
-      "def": "A person who grows crops and raises animals on a farm",
-      "clues": [
-        "Harvest",
-        "Tractor",
-        "Rooster"
-      ]
-    },
-    {
-      "word": "Librarian",
-      "emoji": "📚",
-      "def": "A person who helps you find and borrow books",
-      "clues": [
-        "Shelve",
-        "Quiet",
-        "Catalog"
-      ]
-    },
-    {
-      "word": "Plumber",
-      "emoji": "🔧",
-      "def": "A person who fixes pipes and water problems in buildings",
-      "clues": [
-        "Wrench",
-        "Leak",
-        "Drain"
-      ]
-    },
-    {
-      "word": "Astronaut",
-      "emoji": "🧑‍🚀",
-      "def": "A person who travels into outer space on a rocket",
-      "clues": [
-        "Weightless",
-        "Orbit",
-        "Helmet"
-      ]
-    },
-    {
-      "word": "Veterinarian",
-      "emoji": "",
-      "def": "A person who gives medical care to animals",
-      "clues": [
-        "Paw",
-        "Muzzle",
-        "Kennel"
-      ]
-    },
-    {
-      "word": "Scientist",
-      "emoji": "🧑‍🔬",
-      "def": "A person who does experiments to discover new things",
-      "clues": [
-        "Hypothesis",
-        "Beaker",
-        "Discovery"
-      ]
-    },
-    {
-      "word": "Artist",
-      "emoji": "🧑‍🎨",
-      "def": "A person who creates paintings, drawings, or sculptures",
-      "clues": [
-        "Canvas",
-        "Palette",
-        "Gallery"
-      ]
-    },
-    {
-      "word": "Lawyer",
-      "emoji": "",
-      "def": "A person who helps people with legal problems in court",
-      "clues": [
-        "Courtroom",
-        "Brief",
-        "Objection"
-      ]
-    },
-    {
-      "word": "Carpenter",
-      "emoji": "🪚",
-      "def": "A person who builds and repairs things made of wood",
-      "clues": [
-        "Sawdust",
-        "Plank",
-        "Chisel"
-      ]
-    },
-    {
-      "word": "Journalist",
-      "emoji": "",
-      "def": "A person who researches and writes news stories",
-      "clues": [
-        "Deadline",
-        "Interview",
-        "Column"
-      ]
-    },
-    {
       "word": "Electrician",
       "emoji": "",
-      "def": "A person who installs and fixes electrical wiring in buildings",
+      "def": "A worker who installs and fixes wires that carry power.",
       "clues": [
-        "Volt",
-        "Circuit",
-        "Socket"
-      ]
-    },
-    {
-      "word": "Baker",
-      "emoji": "🥐",
-      "def": "A person who bakes bread, cakes, and pastries",
-      "clues": [
-        "Dough",
-        "Yeast",
-        "Frosting"
-      ]
-    },
-    {
-      "word": "Mechanic",
-      "emoji": "🔩",
-      "def": "A person who repairs cars and other engines",
-      "clues": [
-        "Grease",
-        "Wrench",
-        "Exhaust"
-      ]
-    },
-    {
-      "word": "Lifeguard",
-      "emoji": "",
-      "def": "A person who watches over swimmers to keep them safe",
-      "clues": [
-        "Whistle",
-        "Tower",
-        "Rescue"
-      ]
-    },
-    {
-      "word": "Architect",
-      "emoji": "",
-      "def": "A person who designs buildings and structures",
-      "clues": [
-        "Blueprint",
-        "Foundation",
-        "Draft"
-      ]
-    },
-    {
-      "word": "Accountant",
-      "emoji": "",
-      "def": "A person who keeps track of money and financial records",
-      "clues": [
-        "Ledger",
-        "Audit",
-        "Spreadsheet"
-      ]
-    },
-    {
-      "word": "Pharmacist",
-      "emoji": "💊",
-      "def": "A person who prepares and gives out medicine prescribed by doctors",
-      "clues": [
-        "Prescription",
-        "Capsule",
-        "Counter"
-      ]
-    },
-    {
-      "word": "Janitor",
-      "emoji": "🧹",
-      "def": "A person who cleans and maintains a building",
-      "clues": [
-        "Mop",
-        "Custodian",
-        "Bleach"
-      ]
-    },
-    {
-      "word": "Judge",
-      "emoji": "",
-      "def": "A person who makes legal decisions in a court of law",
-      "clues": [
-        "Gavel",
-        "Verdict",
-        "Robe"
+        "Wires",
+        "Sparks",
+        "Licensed"
       ]
     },
     {
       "word": "Surgeon",
       "emoji": "",
-      "def": "A doctor who operates on patients to fix problems inside the body",
+      "def": "A doctor who fixes the body during careful operations.",
       "clues": [
-        "Scalpel",
+        "Steady",
         "Gloves",
-        "Sterile"
+        "Precise"
+      ]
+    },
+    {
+      "word": "Architect",
+      "emoji": "",
+      "def": "A person who designs buildings before they are built.",
+      "clues": [
+        "Blueprint",
+        "Design",
+        "Scale"
+      ]
+    },
+    {
+      "word": "Librarian",
+      "emoji": "",
+      "def": "A person who helps you find and borrow books.",
+      "clues": [
+        "Quiet",
+        "Stamp",
+        "Shelves"
+      ]
+    },
+    {
+      "word": "Veterinarian",
+      "emoji": "",
+      "def": "A doctor who takes care of sick or hurt animals.",
+      "clues": [
+        "Paws",
+        "Checkup",
+        "Gentle"
+      ]
+    },
+    {
+      "word": "Plumber",
+      "emoji": "",
+      "def": "A worker who fixes pipes, leaks, and drains.",
+      "clues": [
+        "Leak",
+        "Wrench",
+        "Drip"
+      ]
+    },
+    {
+      "word": "Firefighter",
+      "emoji": "🧑‍🚒",
+      "def": "A brave person who puts out fires and rescues people.",
+      "clues": [
+        "Ladder",
+        "Hose",
+        "Rescue"
+      ]
+    },
+    {
+      "word": "Carpenter",
+      "emoji": "",
+      "def": "A worker who builds and shapes things out of wood.",
+      "clues": [
+        "Nails",
+        "Saw",
+        "Plank"
+      ]
+    },
+    {
+      "word": "Pilot",
+      "emoji": "",
+      "def": "A person trained to fly planes through the sky.",
+      "clues": [
+        "Cockpit",
+        "Altitude",
+        "Runway"
+      ]
+    },
+    {
+      "word": "Chef",
+      "emoji": "🧑‍🍳",
+      "def": "A person who cooks tasty meals in a restaurant kitchen.",
+      "clues": [
+        "Knife",
+        "Plating",
+        "Heat"
+      ]
+    },
+    {
+      "word": "Dentist",
+      "emoji": "🦷",
+      "def": "A doctor who checks and cleans your teeth.",
+      "clues": [
+        "Chair",
+        "Drill",
+        "Rinse"
+      ]
+    },
+    {
+      "word": "Astronaut",
+      "emoji": "🧑‍🚀",
+      "def": "A person trained to travel and work in outer space.",
+      "clues": [
+        "Float",
+        "Helmet",
+        "Orbit"
+      ]
+    },
+    {
+      "word": "Farmer",
+      "emoji": "🧑‍🌾",
+      "def": "A person who grows crops and raises animals for food.",
+      "clues": [
+        "Tractor",
+        "Harvest",
+        "Barn"
+      ]
+    },
+    {
+      "word": "Judge",
+      "emoji": "🧑‍⚖️",
+      "def": "A person who decides what is fair in a courtroom.",
+      "clues": [
+        "Gavel",
+        "Robe",
+        "Verdict"
       ]
     },
     {
       "word": "Photographer",
-      "emoji": "📷",
-      "def": "A person who takes pictures using a camera",
+      "emoji": "",
+      "def": "A person who takes pictures using a camera.",
       "clues": [
-        "Shutter",
         "Lens",
-        "Darkroom"
+        "Snap",
+        "Frame"
       ]
     },
     {
-      "word": "Coach",
-      "emoji": "",
-      "def": "A person who trains athletes or sports teams",
+      "word": "Mechanic",
+      "emoji": "🧑‍🔧",
+      "def": "A worker who repairs cars and engines.",
       "clues": [
-        "Whistle",
-        "Drill",
-        "Huddle"
+        "Grease",
+        "Engine",
+        "Tools"
+      ]
+    },
+    {
+      "word": "Teacher",
+      "emoji": "🧑‍🏫",
+      "def": "A person who helps students learn new things.",
+      "clues": [
+        "Lesson",
+        "Board",
+        "Patient"
+      ]
+    },
+    {
+      "word": "Scientist",
+      "emoji": "🧑‍🔬",
+      "def": "A person who studies the world through tests and questions.",
+      "clues": [
+        "Beaker",
+        "Theory",
+        "Curious"
+      ]
+    },
+    {
+      "word": "Barber",
+      "emoji": "💈",
+      "def": "A person who cuts and styles people's hair.",
+      "clues": [
+        "Trim",
+        "Chair",
+        "Buzz"
+      ]
+    },
+    {
+      "word": "Tailor",
+      "emoji": "",
+      "def": "A person who sews and fixes clothes to fit you.",
+      "clues": [
+        "Needle",
+        "Measure",
+        "Hem"
+      ]
+    },
+    {
+      "word": "Painter",
+      "emoji": "🧑‍🎨",
+      "def": "A person who covers walls or canvas with color.",
+      "clues": [
+        "Brush",
+        "Coat",
+        "Ladder"
+      ]
+    },
+    {
+      "word": "Lawyer",
+      "emoji": "",
+      "def": "A person who gives legal advice and speaks in court.",
+      "clues": [
+        "Case",
+        "Argue",
+        "Suit"
+      ]
+    },
+    {
+      "word": "Nurse",
+      "emoji": "",
+      "def": "A person who cares for patients and helps doctors.",
+      "clues": [
+        "Shift",
+        "Chart",
+        "Caring"
+      ]
+    },
+    {
+      "word": "Detective",
+      "emoji": "🕵️",
+      "def": "A person who solves crimes by finding clues.",
+      "clues": [
+        "Clue",
+        "Mystery",
+        "Hunch"
+      ]
+    },
+    {
+      "word": "Sailor",
+      "emoji": "",
+      "def": "A person who works on a ship out at sea.",
+      "clues": [
+        "Deck",
+        "Knot",
+        "Voyage"
+      ]
+    },
+    {
+      "word": "Waiter",
+      "emoji": "",
+      "def": "A person who brings food to your table at a restaurant.",
+      "clues": [
+        "Tray",
+        "Order",
+        "Tip"
+      ]
+    },
+    {
+      "word": "Cashier",
+      "emoji": "",
+      "def": "A person who takes your money at the checkout.",
+      "clues": [
+        "Register",
+        "Receipt",
+        "Change"
+      ]
+    },
+    {
+      "word": "Journalist",
+      "emoji": "",
+      "def": "A person who reports the news to the public.",
+      "clues": [
+        "Story",
+        "Deadline",
+        "Notebook"
+      ]
+    },
+    {
+      "word": "Welder",
+      "emoji": "",
+      "def": "A worker who joins metal pieces using intense heat.",
+      "clues": [
+        "Mask",
+        "Metal",
+        "Torch"
+      ]
+    },
+    {
+      "word": "Babysitter",
+      "emoji": "",
+      "def": "A person who watches children while parents are away.",
+      "clues": [
+        "Watch",
+        "Bedtime",
+        "Snacks"
       ]
     }
   ],
   "Around the House": [
     {
-      "word": "Refrigerator",
-      "emoji": "🧊",
-      "def": "A large appliance that keeps food cold and fresh",
-      "clues": [
-        "Hums",
-        "Leftovers",
-        "Cold"
-      ]
-    },
-    {
-      "word": "Couch",
-      "emoji": "🛋️",
-      "def": "A long, soft piece of furniture for sitting and relaxing",
-      "clues": [
-        "Cushion",
-        "Nap",
-        "Remote"
-      ]
-    },
-    {
-      "word": "Microwave",
-      "emoji": "",
-      "def": "An appliance that heats food very quickly using waves",
-      "clues": [
-        "Beep",
-        "Rotate",
-        "Zap"
-      ]
-    },
-    {
-      "word": "Lamp",
-      "emoji": "💡",
-      "def": "A device that gives off light when you turn it on",
-      "clues": [
-        "Glow",
-        "Shade",
-        "Switch"
-      ]
-    },
-    {
-      "word": "Toilet",
-      "emoji": "🚽",
-      "def": "A bowl in the bathroom used for going to the bathroom",
-      "clues": [
-        "Flush",
-        "Plunger",
-        "Porcelain"
-      ]
-    },
-    {
-      "word": "Broom",
-      "emoji": "🧹",
-      "def": "A tool with a long handle used to sweep the floor",
-      "clues": [
-        "Bristles",
-        "Sweep",
-        "Dustpan"
-      ]
-    },
-    {
-      "word": "Bathtub",
-      "emoji": "🛁",
-      "def": "A large container in the bathroom where you wash your whole body",
-      "clues": [
-        "Bubbles",
-        "Drain",
-        "Soak"
-      ]
-    },
-    {
-      "word": "Pillow",
-      "emoji": "",
-      "def": "A soft cushion you rest your head on while sleeping",
-      "clues": [
-        "Fluffy",
-        "Drool",
-        "Snuggle"
-      ]
-    },
-    {
-      "word": "Curtain",
-      "emoji": "",
-      "def": "A piece of fabric that hangs over a window to block light",
-      "clues": [
-        "Drape",
-        "Privacy",
-        "Rod"
-      ]
-    },
-    {
-      "word": "Washing Machine",
-      "emoji": "",
-      "def": "An appliance that cleans dirty clothes using water and soap",
-      "clues": [
-        "Spin",
-        "Cycle",
-        "Detergent"
-      ]
-    },
-    {
-      "word": "Oven",
-      "emoji": "",
-      "def": "A kitchen appliance that bakes and roasts food using heat",
-      "clues": [
-        "Preheat",
-        "Rack",
-        "Timer"
-      ]
-    },
-    {
-      "word": "Vacuum Cleaner",
-      "emoji": "",
-      "def": "A machine that sucks up dirt and dust from the floor",
-      "clues": [
-        "Suction",
-        "Bag",
-        "Roar"
-      ]
-    },
-    {
-      "word": "Alarm Clock",
-      "emoji": "⏰",
-      "def": "A clock that makes a loud noise to wake you up in the morning",
-      "clues": [
-        "Snooze",
-        "Ring",
-        "Morning"
-      ]
-    },
-    {
-      "word": "Mirror",
-      "emoji": "",
-      "def": "A smooth glass surface that shows your reflection",
-      "clues": [
-        "Reflection",
-        "Vanity",
-        "Fog"
-      ]
-    },
-    {
-      "word": "Doormat",
-      "emoji": "",
-      "def": "A small rug placed at the entrance for wiping your feet",
-      "clues": [
-        "Welcome",
-        "Muddy",
-        "Entry"
-      ]
-    },
-    {
-      "word": "Bookshelf",
-      "emoji": "📚",
-      "def": "A piece of furniture with shelves used to store books",
-      "clues": [
-        "Dusty",
-        "Organize",
-        "Spine"
-      ]
-    },
-    {
       "word": "Toaster",
-      "emoji": "🍞",
-      "def": "A small appliance that heats bread until it is brown and crispy",
+      "emoji": "",
+      "def": "A small machine that warms and browns slices of bread.",
       "clues": [
-        "Slot",
-        "Crumbs",
-        "Pop"
+        "Pop",
+        "Morning",
+        "Crumbs"
+      ]
+    },
+    {
+      "word": "Doorknob",
+      "emoji": "",
+      "def": "The round handle you turn to open a door.",
+      "clues": [
+        "Turn",
+        "Round",
+        "Grip"
+      ]
+    },
+    {
+      "word": "Radiator",
+      "emoji": "",
+      "def": "A metal heater that warms a room.",
+      "clues": [
+        "Warm",
+        "Hiss",
+        "Metal"
       ]
     },
     {
       "word": "Dishwasher",
       "emoji": "",
-      "def": "A machine that washes and dries dirty dishes automatically",
+      "def": "A machine that cleans dirty plates and cups for you.",
       "clues": [
-        "Rinse",
-        "Rack",
-        "Cascade"
+        "Load",
+        "Cycle",
+        "Steam"
+      ]
+    },
+    {
+      "word": "Thermostat",
+      "emoji": "",
+      "def": "A small dial on the wall that controls the temperature.",
+      "clues": [
+        "Dial",
+        "Degrees",
+        "Wall"
+      ]
+    },
+    {
+      "word": "Refrigerator",
+      "emoji": "",
+      "def": "A tall cold box that keeps your food fresh.",
+      "clues": [
+        "Cold",
+        "Hum",
+        "Magnets"
+      ]
+    },
+    {
+      "word": "Vacuum",
+      "emoji": "",
+      "def": "A machine that sucks up dirt from the floor.",
+      "clues": [
+        "Suck",
+        "Carpet",
+        "Loud"
+      ]
+    },
+    {
+      "word": "Mirror",
+      "emoji": "🪞",
+      "def": "A smooth surface that shows your reflection.",
+      "clues": [
+        "Reflect",
+        "Glass",
+        "Vain"
       ]
     },
     {
       "word": "Blender",
       "emoji": "",
-      "def": "A kitchen appliance that mixes and chops food into a smooth liquid",
+      "def": "A machine that whirls food into a smooth drink.",
       "clues": [
         "Whirl",
-        "Smoothie",
+        "Smooth",
         "Blade"
       ]
     },
     {
-      "word": "Ironing Board",
+      "word": "Pillow",
       "emoji": "",
-      "def": "A narrow padded board used to press wrinkles out of clothes",
+      "def": "A soft cushion you rest your head on at night.",
       "clues": [
-        "Steam",
-        "Flat",
-        "Crease"
+        "Soft",
+        "Fluff",
+        "Rest"
       ]
     },
     {
-      "word": "Trash Can",
-      "emoji": "🗑️",
-      "def": "A container used to collect and hold garbage",
+      "word": "Curtain",
+      "emoji": "🪟",
+      "def": "A cloth that hangs over a window to block light.",
       "clues": [
-        "Liner",
-        "Stink",
-        "Lid"
-      ]
-    },
-    {
-      "word": "Ceiling Fan",
-      "emoji": "",
-      "def": "A fan attached to the ceiling that keeps a room cool",
-      "clues": [
-        "Wobble",
-        "Breeze",
-        "Pull"
-      ]
-    },
-    {
-      "word": "Thermostat",
-      "emoji": "🌡️",
-      "def": "A device on the wall that controls the temperature in your home",
-      "clues": [
-        "Dial",
-        "Setting",
-        "Degrees"
-      ]
-    },
-    {
-      "word": "Clothes Dryer",
-      "emoji": "",
-      "def": "A machine that tumbles wet clothes with warm air to dry them",
-      "clues": [
-        "Lint",
-        "Tumble",
-        "Static"
+        "Hang",
+        "Draw",
+        "Fabric"
       ]
     },
     {
       "word": "Kettle",
-      "emoji": "🫖",
-      "def": "A pot used to heat water for making tea or other hot drinks",
+      "emoji": "",
+      "def": "A pot that heats water until it whistles.",
       "clues": [
+        "Boil",
         "Whistle",
-        "Steam",
-        "Boil"
+        "Spout"
+      ]
+    },
+    {
+      "word": "Broom",
+      "emoji": "🧹",
+      "def": "A long brush you push to sweep the floor.",
+      "clues": [
+        "Sweep",
+        "Bristles",
+        "Handle"
+      ]
+    },
+    {
+      "word": "Faucet",
+      "emoji": "🚰",
+      "def": "The spout where water comes out at a sink.",
+      "clues": [
+        "Drip",
+        "Sink",
+        "Twist"
+      ]
+    },
+    {
+      "word": "Staircase",
+      "emoji": "",
+      "def": "A set of steps that connects floors in a house.",
+      "clues": [
+        "Steps",
+        "Climb",
+        "Railing"
+      ]
+    },
+    {
+      "word": "Fireplace",
+      "emoji": "",
+      "def": "An open space in a wall where you burn wood to stay warm.",
+      "clues": [
+        "Logs",
+        "Cozy",
+        "Mantel"
+      ]
+    },
+    {
+      "word": "Microwave",
+      "emoji": "",
+      "def": "A box that heats food quickly using invisible waves.",
+      "clues": [
+        "Beep",
+        "Reheat",
+        "Spin"
+      ]
+    },
+    {
+      "word": "Carpet",
+      "emoji": "",
+      "def": "A soft thick covering spread across the floor.",
+      "clues": [
+        "Plush",
+        "Floor",
+        "Woven"
+      ]
+    },
+    {
+      "word": "Lamp",
+      "emoji": "💡",
+      "def": "A small light you switch on to brighten a room.",
+      "clues": [
+        "Glow",
+        "Switch",
+        "Shade"
+      ]
+    },
+    {
+      "word": "Bathtub",
+      "emoji": "🛁",
+      "def": "A big basin you fill with water to wash yourself.",
+      "clues": [
+        "Soak",
+        "Bubbles",
+        "Plug"
+      ]
+    },
+    {
+      "word": "Closet",
+      "emoji": "",
+      "def": "A small room or space where you store your clothes.",
+      "clues": [
+        "Hangers",
+        "Store",
+        "Hidden"
+      ]
+    },
+    {
+      "word": "Ceiling",
+      "emoji": "",
+      "def": "The flat surface above you inside a room.",
+      "clues": [
+        "Above",
+        "Overhead",
+        "Flat"
       ]
     },
     {
       "word": "Drawer",
       "emoji": "",
-      "def": "A sliding box built into furniture for storing small items",
+      "def": "A sliding box in furniture for keeping things.",
       "clues": [
-        "Stuck",
-        "Junk",
-        "Pull"
+        "Slide",
+        "Pull",
+        "Socks"
       ]
     },
     {
-      "word": "Smoke Detector",
+      "word": "Couch",
+      "emoji": "🛋️",
+      "def": "A long soft seat where several people can sit.",
+      "clues": [
+        "Lounge",
+        "Cushions",
+        "Relax"
+      ]
+    },
+    {
+      "word": "Chimney",
       "emoji": "",
-      "def": "A device on the ceiling that beeps loudly when it senses smoke",
+      "def": "A tall pipe that lets smoke escape from a fire.",
       "clues": [
-        "Beep",
-        "Battery",
-        "Alert"
+        "Smoke",
+        "Brick",
+        "Rooftop"
       ]
     },
     {
-      "word": "Coat Rack",
-      "emoji": "🧥",
-      "def": "A stand with hooks near the door used to hang up coats and bags",
+      "word": "Mailbox",
+      "emoji": "📫",
+      "def": "A box outside where letters are delivered.",
       "clues": [
-        "Hook",
-        "Entryway",
-        "Hang"
+        "Letters",
+        "Flag",
+        "Curb"
       ]
     },
     {
-      "word": "Cutting Board",
+      "word": "Bookshelf",
       "emoji": "",
-      "def": "A flat board used in the kitchen to safely chop food",
+      "def": "A set of shelves where you line up your books.",
       "clues": [
-        "Chop",
-        "Wooden",
-        "Knife"
+        "Shelves",
+        "Spines",
+        "Dusty"
       ]
     },
     {
-      "word": "Window",
-      "emoji": "🪟",
-      "def": "An opening in a wall covered with glass that lets in light and air",
+      "word": "Doormat",
+      "emoji": "",
+      "def": "A small mat by the door for wiping your shoes.",
       "clues": [
-        "Sill",
-        "Breeze",
-        "Pane"
+        "Wipe",
+        "Welcome",
+        "Entrance"
+      ]
+    },
+    {
+      "word": "Wardrobe",
+      "emoji": "",
+      "def": "A tall cupboard with doors for hanging clothes.",
+      "clues": [
+        "Doors",
+        "Clothes",
+        "Cupboard"
+      ]
+    },
+    {
+      "word": "Ironing Board",
+      "emoji": "",
+      "def": "A flat padded surface for pressing wrinkles out of clothes.",
+      "clues": [
+        "Press",
+        "Flat",
+        "Steam"
       ]
     }
   ],
   "Body Parts": [
     {
-      "word": "Elbow",
+      "word": "Kneecap",
       "emoji": "",
-      "def": "The bendy joint in the middle of your arm",
+      "def": "The hard round bone at the front of your knee.",
       "clues": [
+        "Bone",
         "Bend",
-        "Funny",
-        "Joint"
-      ]
-    },
-    {
-      "word": "Knee",
-      "emoji": "",
-      "def": "The joint in the middle of your leg that lets you bend it",
-      "clues": [
-        "Cap",
-        "Buckle",
-        "Scrape"
+        "Round"
       ]
     },
     {
       "word": "Eyebrow",
       "emoji": "",
-      "def": "The strip of hair above your eye that shows your expressions",
+      "def": "The line of hair above each of your eyes.",
       "clues": [
         "Arch",
-        "Surprise",
-        "Furrow"
+        "Raise",
+        "Hairy"
       ]
     },
     {
-      "word": "Thumb",
-      "emoji": "👍",
-      "def": "The short thick finger on the side of your hand",
-      "clues": [
-        "Hitch",
-        "Wrestle",
-        "Oppose"
-      ]
-    },
-    {
-      "word": "Shoulder",
+      "word": "Knuckle",
       "emoji": "",
-      "def": "The rounded joint where your arm connects to your body",
+      "def": "A bumpy joint where your finger bends.",
       "clues": [
-        "Shrug",
-        "Pad",
-        "Carry"
-      ]
-    },
-    {
-      "word": "Nostril",
-      "emoji": "",
-      "def": "One of the two openings at the bottom of your nose",
-      "clues": [
-        "Flare",
-        "Sniff",
-        "Passage"
-      ]
-    },
-    {
-      "word": "Tongue",
-      "emoji": "👅",
-      "def": "The soft muscle inside your mouth that helps you taste and talk",
-      "clues": [
-        "Taste",
-        "Slip",
-        "Lick"
+        "Crack",
+        "Punch",
+        "Bony"
       ]
     },
     {
       "word": "Earlobe",
       "emoji": "",
-      "def": "The soft fleshy bottom part of your ear",
+      "def": "The soft hanging part at the bottom of your ear.",
       "clues": [
-        "Dangle",
-        "Piercing",
-        "Tug"
-      ]
-    },
-    {
-      "word": "Heel",
-      "emoji": "",
-      "def": "The back rounded part at the bottom of your foot",
-      "clues": [
-        "Blister",
-        "Achilles",
-        "Sole"
-      ]
-    },
-    {
-      "word": "Wrist",
-      "emoji": "",
-      "def": "The narrow joint that connects your hand to your arm",
-      "clues": [
-        "Watch",
-        "Pulse",
-        "Snap"
-      ]
-    },
-    {
-      "word": "Spine",
-      "emoji": "",
-      "def": "The long column of bones running down the middle of your back",
-      "clues": [
-        "Posture",
-        "Cord",
-        "Vertebra"
-      ]
-    },
-    {
-      "word": "Rib",
-      "emoji": "",
-      "def": "One of the curved bones that protect your heart and lungs",
-      "clues": [
-        "Cage",
-        "Tickle",
-        "Rack"
-      ]
-    },
-    {
-      "word": "Chin",
-      "emoji": "",
-      "def": "The bony part at the very bottom of your face below your mouth",
-      "clues": [
-        "Dimple",
-        "Jut",
-        "Stroke"
-      ]
-    },
-    {
-      "word": "Calf",
-      "emoji": "",
-      "def": "The fleshy muscle on the back of your lower leg",
-      "clues": [
-        "Cramp",
-        "Flex",
-        "Shin"
-      ]
-    },
-    {
-      "word": "Forehead",
-      "emoji": "",
-      "def": "The flat part of your face above your eyebrows and below your hair",
-      "clues": [
-        "Wrinkle",
-        "Slap",
-        "Kiss"
-      ]
-    },
-    {
-      "word": "Palm",
-      "emoji": "✋",
-      "def": "The flat inner surface of your hand that faces forward",
-      "clues": [
-        "Read",
-        "Sweat",
-        "Grip"
-      ]
-    },
-    {
-      "word": "Pupil",
-      "emoji": "👁️",
-      "def": "The dark circle in the center of your eye that lets in light",
-      "clues": [
-        "Dilate",
-        "Dark",
-        "Focus"
-      ]
-    },
-    {
-      "word": "Temple",
-      "emoji": "",
-      "def": "The flat area on the side of your head next to your eye",
-      "clues": [
-        "Pulse",
-        "Headache",
-        "Rub"
+        "Soft",
+        "Pierce",
+        "Dangle"
       ]
     },
     {
       "word": "Ankle",
       "emoji": "",
-      "def": "The joint that connects your foot to your leg",
+      "def": "The joint that connects your foot to your leg.",
       "clues": [
-        "Sprain",
-        "Sock",
-        "Rotate"
+        "Twist",
+        "Joint",
+        "Sock"
       ]
     },
     {
-      "word": "Lung",
-      "emoji": "🫁",
-      "def": "One of two organs inside your chest that help you breathe",
-      "clues": [
-        "Inhale",
-        "Capacity",
-        "Wheeze"
-      ]
-    },
-    {
-      "word": "Jawbone",
+      "word": "Elbow",
       "emoji": "",
-      "def": "The bone that forms the lower part of your mouth and holds your teeth",
+      "def": "The bendy joint in the middle of your arm.",
       "clues": [
-        "Clench",
-        "Drop",
-        "Grind"
+        "Bend",
+        "Nudge",
+        "Joint"
       ]
     },
     {
-      "word": "Nail",
-      "emoji": "💅",
-      "def": "The hard flat covering that grows on the end of each finger and toe",
+      "word": "Nose",
+      "emoji": "👃",
+      "def": "The part of your face you use to smell and breathe.",
       "clues": [
-        "Polish",
-        "Clip",
-        "Cuticle"
+        "Sniff",
+        "Sneeze",
+        "Center"
       ]
     },
     {
-      "word": "Kidney",
+      "word": "Tongue",
+      "emoji": "👅",
+      "def": "The soft muscle in your mouth that helps you taste.",
+      "clues": [
+        "Taste",
+        "Lick",
+        "Pink"
+      ]
+    },
+    {
+      "word": "Eye",
+      "emoji": "👁️",
+      "def": "The part of your body you use to see.",
+      "clues": [
+        "Blink",
+        "Watch",
+        "Wink"
+      ]
+    },
+    {
+      "word": "Chin",
       "emoji": "",
-      "def": "One of two organs inside your body that filter waste from your blood",
+      "def": "The bottom part of your face below your mouth.",
       "clues": [
-        "Filter",
-        "Bean",
-        "Stone"
+        "Below",
+        "Point",
+        "Stroke"
       ]
     },
     {
-      "word": "Eyelid",
+      "word": "Wrist",
       "emoji": "",
-      "def": "The thin flap of skin that opens and closes to cover your eye",
+      "def": "The joint that connects your hand to your arm.",
+      "clues": [
+        "Watch",
+        "Flick",
+        "Joint"
+      ]
+    },
+    {
+      "word": "Shoulder",
+      "emoji": "",
+      "def": "The joint where your arm meets your body.",
+      "clues": [
+        "Shrug",
+        "Carry",
+        "Broad"
+      ]
+    },
+    {
+      "word": "Heel",
+      "emoji": "",
+      "def": "The rounded back part of your foot.",
+      "clues": [
+        "Back",
+        "Step",
+        "Sore"
+      ]
+    },
+    {
+      "word": "Thumb",
+      "emoji": "👍",
+      "def": "The short thick finger that helps you grip.",
+      "clues": [
+        "Grip",
+        "Up",
+        "Stubby"
+      ]
+    },
+    {
+      "word": "Eyelash",
+      "emoji": "",
+      "def": "One of the tiny hairs along the edge of your eyelid.",
       "clues": [
         "Flutter",
-        "Heavy",
-        "Blink"
+        "Tiny",
+        "Wish"
       ]
     },
     {
-      "word": "Lip",
-      "emoji": "👄",
-      "def": "One of the two soft edges around the opening of your mouth",
-      "clues": [
-        "Balm",
-        "Gloss",
-        "Pucker"
-      ]
-    },
-    {
-      "word": "Armpit",
+      "word": "Forehead",
       "emoji": "",
-      "def": "The hollow area under your shoulder where your arm meets your body",
+      "def": "The flat part of your face above your eyebrows.",
       "clues": [
-        "Deodorant",
-        "Tickle",
-        "Stubble"
+        "Flat",
+        "Wrinkle",
+        "Top"
       ]
     },
     {
-      "word": "Shin",
+      "word": "Spine",
       "emoji": "",
-      "def": "The front part of your lower leg between your knee and ankle",
+      "def": "The long line of bones running down your back.",
       "clues": [
-        "Bruise",
-        "Guard",
-        "Kick"
+        "Stack",
+        "Posture",
+        "Column"
       ]
     },
     {
-      "word": "Skull",
-      "emoji": "💀",
-      "def": "The bony structure that forms your head and protects your brain",
+      "word": "Jaw",
+      "emoji": "",
+      "def": "The bony part of your face that moves when you chew.",
       "clues": [
-        "Crossbones",
-        "Hollow",
-        "Cap"
+        "Chew",
+        "Clench",
+        "Drop"
       ]
     },
     {
       "word": "Cheek",
       "emoji": "",
-      "def": "The soft fleshy area on each side of your face below your eyes",
+      "def": "The soft round part of your face below each eye.",
       "clues": [
-        "Blush",
+        "Rosy",
         "Pinch",
-        "Dimple"
+        "Blush"
       ]
     },
     {
-      "word": "Bladder",
-      "emoji": "",
-      "def": "The organ inside your body that holds urine until you need to go",
+      "word": "Tooth",
+      "emoji": "🦷",
+      "def": "A hard white part in your mouth used to chew food.",
       "clues": [
-        "Urgent",
-        "Full",
-        "Release"
+        "White",
+        "Bite",
+        "Brush"
+      ]
+    },
+    {
+      "word": "Throat",
+      "emoji": "",
+      "def": "The tube inside your neck for swallowing and talking.",
+      "clues": [
+        "Swallow",
+        "Sore",
+        "Gulp"
+      ]
+    },
+    {
+      "word": "Hip",
+      "emoji": "",
+      "def": "The joint on the side of your body where your leg attaches.",
+      "clues": [
+        "Side",
+        "Sway",
+        "Joint"
+      ]
+    },
+    {
+      "word": "Palm",
+      "emoji": "",
+      "def": "The flat inner surface of your hand.",
+      "clues": [
+        "Flat",
+        "Open",
+        "Read"
+      ]
+    },
+    {
+      "word": "Nostril",
+      "emoji": "",
+      "def": "One of the two openings at the bottom of your nose.",
+      "clues": [
+        "Hole",
+        "Flare",
+        "Breathe"
+      ]
+    },
+    {
+      "word": "Calf",
+      "emoji": "",
+      "def": "The muscle at the back of your lower leg.",
+      "clues": [
+        "Muscle",
+        "Lower",
+        "Cramp"
+      ]
+    },
+    {
+      "word": "Eyelid",
+      "emoji": "",
+      "def": "The flap of skin that covers your eye when you blink.",
+      "clues": [
+        "Cover",
+        "Flutter",
+        "Droop"
+      ]
+    },
+    {
+      "word": "Rib",
+      "emoji": "",
+      "def": "One of the curved bones that protect your chest.",
+      "clues": [
+        "Cage",
+        "Curve",
+        "Tickle"
+      ]
+    },
+    {
+      "word": "Pinky",
+      "emoji": "",
+      "def": "The smallest finger on your hand.",
+      "clues": [
+        "Small",
+        "Promise",
+        "Last"
+      ]
+    },
+    {
+      "word": "Forearm",
+      "emoji": "💪",
+      "def": "The part of your arm between your wrist and elbow.",
+      "clues": [
+        "Lower",
+        "Flex",
+        "Strong"
+      ]
+    },
+    {
+      "word": "Scalp",
+      "emoji": "",
+      "def": "The skin on top of your head under your hair.",
+      "clues": [
+        "Top",
+        "Itch",
+        "Skin"
       ]
     }
   ],
@@ -3633,301 +3633,301 @@ const WORD_PACK = {
     {
       "word": "Taylor Swift",
       "emoji": "",
-      "def": "An American pop singer-songwriter famous for her storytelling lyrics.",
+      "def": "An American pop singer-songwriter.",
       "clues": [
-        "Eras",
         "Breakups",
-        "Cats"
+        "Sparkle",
+        "Loyal"
       ]
     },
     {
-      "word": "Beyoncé",
+      "word": "Beyonce",
       "emoji": "",
-      "def": "An American singer and performer known for her powerful voice.",
+      "def": "An American singer and performer.",
       "clues": [
-        "Formation",
-        "Destiny",
-        "Beehive"
-      ]
-    },
-    {
-      "word": "Dwayne Johnson",
-      "emoji": "",
-      "def": "An American actor and former professional wrestler.",
-      "clues": [
-        "Rock",
-        "Eyebrow",
-        "Wrestle"
+        "Fierce",
+        "Stage",
+        "Power"
       ]
     },
     {
       "word": "Oprah Winfrey",
       "emoji": "",
-      "def": "An American television host and media mogul.",
+      "def": "An American talk show host and media leader.",
       "clues": [
         "Couch",
         "Giveaway",
-        "Daytime"
+        "Inspire"
       ]
     },
     {
-      "word": "Elon Musk",
+      "word": "Tom Cruise",
       "emoji": "",
-      "def": "A tech entrepreneur known for electric cars and rockets.",
+      "def": "An American movie actor known for action roles.",
       "clues": [
-        "Rockets",
-        "Electric",
-        "Mars"
+        "Daring",
+        "Grin",
+        "Stunts"
       ]
     },
     {
-      "word": "LeBron James",
+      "word": "Leonardo DiCaprio",
       "emoji": "",
-      "def": "An American professional basketball player and four-time champion.",
+      "def": "An American film actor.",
       "clues": [
-        "Chosen",
-        "Lakers",
-        "Rings"
-      ]
-    },
-    {
-      "word": "Cristiano Ronaldo",
-      "emoji": "",
-      "def": "A Portuguese professional soccer player known for his goal-scoring.",
-      "clues": [
-        "CR7",
-        "Siuu",
-        "Portugal"
-      ]
-    },
-    {
-      "word": "Lionel Messi",
-      "emoji": "",
-      "def": "An Argentine soccer legend and World Cup winner.",
-      "clues": [
-        "Dribble",
-        "Goat",
-        "Argentina"
-      ]
-    },
-    {
-      "word": "Billie Eilish",
-      "emoji": "",
-      "def": "An American singer-songwriter known for her whispery style.",
-      "clues": [
-        "Whisper",
-        "Green",
-        "Spiders"
-      ]
-    },
-    {
-      "word": "Justin Bieber",
-      "emoji": "",
-      "def": "A Canadian pop singer who rose to fame as a teenager.",
-      "clues": [
-        "Belieber",
-        "Canada",
-        "Baby"
-      ]
-    },
-    {
-      "word": "Shakira",
-      "emoji": "",
-      "def": "A Colombian singer famous for her hip movements and singing.",
-      "clues": [
-        "Hips",
-        "Colombia",
-        "Waka"
-      ]
-    },
-    {
-      "word": "Tom Hanks",
-      "emoji": "",
-      "def": "An American actor known for playing wholesome and lovable characters.",
-      "clues": [
-        "Forrest",
-        "Friendly",
-        "Chocolates"
-      ]
-    },
-    {
-      "word": "Serena Williams",
-      "emoji": "",
-      "def": "An American tennis player and multiple Grand Slam champion.",
-      "clues": [
-        "Serve",
-        "Court",
-        "Power"
-      ]
-    },
-    {
-      "word": "Ellen DeGeneres",
-      "emoji": "",
-      "def": "An American comedian and daytime talk show host.",
-      "clues": [
-        "Dancing",
-        "Daytime",
-        "Nemo"
-      ]
-    },
-    {
-      "word": "Kim Kardashian",
-      "emoji": "",
-      "def": "An American media personality and businesswoman.",
-      "clues": [
-        "Contour",
-        "Selfie",
-        "Skims"
+        "Climate",
+        "Drama",
+        "Award"
       ]
     },
     {
       "word": "Will Smith",
       "emoji": "",
-      "def": "An American actor and rapper known for blockbuster films.",
+      "def": "An American actor and former rapper.",
       "clues": [
-        "Slap",
-        "Fresh",
-        "Genie"
+        "Charming",
+        "Comedy",
+        "Family"
       ]
     },
     {
-      "word": "Rihanna",
+      "word": "Dwayne Johnson",
       "emoji": "",
-      "def": "A Barbadian singer and fashion entrepreneur.",
+      "def": "An American actor and former wrestler.",
       "clues": [
-        "Fenty",
-        "Umbrella",
-        "Barbados"
+        "Muscle",
+        "Energy",
+        "Tough"
       ]
     },
     {
-      "word": "Bruno Mars",
+      "word": "Cristiano Ronaldo",
       "emoji": "",
-      "def": "An American singer known for catchy pop and funk songs.",
+      "def": "A Portuguese professional soccer player.",
       "clues": [
-        "Uptown",
-        "Lazy",
-        "Funk"
+        "Goals",
+        "Fitness",
+        "Fans"
       ]
     },
     {
-      "word": "Adele",
+      "word": "Lionel Messi",
       "emoji": "",
-      "def": "A British singer known for powerful emotional ballads.",
+      "def": "An Argentine professional soccer player.",
       "clues": [
-        "Hello",
-        "Rolling",
-        "Heartbreak"
+        "Dribble",
+        "Quiet",
+        "Trophy"
       ]
     },
     {
-      "word": "Ed Sheeran",
+      "word": "Serena Williams",
       "emoji": "",
-      "def": "A British singer-songwriter who plays acoustic guitar.",
+      "def": "An American professional tennis champion.",
       "clues": [
-        "Ginger",
-        "Loop",
-        "Shape"
-      ]
-    },
-    {
-      "word": "Katy Perry",
-      "emoji": "",
-      "def": "An American pop singer known for colorful music videos.",
-      "clues": [
-        "Firework",
-        "California",
-        "Roar"
-      ]
-    },
-    {
-      "word": "Barack Obama",
-      "emoji": "",
-      "def": "The 44th President of the United States of America.",
-      "clues": [
-        "Hope",
-        "44th",
-        "Hawaii"
-      ]
-    },
-    {
-      "word": "Malala Yousafzai",
-      "emoji": "",
-      "def": "A Pakistani activist and youngest Nobel Peace Prize winner.",
-      "clues": [
-        "Education",
-        "Nobel",
-        "Pakistan"
-      ]
-    },
-    {
-      "word": "Usain Bolt",
-      "emoji": "",
-      "def": "A Jamaican sprinter and the fastest man in recorded history.",
-      "clues": [
-        "Lightning",
-        "Sprint",
-        "Jamaica"
-      ]
-    },
-    {
-      "word": "Lady Gaga",
-      "emoji": "",
-      "def": "An American singer famous for eccentric fashion and pop hits.",
-      "clues": [
-        "Poker",
-        "Eccentric",
-        "Monsters"
-      ]
-    },
-    {
-      "word": "Freddie Mercury",
-      "emoji": "",
-      "def": "A British rock singer and lead vocalist of Queen.",
-      "clues": [
-        "Bohemian",
-        "Mustache",
-        "Stadium"
+        "Powerful",
+        "Court",
+        "Sisters"
       ]
     },
     {
       "word": "Michael Jordan",
       "emoji": "",
-      "def": "An American basketball legend often called the greatest of all time.",
+      "def": "A retired American basketball legend.",
       "clues": [
-        "Jumpman",
-        "Bulls",
-        "Airness"
+        "Hoops",
+        "Leap",
+        "Legend"
       ]
     },
     {
-      "word": "Marilyn Monroe",
+      "word": "Ariana Grande",
       "emoji": "",
-      "def": "An American actress and icon of classic Hollywood glamour.",
+      "def": "An American pop singer.",
       "clues": [
-        "Glamour",
-        "Vintage",
-        "Subway"
+        "High",
+        "Ponytail",
+        "Sweet"
       ]
     },
     {
-      "word": "Albert Einstein",
+      "word": "Justin Bieber",
       "emoji": "",
-      "def": "A German-born physicist famous for the theory of relativity.",
+      "def": "A Canadian pop singer.",
       "clues": [
-        "Relativity",
-        "Genius",
-        "Tongue"
+        "Teen",
+        "Catchy",
+        "Fame"
       ]
     },
     {
-      "word": "Michael Jackson",
+      "word": "Ed Sheeran",
       "emoji": "",
-      "def": "An American pop music legend known as the King of Pop.",
+      "def": "An English singer-songwriter.",
       "clues": [
-        "Moonwalk",
-        "Glove",
-        "Thriller"
+        "Acoustic",
+        "Ginger",
+        "Romance"
+      ]
+    },
+    {
+      "word": "Adele",
+      "emoji": "",
+      "def": "An English singer known for powerful ballads.",
+      "clues": [
+        "Emotional",
+        "Vocals",
+        "Heartache"
+      ]
+    },
+    {
+      "word": "Rihanna",
+      "emoji": "",
+      "def": "A singer and businesswoman from Barbados.",
+      "clues": [
+        "Bold",
+        "Beauty",
+        "Island"
+      ]
+    },
+    {
+      "word": "Lady Gaga",
+      "emoji": "",
+      "def": "An American singer and actress.",
+      "clues": [
+        "Outfit",
+        "Theater",
+        "Unique"
+      ]
+    },
+    {
+      "word": "Elon Musk",
+      "emoji": "",
+      "def": "A businessman who runs technology companies.",
+      "clues": [
+        "Rockets",
+        "Tweets",
+        "Wealth"
+      ]
+    },
+    {
+      "word": "Barack Obama",
+      "emoji": "",
+      "def": "A former president of the United States.",
+      "clues": [
+        "Speech",
+        "Leader",
+        "Hope"
+      ]
+    },
+    {
+      "word": "Emma Watson",
+      "emoji": "",
+      "def": "An English actress and activist.",
+      "clues": [
+        "Magic",
+        "Reader",
+        "Poise"
+      ]
+    },
+    {
+      "word": "Jennifer Lawrence",
+      "emoji": "",
+      "def": "An American film actress.",
+      "clues": [
+        "Honest",
+        "Funny",
+        "Talent"
+      ]
+    },
+    {
+      "word": "Brad Pitt",
+      "emoji": "",
+      "def": "An American movie actor and producer.",
+      "clues": [
+        "Handsome",
+        "Hollywood",
+        "Cool"
+      ]
+    },
+    {
+      "word": "Angelina Jolie",
+      "emoji": "",
+      "def": "An American actress and humanitarian.",
+      "clues": [
+        "Adopt",
+        "Charity",
+        "Glamour"
+      ]
+    },
+    {
+      "word": "Selena Gomez",
+      "emoji": "",
+      "def": "An American singer and actress.",
+      "clues": [
+        "Sweet",
+        "Disney",
+        "Friendly"
+      ]
+    },
+    {
+      "word": "Keanu Reeves",
+      "emoji": "",
+      "def": "A Canadian actor known for action films.",
+      "clues": [
+        "Humble",
+        "Calm",
+        "Kind"
+      ]
+    },
+    {
+      "word": "LeBron James",
+      "emoji": "",
+      "def": "An American professional basketball player.",
+      "clues": [
+        "Dunk",
+        "Crown",
+        "Team"
+      ]
+    },
+    {
+      "word": "David Beckham",
+      "emoji": "",
+      "def": "A retired English soccer player and style icon.",
+      "clues": [
+        "Bend",
+        "Fashion",
+        "Spouse"
+      ]
+    },
+    {
+      "word": "Shakira",
+      "emoji": "",
+      "def": "A Colombian singer and dancer.",
+      "clues": [
+        "Hips",
+        "Latin",
+        "Rhythm"
+      ]
+    },
+    {
+      "word": "Bruno Mars",
+      "emoji": "",
+      "def": "An American singer and performer.",
+      "clues": [
+        "Smooth",
+        "Funky",
+        "Hat"
+      ]
+    },
+    {
+      "word": "Morgan Freeman",
+      "emoji": "",
+      "def": "An American actor known for his deep voice.",
+      "clues": [
+        "Voice",
+        "Wise",
+        "Veteran"
       ]
     }
   ],
@@ -3935,301 +3935,301 @@ const WORD_PACK = {
     {
       "word": "Nike",
       "emoji": "",
-      "def": "A global sportswear brand known for its swoosh logo.",
+      "def": "A global maker of athletic shoes and apparel.",
       "clues": [
-        "Swoosh",
         "Victory",
-        "Sneakers"
-      ]
-    },
-    {
-      "word": "McDonald's",
-      "emoji": "",
-      "def": "A global fast-food chain known for burgers and fries.",
-      "clues": [
-        "Arches",
-        "Fries",
-        "Clown"
-      ]
-    },
-    {
-      "word": "Apple",
-      "emoji": "",
-      "def": "An American tech company that makes iPhones and MacBooks.",
-      "clues": [
-        "Bitten",
-        "Cupertino",
-        "Minimal"
-      ]
-    },
-    {
-      "word": "Coca-Cola",
-      "emoji": "",
-      "def": "A popular fizzy soft drink sold around the world.",
-      "clues": [
-        "Fizzy",
-        "Santa",
-        "Refreshing"
-      ]
-    },
-    {
-      "word": "Google",
-      "emoji": "",
-      "def": "A tech company that runs the world's most used search engine.",
-      "clues": [
-        "Search",
-        "Doodle",
-        "Mountain"
-      ]
-    },
-    {
-      "word": "LEGO",
-      "emoji": "",
-      "def": "A Danish toy company that makes colorful interlocking plastic bricks.",
-      "clues": [
-        "Bricks",
-        "Denmark",
-        "Stepping"
-      ]
-    },
-    {
-      "word": "Disney",
-      "emoji": "",
-      "def": "An American entertainment company known for beloved animated films.",
-      "clues": [
-        "Magic",
-        "Castle",
-        "Mickey"
-      ]
-    },
-    {
-      "word": "Amazon",
-      "emoji": "",
-      "def": "An online shopping and technology giant founded by Jeff Bezos.",
-      "clues": [
-        "Prime",
-        "River",
-        "Warehouse"
-      ]
-    },
-    {
-      "word": "Netflix",
-      "emoji": "",
-      "def": "A streaming service where you can watch shows and movies.",
-      "clues": [
-        "Binge",
-        "Chill",
-        "Stream"
-      ]
-    },
-    {
-      "word": "YouTube",
-      "emoji": "",
-      "def": "A video-sharing platform where creators post content online.",
-      "clues": [
-        "Subscribe",
-        "Views",
-        "Creators"
-      ]
-    },
-    {
-      "word": "Instagram",
-      "emoji": "",
-      "def": "A social media app focused on sharing photos and videos.",
-      "clues": [
-        "Filter",
-        "Reel",
-        "Stories"
-      ]
-    },
-    {
-      "word": "Toyota",
-      "emoji": "",
-      "def": "A Japanese car manufacturer known for reliable vehicles.",
-      "clues": [
-        "Reliable",
-        "Japan",
-        "Prius"
-      ]
-    },
-    {
-      "word": "Samsung",
-      "emoji": "",
-      "def": "A South Korean electronics giant known for phones and televisions.",
-      "clues": [
-        "Galaxy",
-        "Korea",
-        "Screen"
+        "Athlete",
+        "Bold"
       ]
     },
     {
       "word": "Adidas",
       "emoji": "",
-      "def": "A German sportswear brand known for its three stripes.",
+      "def": "A German maker of sportswear and footwear.",
       "clues": [
         "Stripes",
-        "Germany",
-        "Trefoil"
+        "Track",
+        "Sport"
       ]
     },
     {
-      "word": "Starbucks",
+      "word": "Coca-Cola",
       "emoji": "",
-      "def": "An American coffeehouse chain with stores worldwide.",
+      "def": "A popular carbonated soft drink company.",
       "clues": [
-        "Siren",
-        "Latte",
-        "Sleeve"
-      ]
-    },
-    {
-      "word": "IKEA",
-      "emoji": "",
-      "def": "A Swedish furniture retailer famous for flat-pack products.",
-      "clues": [
-        "Flatpack",
-        "Sweden",
-        "Meatballs"
-      ]
-    },
-    {
-      "word": "Ferrari",
-      "emoji": "",
-      "def": "An Italian luxury sports car brand with a prancing horse logo.",
-      "clues": [
-        "Prancing",
-        "Maranello",
-        "Scarlet"
-      ]
-    },
-    {
-      "word": "Spotify",
-      "emoji": "",
-      "def": "A music streaming platform with millions of songs and podcasts.",
-      "clues": [
-        "Playlist",
-        "Green",
-        "Podcast"
+        "Fizzy",
+        "Red",
+        "Refresh"
       ]
     },
     {
       "word": "Pepsi",
       "emoji": "",
-      "def": "A popular cola soft drink that competes with Coca-Cola.",
+      "def": "A widely sold soft drink brand.",
       "clues": [
         "Cola",
-        "Halftime",
-        "Challenge"
+        "Bubbles",
+        "Cold"
       ]
     },
     {
-      "word": "Zara",
+      "word": "McDonald's",
       "emoji": "",
-      "def": "A Spanish fast-fashion clothing brand sold worldwide.",
+      "def": "A global fast-food chain known for burgers.",
       "clues": [
-        "Fashion",
-        "Spain",
-        "Runway"
+        "Fries",
+        "Quick",
+        "Golden"
       ]
     },
     {
-      "word": "Microsoft",
+      "word": "Starbucks",
       "emoji": "",
-      "def": "An American tech company known for Windows and Xbox.",
+      "def": "A worldwide coffeehouse chain.",
       "clues": [
-        "Windows",
-        "Gates",
-        "Office"
+        "Beans",
+        "Cup",
+        "Morning"
       ]
     },
     {
-      "word": "Porsche",
+      "word": "Apple",
       "emoji": "",
-      "def": "A German luxury car brand known for its sports cars.",
+      "def": "A technology company that makes phones and computers.",
       "clues": [
-        "Stuttgart",
-        "Crest",
-        "Sports"
+        "Sleek",
+        "Gadget",
+        "Bite"
       ]
     },
     {
-      "word": "Red Bull",
+      "word": "Samsung",
       "emoji": "",
-      "def": "An Austrian energy drink brand that sponsors extreme sports.",
+      "def": "A South Korean electronics company.",
       "clues": [
-        "Wings",
-        "Energy",
-        "Extreme"
+        "Screen",
+        "Device",
+        "Tech"
       ]
     },
     {
-      "word": "Gucci",
+      "word": "Google",
       "emoji": "",
-      "def": "An Italian luxury fashion brand known for its double-G logo.",
+      "def": "A company known for its internet search engine.",
       "clues": [
-        "Luxury",
-        "Florence",
-        "GG"
+        "Search",
+        "Online",
+        "Answers"
       ]
     },
     {
-      "word": "PlayStation",
+      "word": "Amazon",
       "emoji": "",
-      "def": "A Sony video game console brand loved by millions of gamers.",
+      "def": "A giant online shopping and technology company.",
       "clues": [
-        "Controller",
-        "Sony",
-        "Exclusive"
+        "Delivery",
+        "Boxes",
+        "Parcel"
       ]
     },
     {
-      "word": "Airbnb",
+      "word": "Disney",
       "emoji": "",
-      "def": "An online platform for renting homes and rooms while traveling.",
+      "def": "An entertainment company famous for animated films and parks.",
       "clues": [
-        "Stay",
-        "Host",
-        "Travel"
+        "Magic",
+        "Castle",
+        "Dreams"
       ]
     },
     {
-      "word": "Twitter",
+      "word": "Netflix",
       "emoji": "",
-      "def": "A social media platform where people post short messages called tweets.",
+      "def": "A streaming service for movies and shows.",
       "clues": [
-        "Tweet",
-        "Bird",
-        "Trending"
+        "Binge",
+        "Stream",
+        "Couch"
       ]
     },
     {
-      "word": "KFC",
+      "word": "Toyota",
       "emoji": "",
-      "def": "A fast-food chain famous for its fried chicken worldwide.",
+      "def": "A Japanese carmaker.",
       "clues": [
-        "Colonel",
-        "Crispy",
-        "Bucket"
+        "Drive",
+        "Reliable",
+        "Road"
       ]
     },
     {
       "word": "Tesla",
       "emoji": "",
-      "def": "An American electric car company known for sleek innovative vehicles.",
+      "def": "An American maker of electric cars.",
       "clues": [
-        "Autopilot",
-        "Charging",
-        "Supercar"
+        "Electric",
+        "Future",
+        "Charge"
       ]
     },
     {
-      "word": "Nintendo",
+      "word": "BMW",
       "emoji": "",
-      "def": "A Japanese company that makes beloved video games and consoles.",
+      "def": "A German luxury car manufacturer.",
       "clues": [
-        "Mario",
-        "Handheld",
-        "Cartridge"
+        "Luxury",
+        "Engine",
+        "Drive"
+      ]
+    },
+    {
+      "word": "LEGO",
+      "emoji": "",
+      "def": "A toy company famous for building bricks.",
+      "clues": [
+        "Build",
+        "Stack",
+        "Play"
+      ]
+    },
+    {
+      "word": "Lays",
+      "emoji": "",
+      "def": "A brand of potato chips.",
+      "clues": [
+        "Crunchy",
+        "Snack",
+        "Bag"
+      ]
+    },
+    {
+      "word": "Oreo",
+      "emoji": "",
+      "def": "A brand of sandwich cookies.",
+      "clues": [
+        "Twist",
+        "Dunk",
+        "Cream"
+      ]
+    },
+    {
+      "word": "Gucci",
+      "emoji": "",
+      "def": "An Italian luxury fashion house.",
+      "clues": [
+        "Fashion",
+        "Pricey",
+        "Style"
+      ]
+    },
+    {
+      "word": "Lululemon",
+      "emoji": "",
+      "def": "A maker of athletic and yoga clothing.",
+      "clues": [
+        "Stretch",
+        "Yoga",
+        "Comfy"
+      ]
+    },
+    {
+      "word": "Spotify",
+      "emoji": "",
+      "def": "A music streaming service.",
+      "clues": [
+        "Playlist",
+        "Audio",
+        "Listen"
+      ]
+    },
+    {
+      "word": "YouTube",
+      "emoji": "",
+      "def": "A website for sharing and watching videos.",
+      "clues": [
+        "Clips",
+        "Upload",
+        "Watch"
+      ]
+    },
+    {
+      "word": "Ferrari",
+      "emoji": "",
+      "def": "An Italian maker of luxury sports cars.",
+      "clues": [
+        "Speed",
+        "Racing",
+        "Sleek"
+      ]
+    },
+    {
+      "word": "Microsoft",
+      "emoji": "",
+      "def": "A major software and technology company.",
+      "clues": [
+        "Software",
+        "Office",
+        "Windows"
+      ]
+    },
+    {
+      "word": "Subway",
+      "emoji": "",
+      "def": "A fast-food chain known for sandwiches.",
+      "clues": [
+        "Fresh",
+        "Footlong",
+        "Sub"
+      ]
+    },
+    {
+      "word": "Pringles",
+      "emoji": "",
+      "def": "A brand of stackable potato chips.",
+      "clues": [
+        "Tube",
+        "Stack",
+        "Crisp"
+      ]
+    },
+    {
+      "word": "Rolex",
+      "emoji": "",
+      "def": "A Swiss maker of luxury watches.",
+      "clues": [
+        "Time",
+        "Wrist",
+        "Status"
+      ]
+    },
+    {
+      "word": "Heinz",
+      "emoji": "",
+      "def": "A brand famous for ketchup and sauces.",
+      "clues": [
+        "Tomato",
+        "Squeeze",
+        "Bottle"
+      ]
+    },
+    {
+      "word": "IKEA",
+      "emoji": "",
+      "def": "A Swedish furniture and home goods retailer.",
+      "clues": [
+        "Assemble",
+        "Furniture",
+        "Flatpack"
+      ]
+    },
+    {
+      "word": "Mercedes",
+      "emoji": "",
+      "def": "A German maker of luxury automobiles.",
+      "clues": [
+        "Elegant",
+        "Premium",
+        "Wheels"
       ]
     }
   ],
@@ -4237,603 +4237,603 @@ const WORD_PACK = {
     {
       "word": "Frozen",
       "emoji": "",
-      "def": "A Disney animated film about two royal sisters and magic ice.",
+      "def": "A Disney animated film about two sisters.",
       "clues": [
-        "Elsa",
-        "Snowman",
-        "Arendelle"
+        "Winter",
+        "Sisters",
+        "Snow"
       ]
     },
     {
       "word": "Titanic",
       "emoji": "",
-      "def": "A film about a tragic ocean liner that sinks on its voyage.",
+      "def": "A romance film set aboard a doomed ocean liner.",
       "clues": [
-        "Iceberg",
-        "Sinking",
-        "Romance"
+        "Tragedy",
+        "Ocean",
+        "Diamond"
       ]
     },
     {
       "word": "The Lion King",
       "emoji": "",
-      "def": "A Disney film about a lion cub who becomes king of the savanna.",
+      "def": "A Disney animated film about a young lion prince.",
       "clues": [
-        "Simba",
-        "Hakuna",
-        "Savanna"
+        "Pride",
+        "Savanna",
+        "Crown"
       ]
     },
     {
       "word": "Toy Story",
       "emoji": "",
-      "def": "A Pixar film about toys that come to life when no one is watching.",
+      "def": "A Pixar film about toys that come to life.",
       "clues": [
-        "Woody",
-        "Infinity",
-        "Cowboy"
-      ]
-    },
-    {
-      "word": "Avatar",
-      "emoji": "",
-      "def": "A sci-fi film about humans visiting a lush alien world called Pandora.",
-      "clues": [
-        "Pandora",
-        "Blue",
-        "Floating"
-      ]
-    },
-    {
-      "word": "Jurassic Park",
-      "emoji": "",
-      "def": "A film about a theme park where real dinosaurs run loose.",
-      "clues": [
-        "Dinosaurs",
-        "DNA",
-        "Amber"
-      ]
-    },
-    {
-      "word": "Star Wars",
-      "emoji": "",
-      "def": "A space adventure about the battle between good and evil forces.",
-      "clues": [
-        "Jedi",
-        "Galaxy",
-        "Lightsaber"
-      ]
-    },
-    {
-      "word": "Spider-Man",
-      "emoji": "",
-      "def": "A superhero film about a teenager bitten by a radioactive spider.",
-      "clues": [
-        "Web",
-        "Queens",
-        "Tingling"
+        "Childhood",
+        "Playtime",
+        "Friends"
       ]
     },
     {
       "word": "Finding Nemo",
       "emoji": "",
-      "def": "A Pixar film about a father fish searching the ocean for his son.",
-      "clues": [
-        "Clownfish",
-        "Reef",
-        "Sherman"
-      ]
-    },
-    {
-      "word": "Shrek",
-      "emoji": "",
-      "def": "An animated film about a lovable green ogre who saves a princess.",
-      "clues": [
-        "Swamp",
-        "Donkey",
-        "Layers"
-      ]
-    },
-    {
-      "word": "The Avengers",
-      "emoji": "",
-      "def": "A Marvel film where superheroes team up to save the world.",
-      "clues": [
-        "Assemble",
-        "Shield",
-        "Infinity"
-      ]
-    },
-    {
-      "word": "Moana",
-      "emoji": "",
-      "def": "A Disney film about a Polynesian girl who sails to save her island.",
+      "def": "A Pixar film about a fish searching for his son.",
       "clues": [
         "Ocean",
-        "Polynesia",
-        "Wayfinder"
+        "Journey",
+        "Reef"
       ]
     },
     {
-      "word": "Coco",
+      "word": "Jurassic Park",
       "emoji": "",
-      "def": "A Pixar film about a boy who visits the colorful Land of the Dead.",
+      "def": "An adventure film about a theme park with dinosaurs.",
       "clues": [
-        "Marigold",
-        "Ancestors",
-        "Mexico"
+        "Ancient",
+        "Island",
+        "Danger"
       ]
     },
     {
-      "word": "The Little Mermaid",
+      "word": "Avatar",
       "emoji": "",
-      "def": "A Disney film about a mermaid who dreams of living on land.",
+      "def": "A science fiction film set on a distant moon.",
       "clues": [
-        "Ariel",
-        "Trident",
-        "Underwater"
-      ]
-    },
-    {
-      "word": "Beauty and the Beast",
-      "emoji": "",
-      "def": "A Disney film about a girl who falls in love with an enchanted prince.",
-      "clues": [
-        "Enchanted",
-        "Candelabra",
-        "Rose"
+        "Blue",
+        "Nature",
+        "Worlds"
       ]
     },
     {
       "word": "Harry Potter",
       "emoji": "",
-      "def": "A film series about a young wizard attending a school for magic.",
+      "def": "A fantasy film series about a young wizard.",
       "clues": [
-        "Wand",
-        "Hogwarts",
-        "Scar"
+        "Spells",
+        "School",
+        "Magic"
       ]
     },
     {
-      "word": "The Dark Knight",
+      "word": "Star Wars",
       "emoji": "",
-      "def": "A superhero film about Batman facing a dangerous criminal called the Joker.",
+      "def": "A space adventure film saga.",
       "clues": [
-        "Gotham",
-        "Chaos",
-        "Vigilante"
+        "Galaxy",
+        "Battle",
+        "Hero"
       ]
     },
     {
-      "word": "Home Alone",
+      "word": "The Avengers",
       "emoji": "",
-      "def": "A comedy film about a boy left behind who defends his house from burglars.",
+      "def": "A film about superheroes teaming up.",
       "clues": [
-        "Booby",
-        "Christmas",
-        "Traps"
+        "Heroes",
+        "Teamwork",
+        "Power"
+      ]
+    },
+    {
+      "word": "Spider-Man",
+      "emoji": "",
+      "def": "A superhero film about a young hero with spider powers.",
+      "clues": [
+        "Hero",
+        "Swing",
+        "City"
+      ]
+    },
+    {
+      "word": "Batman",
+      "emoji": "",
+      "def": "A film about a masked crime-fighting hero.",
+      "clues": [
+        "Night",
+        "Gadgets",
+        "Justice"
+      ]
+    },
+    {
+      "word": "Shrek",
+      "emoji": "",
+      "def": "An animated comedy about an ogre and his friends.",
+      "clues": [
+        "Swamp",
+        "Green",
+        "Fairytale"
+      ]
+    },
+    {
+      "word": "Cars",
+      "emoji": "",
+      "def": "A Pixar film about racing vehicles.",
+      "clues": [
+        "Race",
+        "Speed",
+        "Road"
+      ]
+    },
+    {
+      "word": "Moana",
+      "emoji": "",
+      "def": "A Disney film about a girl who sails the sea.",
+      "clues": [
+        "Island",
+        "Voyage",
+        "Brave"
       ]
     },
     {
       "word": "Aladdin",
       "emoji": "",
-      "def": "A Disney film about a street boy who finds a magic lamp and genie.",
+      "def": "A Disney film about a poor boy and a magic lamp.",
       "clues": [
-        "Genie",
-        "Lamp",
-        "Agrabah"
+        "Wishes",
+        "Desert",
+        "Treasure"
+      ]
+    },
+    {
+      "word": "Beauty and the Beast",
+      "emoji": "",
+      "def": "A Disney film about a girl who befriends a cursed prince.",
+      "clues": [
+        "Rose",
+        "Castle",
+        "Curse"
       ]
     },
     {
       "word": "The Incredibles",
       "emoji": "",
-      "def": "A Pixar film about a family of superheroes living in secret.",
+      "def": "A Pixar film about a family of superheroes.",
       "clues": [
-        "Super",
-        "Cape",
-        "Suburbia"
+        "Family",
+        "Powers",
+        "Secret"
+      ]
+    },
+    {
+      "word": "Despicable Me",
+      "emoji": "",
+      "def": "An animated comedy about a villain and tiny helpers.",
+      "clues": [
+        "Villain",
+        "Yellow",
+        "Plan"
       ]
     },
     {
       "word": "Up",
       "emoji": "",
-      "def": "A Pixar film about an old man who ties balloons to his house to fly away.",
+      "def": "A Pixar film about an old man and a floating house.",
       "clues": [
         "Balloons",
-        "Adventure",
-        "Carl"
-      ]
-    },
-    {
-      "word": "WALL-E",
-      "emoji": "",
-      "def": "A Pixar film about a small robot left to clean up a deserted Earth.",
-      "clues": [
-        "Robot",
-        "Trash",
-        "Eve"
-      ]
-    },
-    {
-      "word": "The Jungle Book",
-      "emoji": "",
-      "def": "A Disney film about a boy raised by wolves in the jungle.",
-      "clues": [
-        "Mowgli",
-        "Baloo",
-        "Bare"
-      ]
-    },
-    {
-      "word": "Zootopia",
-      "emoji": "",
-      "def": "A Disney film set in a city where animals live and work together.",
-      "clues": [
-        "Bunny",
-        "Mammal",
-        "Hustle"
-      ]
-    },
-    {
-      "word": "Ratatouille",
-      "emoji": "",
-      "def": "A Pixar film about a rat in Paris who dreams of becoming a chef.",
-      "clues": [
-        "Chef",
-        "Paris",
-        "Rat"
+        "Journey",
+        "Sky"
       ]
     },
     {
       "word": "Inside Out",
       "emoji": "",
-      "def": "A Pixar film set inside the mind of a young girl navigating emotions.",
+      "def": "A Pixar film about a girl's emotions.",
       "clues": [
-        "Joy",
-        "Memory",
-        "Emotion"
+        "Feelings",
+        "Mind",
+        "Colors"
       ]
     },
     {
-      "word": "Minions",
+      "word": "Zootopia",
       "emoji": "",
-      "def": "An animated film about small yellow creatures serving a villain.",
+      "def": "A Disney film set in a city of animals.",
       "clues": [
+        "Animals",
+        "City",
+        "Mystery"
+      ]
+    },
+    {
+      "word": "Tangled",
+      "emoji": "",
+      "def": "A Disney film about a princess with very long hair.",
+      "clues": [
+        "Hair",
+        "Tower",
+        "Escape"
+      ]
+    },
+    {
+      "word": "Cinderella",
+      "emoji": "",
+      "def": "A classic film about a girl and a royal ball.",
+      "clues": [
+        "Slipper",
+        "Ball",
+        "Midnight"
+      ]
+    },
+    {
+      "word": "The Jungle Book",
+      "emoji": "",
+      "def": "A film about a boy raised by animals in the wild.",
+      "clues": [
+        "Wild",
+        "Boy",
+        "Friends"
+      ]
+    },
+    {
+      "word": "Ratatouille",
+      "emoji": "",
+      "def": "A Pixar film about a rat who wants to cook.",
+      "clues": [
+        "Cooking",
+        "Kitchen",
+        "Dream"
+      ]
+    },
+    {
+      "word": "Kung Fu Panda",
+      "emoji": "",
+      "def": "An animated film about a panda learning martial arts.",
+      "clues": [
+        "Fighting",
+        "Training",
+        "Hero"
+      ]
+    },
+    {
+      "word": "The Wizard of Oz",
+      "emoji": "",
+      "def": "A classic film about a girl swept to a magical land.",
+      "clues": [
+        "Journey",
         "Yellow",
-        "Banana",
-        "Despicable"
+        "Home"
       ]
     },
     {
-      "word": "The Secret Life of Pets",
+      "word": "E.T.",
       "emoji": "",
-      "def": "An animated film showing what pets do when their owners leave home.",
+      "def": "A film about a boy who befriends a gentle alien.",
       "clues": [
-        "Pets",
-        "Apartment",
-        "Sneaking"
+        "Alien",
+        "Friendship",
+        "Bond"
       ]
     },
     {
-      "word": "Encanto",
+      "word": "Coco",
       "emoji": "",
-      "def": "A Disney film about a magical Colombian family with unique gifts.",
+      "def": "A Pixar film about a boy and his family's musical past.",
       "clues": [
-        "Miracle",
-        "Colombia",
-        "Bruno"
-      ]
-    },
-    {
-      "word": "Luca",
-      "emoji": "",
-      "def": "A Pixar film about a sea monster boy who discovers the human world in Italy.",
-      "clues": [
-        "Italy",
-        "Vespa",
-        "Portorosso"
+        "Music",
+        "Family",
+        "Memory"
       ]
     }
   ],
   "School": [
     {
-      "word": "Pencil",
-      "emoji": "✏️",
-      "def": "A wooden stick you use to write or draw things.",
+      "word": "Protractor",
+      "emoji": "",
+      "def": "A flat half-circle tool used to measure and draw angles.",
       "clues": [
-        "Write",
-        "Eraser",
-        "Wood"
-      ]
-    },
-    {
-      "word": "Backpack",
-      "emoji": "🎒",
-      "def": "A bag you carry on your back to hold school supplies.",
-      "clues": [
-        "Carry",
-        "Straps",
-        "Zipper"
-      ]
-    },
-    {
-      "word": "Ruler",
-      "emoji": "📏",
-      "def": "A flat stick used to measure things and draw straight lines.",
-      "clues": [
+        "Curved",
         "Measure",
-        "Straight",
-        "Inches"
-      ]
-    },
-    {
-      "word": "Scissors",
-      "emoji": "✂️",
-      "def": "A tool with two blades used to cut paper or fabric.",
-      "clues": [
-        "Cut",
-        "Blades",
-        "Sharp"
-      ]
-    },
-    {
-      "word": "Crayon",
-      "emoji": "🖍️",
-      "def": "A colorful wax stick used to color pictures.",
-      "clues": [
-        "Color",
-        "Waxy",
-        "Melt"
-      ]
-    },
-    {
-      "word": "Notebook",
-      "emoji": "📓",
-      "def": "A book with blank pages where you write notes.",
-      "clues": [
-        "Pages",
-        "Lines",
-        "Spiral"
-      ]
-    },
-    {
-      "word": "Eraser",
-      "emoji": "🧹",
-      "def": "A pink block that rubs away pencil marks on paper.",
-      "clues": [
-        "Rubber",
-        "Undo",
-        "Pink"
-      ]
-    },
-    {
-      "word": "Glue",
-      "emoji": "",
-      "def": "A sticky liquid that holds pieces of paper together.",
-      "clues": [
-        "Sticky",
-        "Bond",
-        "Dry"
-      ]
-    },
-    {
-      "word": "Desk",
-      "emoji": "",
-      "def": "A flat table where students sit and do their schoolwork.",
-      "clues": [
-        "Sit",
-        "Flat",
-        "Study"
-      ]
-    },
-    {
-      "word": "Chalkboard",
-      "emoji": "",
-      "def": "A dark board on the wall where teachers write with chalk.",
-      "clues": [
-        "Dust",
-        "Squeak",
-        "White"
-      ]
-    },
-    {
-      "word": "Marker",
-      "emoji": "",
-      "def": "A pen with a felt tip that makes bold colorful lines.",
-      "clues": [
-        "Cap",
-        "Felt",
-        "Bold"
-      ]
-    },
-    {
-      "word": "Homework",
-      "emoji": "",
-      "def": "Schoolwork that students take home to finish each night.",
-      "clues": [
-        "Due",
-        "Night",
-        "Dread"
-      ]
-    },
-    {
-      "word": "Lunch Box",
-      "emoji": "🍱",
-      "def": "A small container that holds your food at school.",
-      "clues": [
-        "Food",
-        "Thermos",
-        "Snap"
-      ]
-    },
-    {
-      "word": "Principal",
-      "emoji": "",
-      "def": "The boss of the whole school who is in charge of everyone.",
-      "clues": [
-        "Office",
-        "Boss",
-        "Trouble"
-      ]
-    },
-    {
-      "word": "Recess",
-      "emoji": "",
-      "def": "A short break during school when kids go outside to play.",
-      "clues": [
-        "Swing",
-        "Outside",
-        "Bell"
-      ]
-    },
-    {
-      "word": "Library",
-      "emoji": "📚",
-      "def": "A quiet room full of books you can borrow to read.",
-      "clues": [
-        "Quiet",
-        "Shelf",
-        "Borrow"
-      ]
-    },
-    {
-      "word": "Report Card",
-      "emoji": "",
-      "def": "A paper that shows what grades you earned in school.",
-      "clues": [
-        "Grades",
-        "Parents",
-        "Nervous"
-      ]
-    },
-    {
-      "word": "Cafeteria",
-      "emoji": "",
-      "def": "The big room at school where students eat their lunch.",
-      "clues": [
-        "Tray",
-        "Loud",
-        "Smell"
-      ]
-    },
-    {
-      "word": "Teacher",
-      "emoji": "👩‍🏫",
-      "def": "The person at school who helps you learn new things.",
-      "clues": [
-        "Grade",
-        "Lesson",
-        "Chalk"
-      ]
-    },
-    {
-      "word": "Calculator",
-      "emoji": "🧮",
-      "def": "A small machine that helps you solve math problems quickly.",
-      "clues": [
-        "Numbers",
-        "Battery",
-        "Button"
-      ]
-    },
-    {
-      "word": "Globe",
-      "emoji": "🌍",
-      "def": "A round ball that shows a map of the whole world.",
-      "clues": [
-        "Spin",
-        "Countries",
-        "Round"
-      ]
-    },
-    {
-      "word": "Map",
-      "emoji": "🗺️",
-      "def": "A flat drawing that shows roads, rivers, and places.",
-      "clues": [
-        "Direction",
-        "Fold",
-        "Legend"
-      ]
-    },
-    {
-      "word": "Pencil Case",
-      "emoji": "",
-      "def": "A small pouch that holds your pens and pencils at school.",
-      "clues": [
-        "Zip",
-        "Pouch",
-        "Supplies"
-      ]
-    },
-    {
-      "word": "Textbook",
-      "emoji": "📖",
-      "def": "A thick school book full of lessons and information to learn.",
-      "clues": [
-        "Heavy",
-        "Chapter",
-        "Read"
-      ]
-    },
-    {
-      "word": "Compass",
-      "emoji": "",
-      "def": "A pointy tool used to draw perfect circles in math class.",
-      "clues": [
-        "Circle",
-        "Point",
-        "Spin"
-      ]
-    },
-    {
-      "word": "Binder",
-      "emoji": "",
-      "def": "A thick folder with rings that holds lots of school papers.",
-      "clues": [
-        "Rings",
-        "Organize",
-        "Click"
-      ]
-    },
-    {
-      "word": "Highlighter",
-      "emoji": "",
-      "def": "A bright pen used to color over important words so you remember them.",
-      "clues": [
-        "Neon",
-        "Transparent",
-        "Important"
-      ]
-    },
-    {
-      "word": "Stapler",
-      "emoji": "",
-      "def": "A tool that pushes little metal pieces through paper to hold it together.",
-      "clues": [
-        "Click",
-        "Metal",
-        "Jam"
-      ]
-    },
-    {
-      "word": "Bell",
-      "emoji": "🔔",
-      "def": "A loud ringing sound that tells students when class starts or ends.",
-      "clues": [
-        "Ring",
-        "Signal",
-        "End"
+        "Geometry"
       ]
     },
     {
       "word": "Whiteboard",
       "emoji": "",
-      "def": "A smooth white board that teachers write on with special markers.",
+      "def": "A smooth white surface the teacher writes on at the front.",
       "clues": [
-        "Erase",
+        "Wipe",
         "Marker",
-        "Smear"
+        "Front"
+      ]
+    },
+    {
+      "word": "Detention",
+      "emoji": "",
+      "def": "Staying after class as a punishment for breaking the rules.",
+      "clues": [
+        "Trouble",
+        "Stay",
+        "Quiet"
+      ]
+    },
+    {
+      "word": "Locker",
+      "emoji": "",
+      "def": "A tall metal box in the hallway for keeping your things.",
+      "clues": [
+        "Metal",
+        "Hallway",
+        "Combination"
+      ]
+    },
+    {
+      "word": "Microscope",
+      "emoji": "🔬",
+      "def": "A tool that makes tiny things look much bigger.",
+      "clues": [
+        "Tiny",
+        "Science",
+        "Lens"
+      ]
+    },
+    {
+      "word": "Cafeteria",
+      "emoji": "",
+      "def": "The big room where students eat their lunch together.",
+      "clues": [
+        "Tray",
+        "Noisy",
+        "Tables"
+      ]
+    },
+    {
+      "word": "Eraser",
+      "emoji": "",
+      "def": "A small rubber piece that rubs out pencil marks.",
+      "clues": [
+        "Mistake",
+        "Rubber",
+        "Clean"
+      ]
+    },
+    {
+      "word": "Globe",
+      "emoji": "🌐",
+      "def": "A round model of the Earth that spins on a stand.",
+      "clues": [
+        "Round",
+        "Spin",
+        "Countries"
+      ]
+    },
+    {
+      "word": "Recess",
+      "emoji": "",
+      "def": "A break when kids go outside to play during the day.",
+      "clues": [
+        "Break",
+        "Outside",
+        "Play"
+      ]
+    },
+    {
+      "word": "Chalkboard",
+      "emoji": "",
+      "def": "A dark board the teacher writes on with sticks of chalk.",
+      "clues": [
+        "Dusty",
+        "Green",
+        "Lesson"
+      ]
+    },
+    {
+      "word": "Homework",
+      "emoji": "",
+      "def": "Work the teacher gives you to finish at home.",
+      "clues": [
+        "Evening",
+        "Assignment",
+        "Practice"
+      ]
+    },
+    {
+      "word": "Principal",
+      "emoji": "",
+      "def": "The person in charge who runs the whole school.",
+      "clues": [
+        "Office",
+        "Leader",
+        "Important"
+      ]
+    },
+    {
+      "word": "Calculator",
+      "emoji": "",
+      "def": "A small machine that helps you solve number problems fast.",
+      "clues": [
+        "Buttons",
+        "Numbers",
+        "Pocket"
+      ]
+    },
+    {
+      "word": "Textbook",
+      "emoji": "📚",
+      "def": "A thick book full of lessons for a school subject.",
+      "clues": [
+        "Pages",
+        "Chapter",
+        "Study"
+      ]
+    },
+    {
+      "word": "Scissors",
+      "emoji": "✂️",
+      "def": "A tool with two blades used for cutting paper.",
+      "clues": [
+        "Cut",
+        "Sharp",
+        "Craft"
+      ]
+    },
+    {
+      "word": "Stapler",
+      "emoji": "",
+      "def": "A tool that pushes metal pins to hold papers together.",
+      "clues": [
+        "Click",
+        "Attach",
+        "Desk"
+      ]
+    },
+    {
+      "word": "Gymnasium",
+      "emoji": "",
+      "def": "A large indoor room where students play sports.",
+      "clues": [
+        "Sneakers",
+        "Echo",
+        "Hoops"
+      ]
+    },
+    {
+      "word": "Highlighter",
+      "emoji": "",
+      "def": "A bright pen used to color over important words.",
+      "clues": [
+        "Bright",
+        "Notes",
+        "Yellow"
+      ]
+    },
+    {
+      "word": "Notebook",
+      "emoji": "📓",
+      "def": "A book of blank pages where you write your notes.",
+      "clues": [
+        "Lined",
+        "Cover",
+        "Spiral"
+      ]
+    },
+    {
+      "word": "Crayon",
+      "emoji": "🖍️",
+      "def": "A colored wax stick that little kids draw with.",
+      "clues": [
+        "Wax",
+        "Color",
+        "Box"
+      ]
+    },
+    {
+      "word": "Ruler",
+      "emoji": "📏",
+      "def": "A straight tool with marks used to measure length.",
+      "clues": [
+        "Straight",
+        "Inches",
+        "Line"
+      ]
+    },
+    {
+      "word": "Pencil",
+      "emoji": "✏️",
+      "def": "A wooden writing tool with lead that you can sharpen.",
+      "clues": [
+        "Sharp",
+        "Write",
+        "Wood"
+      ]
+    },
+    {
+      "word": "Bell",
+      "emoji": "🔔",
+      "def": "The sound that tells students a class is starting or ending.",
+      "clues": [
+        "Ring",
+        "Signal",
+        "Period"
+      ]
+    },
+    {
+      "word": "Quiz",
+      "emoji": "",
+      "def": "A short test with a few questions on what you learned.",
+      "clues": [
+        "Questions",
+        "Grade",
+        "Short"
+      ]
+    },
+    {
+      "word": "Library",
+      "emoji": "",
+      "def": "A quiet place in school full of books to borrow.",
+      "clues": [
+        "Quiet",
+        "Shelves",
+        "Borrow"
+      ]
+    },
+    {
+      "word": "Glue",
+      "emoji": "",
+      "def": "A sticky liquid used to hold paper and crafts together.",
+      "clues": [
+        "Sticky",
+        "Bottle",
+        "Paste"
+      ]
+    },
+    {
+      "word": "Playground",
+      "emoji": "",
+      "def": "The outdoor area with swings and slides for kids to play.",
+      "clues": [
+        "Swings",
+        "Outside",
+        "Slide"
+      ]
+    },
+    {
+      "word": "Report Card",
+      "emoji": "",
+      "def": "A paper that shows your grades for the school term.",
+      "clues": [
+        "Grades",
+        "Parents",
+        "Marks"
+      ]
+    },
+    {
+      "word": "Compass",
+      "emoji": "",
+      "def": "A pointed tool with two legs for drawing perfect circles.",
+      "clues": [
+        "Circle",
+        "Point",
+        "Draw"
+      ]
+    },
+    {
+      "word": "Flashcard",
+      "emoji": "",
+      "def": "A small card with a question on one side for studying.",
+      "clues": [
+        "Memory",
+        "Practice",
+        "Stack"
       ]
     }
   ],
@@ -4841,137 +4841,157 @@ const WORD_PACK = {
     {
       "word": "Spider-Man",
       "emoji": "",
-      "def": "A teenage hero who shoots webs and swings between tall buildings.",
+      "def": "A young hero who swings through the city and climbs walls.",
       "clues": [
-        "Web",
-        "Bite",
-        "Swing"
+        "Agile",
+        "Mask",
+        "Rooftop"
       ]
     },
     {
       "word": "Batman",
       "emoji": "",
-      "def": "A dark hero who fights crime at night using gadgets and a cape.",
+      "def": "A hero in a dark cape who fights crime at night.",
       "clues": [
-        "Cave",
-        "Night",
-        "Gadget"
-      ]
-    },
-    {
-      "word": "Superman",
-      "emoji": "",
-      "def": "A hero from another planet who can fly and has super strength.",
-      "clues": [
-        "Krypton",
-        "Fly",
-        "Cape"
+        "Shadow",
+        "Gadgets",
+        "Brooding"
       ]
     },
     {
       "word": "Wonder Woman",
       "emoji": "",
-      "def": "A warrior princess hero with a golden lasso and a shield.",
+      "def": "A warrior princess with a magic rope and great strength.",
       "clues": [
+        "Warrior",
         "Lasso",
-        "Shield",
-        "Warrior"
+        "Island"
       ]
     },
     {
       "word": "Hulk",
       "emoji": "",
-      "def": "A scientist who turns into a giant green monster when he gets angry.",
+      "def": "A scientist who turns huge and strong when he gets angry.",
       "clues": [
-        "Green",
         "Smash",
-        "Angry"
-      ]
-    },
-    {
-      "word": "Iron Man",
-      "emoji": "",
-      "def": "A genius inventor who wears a powerful suit of metal armor.",
-      "clues": [
-        "Suit",
-        "Genius",
-        "Blast"
+        "Angry",
+        "Giant"
       ]
     },
     {
       "word": "Black Panther",
       "emoji": "",
-      "def": "A king and hero who wears a vibranium suit shaped like a panther.",
+      "def": "A king and hero who protects a hidden African nation.",
       "clues": [
-        "Vibranium",
         "King",
-        "Claws"
-      ]
-    },
-    {
-      "word": "Captain America",
-      "emoji": "",
-      "def": "A super soldier hero who carries a round red white and blue shield.",
-      "clues": [
-        "Shield",
-        "Soldier",
-        "Frozen"
-      ]
-    },
-    {
-      "word": "Thor",
-      "emoji": "",
-      "def": "A god from another world who fights with a magic hammer.",
-      "clues": [
-        "Hammer",
-        "Lightning",
-        "Viking"
+        "Claws",
+        "Stealthy"
       ]
     },
     {
       "word": "Flash",
       "emoji": "",
-      "def": "A hero who can run faster than anything else in the world.",
+      "def": "A hero who can run faster than anything in the world.",
       "clues": [
         "Speed",
         "Lightning",
-        "Run"
+        "Blur"
+      ]
+    },
+    {
+      "word": "Thor",
+      "emoji": "",
+      "def": "A god of thunder who swings a mighty hammer.",
+      "clues": [
+        "Thunder",
+        "Hammer",
+        "Asgard"
+      ]
+    },
+    {
+      "word": "Superman",
+      "emoji": "",
+      "def": "A hero from another planet who flies and is super strong.",
+      "clues": [
+        "Fly",
+        "Cape",
+        "Krypton"
+      ]
+    },
+    {
+      "word": "Iron Man",
+      "emoji": "",
+      "def": "A smart inventor who fights in a flying metal suit.",
+      "clues": [
+        "Armor",
+        "Genius",
+        "Flight"
+      ]
+    },
+    {
+      "word": "Captain America",
+      "emoji": "",
+      "def": "A brave soldier hero who carries a round shield.",
+      "clues": [
+        "Shield",
+        "Soldier",
+        "Loyal"
       ]
     },
     {
       "word": "Aquaman",
       "emoji": "",
-      "def": "A hero who is king of the ocean and can talk to sea animals.",
+      "def": "A hero who rules the sea and talks to fish.",
       "clues": [
         "Ocean",
         "Trident",
-        "Fish"
+        "Swim"
+      ]
+    },
+    {
+      "word": "Green Lantern",
+      "emoji": "",
+      "def": "A hero whose magic ring builds anything he imagines.",
+      "clues": [
+        "Ring",
+        "Glow",
+        "Willpower"
+      ]
+    },
+    {
+      "word": "Wolverine",
+      "emoji": "",
+      "def": "A tough hero with sharp claws and fast healing.",
+      "clues": [
+        "Claws",
+        "Healing",
+        "Gruff"
+      ]
+    },
+    {
+      "word": "Captain Marvel",
+      "emoji": "",
+      "def": "A pilot hero who glows and flies through outer space.",
+      "clues": [
+        "Cosmic",
+        "Pilot",
+        "Glowing"
       ]
     },
     {
       "word": "Black Widow",
       "emoji": "",
-      "def": "A super spy hero who is an expert at fighting and sneaking around.",
+      "def": "A clever spy hero who is an expert at fighting.",
       "clues": [
         "Spy",
-        "Acrobat",
-        "Sting"
-      ]
-    },
-    {
-      "word": "Hawkeye",
-      "emoji": "",
-      "def": "A hero who never misses a shot with his bow and arrow.",
-      "clues": [
-        "Arrow",
-        "Aim",
-        "Quiver"
+        "Stealthy",
+        "Agent"
       ]
     },
     {
       "word": "Doctor Strange",
       "emoji": "",
-      "def": "A hero who uses magic and can travel between different worlds.",
+      "def": "A wizard hero who casts spells and opens magic portals.",
       "clues": [
         "Magic",
         "Portal",
@@ -4981,117 +5001,67 @@ const WORD_PACK = {
     {
       "word": "Ant-Man",
       "emoji": "",
-      "def": "A hero who can shrink down to the size of a tiny insect.",
+      "def": "A hero who can shrink down to the size of a bug.",
       "clues": [
         "Shrink",
         "Tiny",
-        "Ants"
-      ]
-    },
-    {
-      "word": "Wasp",
-      "emoji": "",
-      "def": "A hero who can shrink and fly using special wings on her suit.",
-      "clues": [
-        "Sting",
-        "Fly",
-        "Shrink"
-      ]
-    },
-    {
-      "word": "Black Cat",
-      "emoji": "",
-      "def": "A daring cat burglar hero known for her acrobatic fighting skills.",
-      "clues": [
-        "Luck",
-        "Stealth",
-        "Acrobat"
-      ]
-    },
-    {
-      "word": "Cyclops",
-      "emoji": "",
-      "def": "A mutant hero who shoots powerful laser beams from his eyes.",
-      "clues": [
-        "Visor",
-        "Laser",
-        "Team"
+        "Suit"
       ]
     },
     {
       "word": "Storm",
       "emoji": "",
-      "def": "A mutant hero who can control weather like wind rain and lightning.",
+      "def": "A hero who can control the wind, rain, and lightning.",
       "clues": [
-        "Lightning",
         "Weather",
-        "Wind"
+        "Wind",
+        "Clouds"
       ]
     },
     {
-      "word": "Wolverine",
+      "word": "Green Arrow",
       "emoji": "",
-      "def": "A mutant hero with metal claws and the ability to heal very quickly.",
+      "def": "A skilled hero who fights using a bow and arrows.",
       "clues": [
-        "Claws",
-        "Heal",
-        "Metal"
+        "Archer",
+        "Bow",
+        "Hood"
       ]
     },
     {
-      "word": "Scarlet Witch",
+      "word": "Cyclops",
       "emoji": "",
-      "def": "A powerful hero who can change reality itself using magic.",
+      "def": "A hero who shoots powerful beams from his eyes.",
       "clues": [
-        "Reality",
-        "Chaos",
-        "Red"
-      ]
-    },
-    {
-      "word": "Vision",
-      "emoji": "",
-      "def": "A hero who is a robot with a glowing gem in his forehead.",
-      "clues": [
-        "Gem",
-        "Android",
-        "Phase"
-      ]
-    },
-    {
-      "word": "Shazam",
-      "emoji": "",
-      "def": "A kid who turns into a powerful adult hero when he says a magic word.",
-      "clues": [
-        "Word",
-        "Lightning",
-        "Kid"
-      ]
-    },
-    {
-      "word": "Green Lantern",
-      "emoji": "",
-      "def": "A hero who uses a special ring to create anything made of green light.",
-      "clues": [
-        "Ring",
-        "Construct",
-        "Oath"
-      ]
-    },
-    {
-      "word": "Nightwing",
-      "emoji": "",
-      "def": "A hero who was once a sidekick but grew up to lead his own team.",
-      "clues": [
-        "Flip",
-        "Escrima",
+        "Beam",
+        "Visor",
         "Leader"
+      ]
+    },
+    {
+      "word": "Supergirl",
+      "emoji": "",
+      "def": "A flying hero with super strength who is Superman's cousin.",
+      "clues": [
+        "Fly",
+        "Strong",
+        "Cousin"
+      ]
+    },
+    {
+      "word": "Batgirl",
+      "emoji": "",
+      "def": "A brave hero in a cape who helps protect the city.",
+      "clues": [
+        "Cape",
+        "Sidekick",
+        "Night"
       ]
     },
     {
       "word": "Robin",
       "emoji": "",
-      "def": "A young sidekick hero who helps Batman fight crime in the city.",
+      "def": "A young hero who is Batman's trusted helper.",
       "clues": [
         "Sidekick",
         "Young",
@@ -5099,111 +5069,141 @@ const WORD_PACK = {
       ]
     },
     {
-      "word": "Captain Marvel",
+      "word": "Hawkeye",
       "emoji": "",
-      "def": "A hero with incredible strength who can fly through outer space.",
+      "def": "A hero who never misses a target with his arrows.",
+      "clues": [
+        "Archer",
+        "Aim",
+        "Quiver"
+      ]
+    },
+    {
+      "word": "Falcon",
+      "emoji": "",
+      "def": "A hero who soars through the sky with mechanical wings.",
+      "clues": [
+        "Wings",
+        "Soar",
+        "Glide"
+      ]
+    },
+    {
+      "word": "Nightcrawler",
+      "emoji": "",
+      "def": "A blue hero who can vanish and teleport in a puff.",
+      "clues": [
+        "Teleport",
+        "Blue",
+        "Vanish"
+      ]
+    },
+    {
+      "word": "Star-Lord",
+      "emoji": "",
+      "def": "A space hero who leads a team and loves old music.",
       "clues": [
         "Space",
-        "Blast",
-        "Cosmic"
+        "Leader",
+        "Music"
       ]
     },
     {
-      "word": "She-Hulk",
+      "word": "Vision",
       "emoji": "",
-      "def": "A hero who is a lawyer and also turns into a giant green woman.",
+      "def": "A thinking robot hero who can walk through solid walls.",
       "clues": [
-        "Green",
-        "Lawyer",
-        "Strong"
+        "Android",
+        "Phasing",
+        "Gem"
       ]
     },
     {
-      "word": "Ms. Marvel",
+      "word": "Shazam",
       "emoji": "",
-      "def": "A teenage hero who can stretch and grow her body in amazing ways.",
+      "def": "A kid who becomes a grown hero by saying a magic word.",
       "clues": [
-        "Stretch",
-        "Fist",
-        "Inhuman"
+        "Lightning",
+        "Magic",
+        "Boy"
       ]
     },
     {
-      "word": "Blue Beetle",
+      "word": "Daredevil",
       "emoji": "",
-      "def": "A teen hero whose alien armor gives him amazing powers to fight evil.",
+      "def": "A blind hero whose other senses help him fight crime.",
       "clues": [
-        "Armor",
-        "Alien",
-        "Teen"
+        "Blind",
+        "Senses",
+        "Fearless"
       ]
     }
   ],
   "Dinosaurs": [
     {
-      "word": "Tyrannosaurus",
-      "emoji": "🦖",
-      "def": "A giant meat-eating dinosaur with tiny arms and huge jaws.",
-      "clues": [
-        "Tiny",
-        "Arms",
-        "King"
-      ]
-    },
-    {
       "word": "Triceratops",
       "emoji": "",
-      "def": "A plant-eating dinosaur with three horns and a bony frill on its head.",
+      "def": "A plant-eater with three horns and a big bony frill.",
       "clues": [
-        "Horns",
-        "Frill",
-        "Three"
-      ]
-    },
-    {
-      "word": "Brachiosaurus",
-      "emoji": "🦕",
-      "def": "A huge dinosaur with a very long neck that ate leaves from tall trees.",
-      "clues": [
-        "Neck",
-        "Tall",
-        "Leaves"
+        "Charge",
+        "Plant",
+        "Ancient"
       ]
     },
     {
       "word": "Velociraptor",
       "emoji": "",
-      "def": "A small fast dinosaur that hunted in packs and had sharp claws.",
+      "def": "A small fast hunter that ran in clever packs.",
       "clues": [
+        "Swift",
         "Pack",
-        "Claw",
-        "Fast"
+        "Hunter"
       ]
     },
     {
       "word": "Stegosaurus",
       "emoji": "",
-      "def": "A plant-eating dinosaur with big bony plates running along its back.",
+      "def": "A plant-eater with bony plates along its curved back.",
       "clues": [
         "Plates",
-        "Spike",
-        "Back"
+        "Slow",
+        "Spiked"
       ]
     },
     {
-      "word": "Pterodactyl",
+      "word": "Brachiosaurus",
       "emoji": "",
-      "def": "A flying reptile from dinosaur times with big leathery wings.",
+      "def": "A huge plant-eater with a very long neck reaching treetops.",
       "clues": [
-        "Fly",
-        "Wings",
-        "Screech"
+        "Towering",
+        "Neck",
+        "Gentle"
+      ]
+    },
+    {
+      "word": "Tyrannosaurus",
+      "emoji": "",
+      "def": "A giant meat-eater with huge jaws and tiny arms.",
+      "clues": [
+        "Roar",
+        "Jaws",
+        "Predator"
+      ]
+    },
+    {
+      "word": "Spinosaurus",
+      "emoji": "",
+      "def": "A big meat-eater with a tall sail along its back.",
+      "clues": [
+        "Sail",
+        "River",
+        "Fierce"
       ]
     },
     {
       "word": "Ankylosaurus",
       "emoji": "",
-      "def": "A dinosaur covered in thick bony armor with a club at the end of its tail.",
+      "def": "An armored plant-eater with a heavy club on its tail.",
       "clues": [
         "Armor",
         "Club",
@@ -5211,233 +5211,233 @@ const WORD_PACK = {
       ]
     },
     {
-      "word": "Diplodocus",
+      "word": "Pteranodon",
       "emoji": "",
-      "def": "A giant dinosaur with an incredibly long neck and a very long tail.",
+      "def": "A flying reptile with wide wings and no teeth.",
       "clues": [
-        "Long",
-        "Whip",
-        "Tail"
+        "Wings",
+        "Glide",
+        "Crest"
       ]
     },
     {
-      "word": "Spinosaurus",
+      "word": "Diplodocus",
       "emoji": "",
-      "def": "A huge meat-eating dinosaur with a tall sail fin on its back.",
+      "def": "A very long plant-eater with a whip-like tail.",
       "clues": [
-        "Sail",
-        "Fin",
-        "River"
+        "Lengthy",
+        "Tail",
+        "Grazer"
       ]
     },
     {
       "word": "Allosaurus",
       "emoji": "",
-      "def": "A fierce meat-eating dinosaur that lived before the T-Rex.",
+      "def": "A fierce meat-eater that hunted before the T. rex era.",
       "clues": [
         "Hunter",
-        "Jaws",
-        "Early"
+        "Sharp",
+        "Jurassic"
       ]
     },
     {
       "word": "Parasaurolophus",
       "emoji": "",
-      "def": "A plant-eating dinosaur with a long bony tube on top of its head.",
+      "def": "A plant-eater with a long curved crest on its head.",
       "clues": [
         "Crest",
-        "Honk",
+        "Call",
         "Herd"
-      ]
-    },
-    {
-      "word": "Iguanodon",
-      "emoji": "",
-      "def": "A plant-eating dinosaur that could walk on two or four legs.",
-      "clues": [
-        "Thumb",
-        "Spike",
-        "Four"
       ]
     },
     {
       "word": "Pachycephalosaurus",
       "emoji": "",
-      "def": "A dinosaur with an extremely thick domed skull on top of its head.",
+      "def": "A plant-eater with a thick bony dome for head-butting.",
       "clues": [
         "Dome",
         "Headbutt",
-        "Skull"
+        "Thick"
+      ]
+    },
+    {
+      "word": "Iguanodon",
+      "emoji": "",
+      "def": "A plant-eater with a pointed thumb spike on each hand.",
+      "clues": [
+        "Thumb",
+        "Spike",
+        "Grazer"
       ]
     },
     {
       "word": "Compsognathus",
       "emoji": "",
-      "def": "One of the tiniest dinosaurs ever found, about the size of a chicken.",
+      "def": "A tiny meat-eater about the size of a chicken.",
       "clues": [
         "Tiny",
-        "Chicken",
-        "Swift"
-      ]
-    },
-    {
-      "word": "Megalosaurus",
-      "emoji": "",
-      "def": "One of the very first dinosaurs ever discovered and named by scientists.",
-      "clues": [
-        "First",
-        "Large",
-        "Lizard"
-      ]
-    },
-    {
-      "word": "Archaeopteryx",
-      "emoji": "",
-      "def": "An ancient creature that was part dinosaur and part bird.",
-      "clues": [
-        "Feathers",
-        "Bird",
-        "Ancient"
-      ]
-    },
-    {
-      "word": "Carnotaurus",
-      "emoji": "",
-      "def": "A meat-eating dinosaur with two horns above its eyes and tiny arms.",
-      "clues": [
-        "Horns",
-        "Bull",
-        "Sprint"
-      ]
-    },
-    {
-      "word": "Kentrosaurus",
-      "emoji": "",
-      "def": "A dinosaur related to Stegosaurus with spikes all along its body.",
-      "clues": [
-        "Spikes",
-        "Sharp",
-        "Africa"
-      ]
-    },
-    {
-      "word": "Mosasaurus",
-      "emoji": "",
-      "def": "A giant sea reptile from dinosaur times with huge jaws for catching fish.",
-      "clues": [
-        "Ocean",
-        "Jaws",
-        "Swim"
-      ]
-    },
-    {
-      "word": "Plesiosaur",
-      "emoji": "",
-      "def": "A long-necked sea reptile that swam in oceans during dinosaur times.",
-      "clues": [
-        "Flippers",
-        "Sea",
-        "Loch"
-      ]
-    },
-    {
-      "word": "Oviraptor",
-      "emoji": "",
-      "def": "A feathered dinosaur that was once mistakenly thought to steal eggs.",
-      "clues": [
-        "Feathers",
-        "Eggs",
-        "Crest"
-      ]
-    },
-    {
-      "word": "Therizinosaurus",
-      "emoji": "",
-      "def": "A dinosaur with enormous long curved claws on its front limbs.",
-      "clues": [
-        "Claws",
-        "Curved",
-        "Huge"
+        "Quick",
+        "Nimble"
       ]
     },
     {
       "word": "Gallimimus",
       "emoji": "",
-      "def": "A fast ostrich-like dinosaur that ran in large herds across open land.",
+      "def": "A speedy dinosaur that looked a bit like a big ostrich.",
       "clues": [
-        "Ostrich",
-        "Herd",
-        "Run"
+        "Swift",
+        "Lanky",
+        "Flock"
       ]
     },
     {
-      "word": "Styracosaurus",
+      "word": "Carnotaurus",
       "emoji": "",
-      "def": "A horned dinosaur with a large frill covered in long sharp spikes.",
+      "def": "A meat-eater with two horns above its eyes and short arms.",
       "clues": [
-        "Spikes",
-        "Frill",
-        "Charge"
+        "Horned",
+        "Runner",
+        "Fierce"
       ]
     },
     {
       "word": "Dilophosaurus",
       "emoji": "",
-      "def": "A meat-eating dinosaur with two thin crests running along its head.",
+      "def": "A meat-eater with two thin crests on top of its head.",
       "clues": [
-        "Crest",
-        "Frill",
-        "Spit"
+        "Crests",
+        "Slim",
+        "Hunter"
       ]
     },
     {
-      "word": "Ceratosaurus",
+      "word": "Apatosaurus",
       "emoji": "",
-      "def": "A meat-eating dinosaur with a horn on its nose and bony ridges above its eyes.",
+      "def": "A massive long-necked plant-eater that shook the ground.",
       "clues": [
-        "Horn",
-        "Nose",
-        "Ridge"
-      ]
-    },
-    {
-      "word": "Mamenchisaurus",
-      "emoji": "",
-      "def": "A giant plant-eating dinosaur with one of the longest necks ever found.",
-      "clues": [
+        "Massive",
         "Neck",
-        "Giant",
-        "China"
+        "Grazer"
+      ]
+    },
+    {
+      "word": "Archaeopteryx",
+      "emoji": "",
+      "def": "An early feathered creature that links dinosaurs and birds.",
+      "clues": [
+        "Feathered",
+        "Ancient",
+        "Glide"
+      ]
+    },
+    {
+      "word": "Microraptor",
+      "emoji": "",
+      "def": "A tiny feathered dinosaur with wings on all four limbs.",
+      "clues": [
+        "Feathered",
+        "Small",
+        "Glide"
+      ]
+    },
+    {
+      "word": "Therizinosaurus",
+      "emoji": "",
+      "def": "A strange plant-eater with extremely long curved claws.",
+      "clues": [
+        "Claws",
+        "Lanky",
+        "Grazer"
+      ]
+    },
+    {
+      "word": "Mosasaurus",
+      "emoji": "",
+      "def": "A giant sea reptile that ruled the ancient oceans.",
+      "clues": [
+        "Ocean",
+        "Jaws",
+        "Swimmer"
+      ]
+    },
+    {
+      "word": "Plesiosaurus",
+      "emoji": "",
+      "def": "A sea reptile with flippers and a very long neck.",
+      "clues": [
+        "Flippers",
+        "Ocean",
+        "Paddle"
+      ]
+    },
+    {
+      "word": "Brontosaurus",
+      "emoji": "",
+      "def": "A famous long-necked giant that ate plants all day.",
+      "clues": [
+        "Hefty",
+        "Neck",
+        "Grazer"
       ]
     },
     {
       "word": "Deinonychus",
       "emoji": "",
-      "def": "A clever pack-hunting dinosaur with a large curved killing claw on each foot.",
+      "def": "A sharp-clawed hunter that inspired the movie raptors.",
       "clues": [
-        "Pack",
-        "Sickle",
-        "Claw"
+        "Claw",
+        "Agile",
+        "Predator"
+      ]
+    },
+    {
+      "word": "Giganotosaurus",
+      "emoji": "",
+      "def": "One of the largest meat-eaters that ever walked the land.",
+      "clues": [
+        "Huge",
+        "Predator",
+        "Jaws"
+      ]
+    },
+    {
+      "word": "Oviraptor",
+      "emoji": "",
+      "def": "A bird-like dinosaur once thought to steal other eggs.",
+      "clues": [
+        "Beak",
+        "Nest",
+        "Feathered"
       ]
     },
     {
       "word": "Protoceratops",
       "emoji": "",
-      "def": "A small sheep-sized dinosaur with a bony frill but no big horns yet.",
+      "def": "A small plant-eater with a frill but no big horns.",
       "clues": [
         "Frill",
         "Small",
-        "Desert"
+        "Grazer"
       ]
     },
     {
-      "word": "Baryonyx",
+      "word": "Quetzalcoatlus",
       "emoji": "",
-      "def": "A fish-eating dinosaur with large claws and a long crocodile-like snout.",
+      "def": "A flying reptile as tall as a giraffe with huge wings.",
       "clues": [
-        "Fish",
-        "Claw",
-        "Snout"
+        "Wings",
+        "Towering",
+        "Soar"
+      ]
+    },
+    {
+      "word": "Maiasaura",
+      "emoji": "",
+      "def": "A plant-eater known for caring for its babies in nests.",
+      "clues": [
+        "Nest",
+        "Caring",
+        "Herd"
       ]
     }
   ],
@@ -5459,7 +5459,7 @@ const WORD_PACK = {
       "clues": [
         "Denim",
         "Pockets",
-        "Indigo"
+        "Everyday"
       ]
     },
     {
@@ -5467,9 +5467,9 @@ const WORD_PACK = {
       "emoji": "👗",
       "def": "A one-piece garment worn by girls and women.",
       "clues": [
-        "Skirt",
         "Twirl",
-        "Formal"
+        "Elegant",
+        "Party"
       ]
     },
     {
@@ -5477,9 +5477,9 @@ const WORD_PACK = {
       "emoji": "🧥",
       "def": "A short coat you wear to stay warm outside.",
       "clues": [
-        "Zipper",
+        "Zip",
         "Layer",
-        "Breeze"
+        "Outdoor"
       ]
     },
     {
@@ -5487,9 +5487,9 @@ const WORD_PACK = {
       "emoji": "🧦",
       "def": "Stretchy coverings you pull over your feet and ankles.",
       "clues": [
-        "Toes",
-        "Laundry",
-        "Pair"
+        "Feet",
+        "Pair",
+        "Soft"
       ]
     },
     {
@@ -5498,8 +5498,8 @@ const WORD_PACK = {
       "def": "Comfortable rubber-soled shoes great for running and playing.",
       "clues": [
         "Laces",
-        "Cushion",
-        "Court"
+        "Sporty",
+        "Comfy"
       ]
     },
     {
@@ -5507,9 +5507,9 @@ const WORD_PACK = {
       "emoji": "🎩",
       "def": "A covering you put on your head for style or sun.",
       "clues": [
-        "Brim",
         "Head",
-        "Shade"
+        "Shade",
+        "Style"
       ]
     },
     {
@@ -5517,9 +5517,9 @@ const WORD_PACK = {
       "emoji": "🧣",
       "def": "A long strip of fabric you wrap around your neck.",
       "clues": [
-        "Neck",
-        "Winter",
-        "Knit"
+        "Wrap",
+        "Chilly",
+        "Wool"
       ]
     },
     {
@@ -5527,9 +5527,9 @@ const WORD_PACK = {
       "emoji": "🧤",
       "def": "Coverings for your hands with separate fingers inside.",
       "clues": [
-        "Fingers",
+        "Hands",
         "Grip",
-        "Frost"
+        "Pair"
       ]
     },
     {
@@ -5537,9 +5537,9 @@ const WORD_PACK = {
       "emoji": "🧶",
       "def": "A warm knitted top you pull over your head.",
       "clues": [
-        "Wool",
+        "Warm",
         "Cozy",
-        "Cable"
+        "Pullover"
       ]
     },
     {
@@ -5547,9 +5547,9 @@ const WORD_PACK = {
       "emoji": "🧥",
       "def": "A long heavy outer garment worn in cold weather.",
       "clues": [
-        "Buttons",
         "Warmth",
-        "Wool"
+        "Heavy",
+        "Outer"
       ]
     },
     {
@@ -5558,8 +5558,8 @@ const WORD_PACK = {
       "def": "Pants that end above the knee for warm weather.",
       "clues": [
         "Summer",
-        "Knees",
-        "Breezy"
+        "Legs",
+        "Cool"
       ]
     },
     {
@@ -5567,9 +5567,9 @@ const WORD_PACK = {
       "emoji": "👗",
       "def": "A garment that hangs from the waist down without legs.",
       "clues": [
-        "Hem",
+        "Waist",
         "Swish",
-        "Pleats"
+        "Flowy"
       ]
     },
     {
@@ -5577,9 +5577,9 @@ const WORD_PACK = {
       "emoji": "👢",
       "def": "Tall shoes that cover your ankle and part of your leg.",
       "clues": [
-        "Ankle",
+        "Sturdy",
         "Mud",
-        "Heel"
+        "Tall"
       ]
     },
     {
@@ -5587,9 +5587,9 @@ const WORD_PACK = {
       "emoji": "👡",
       "def": "Open shoes held on by straps that let your toes show.",
       "clues": [
-        "Straps",
-        "Beach",
-        "Thong"
+        "Summer",
+        "Open",
+        "Beach"
       ]
     },
     {
@@ -5598,8 +5598,8 @@ const WORD_PACK = {
       "def": "Loose comfortable clothes you wear to sleep at night.",
       "clues": [
         "Bedtime",
-        "Flannel",
-        "Cozy"
+        "Soft",
+        "Lounge"
       ]
     },
     {
@@ -5607,9 +5607,9 @@ const WORD_PACK = {
       "emoji": "👕",
       "def": "A sweatshirt with a hood you can pull over your head.",
       "clues": [
-        "Pouch",
-        "Hood",
-        "Campus"
+        "Casual",
+        "Pocket",
+        "Lounge"
       ]
     },
     {
@@ -5617,9 +5617,9 @@ const WORD_PACK = {
       "emoji": "👔",
       "def": "A matching jacket and trousers worn for formal occasions.",
       "clues": [
-        "Tie",
-        "Professional",
-        "Lapel"
+        "Formal",
+        "Office",
+        "Sharp"
       ]
     },
     {
@@ -5629,7 +5629,7 @@ const WORD_PACK = {
       "clues": [
         "Knot",
         "Formal",
-        "Silk"
+        "Collar"
       ]
     },
     {
@@ -5637,8 +5637,8 @@ const WORD_PACK = {
       "emoji": "",
       "def": "A strip worn around the waist to hold up your pants.",
       "clues": [
-        "Buckle",
         "Waist",
+        "Buckle",
         "Loop"
       ]
     },
@@ -5648,8 +5648,8 @@ const WORD_PACK = {
       "def": "A garment designed to be worn while swimming.",
       "clues": [
         "Pool",
-        "Chlorine",
-        "Splash"
+        "Splash",
+        "Beach"
       ]
     },
     {
@@ -5657,9 +5657,9 @@ const WORD_PACK = {
       "emoji": "🌧️",
       "def": "A waterproof coat that keeps you dry in the rain.",
       "clues": [
+        "Wet",
         "Waterproof",
-        "Puddle",
-        "Hood"
+        "Storm"
       ]
     },
     {
@@ -5677,9 +5677,9 @@ const WORD_PACK = {
       "emoji": "🧤",
       "def": "Warm hand coverings where all four fingers share one pocket.",
       "clues": [
-        "Snowball",
-        "Thumb",
-        "Fuzzy"
+        "Hands",
+        "Frosty",
+        "Snug"
       ]
     },
     {
@@ -5687,9 +5687,9 @@ const WORD_PACK = {
       "emoji": "🩱",
       "def": "Tight stretchy pants that hug your legs all the way down.",
       "clues": [
-        "Stretch",
-        "Yoga",
-        "Spandex"
+        "Stretchy",
+        "Snug",
+        "Active"
       ]
     },
     {
@@ -5699,7 +5699,7 @@ const WORD_PACK = {
       "clues": [
         "Sleeveless",
         "Layer",
-        "Button"
+        "Snug"
       ]
     },
     {
@@ -5709,7 +5709,7 @@ const WORD_PACK = {
       "clues": [
         "Brim",
         "Sporty",
-        "Snap"
+        "Shade"
       ]
     },
     {
@@ -5717,9 +5717,9 @@ const WORD_PACK = {
       "emoji": "👚",
       "def": "A light loose shirt usually worn by women and girls.",
       "clues": [
-        "Collar",
         "Flowy",
-        "Button"
+        "Collar",
+        "Light"
       ]
     },
     {
@@ -5727,9 +5727,9 @@ const WORD_PACK = {
       "emoji": "🧶",
       "def": "A knitted sweater that opens at the front with buttons.",
       "clues": [
-        "Buttons",
-        "Grandma",
-        "Cozy"
+        "Cozy",
+        "Layer",
+        "Knit"
       ]
     },
     {
@@ -5738,7 +5738,7 @@ const WORD_PACK = {
       "def": "Pants with a front bib and shoulder straps attached.",
       "clues": [
         "Straps",
-        "Farmer",
+        "Farm",
         "Denim"
       ]
     }
@@ -5749,9 +5749,9 @@ const WORD_PACK = {
       "emoji": "🔴",
       "def": "The bright color of fire trucks and ripe strawberries.",
       "clues": [
-        "Anger",
-        "Stop",
-        "Apple"
+        "Warm",
+        "Bold",
+        "Fire"
       ]
     },
     {
@@ -5760,8 +5760,8 @@ const WORD_PACK = {
       "def": "The color of a clear sky and the deep ocean.",
       "clues": [
         "Sky",
-        "Ocean",
-        "Calm"
+        "Calm",
+        "Cool"
       ]
     },
     {
@@ -5769,9 +5769,9 @@ const WORD_PACK = {
       "emoji": "🟡",
       "def": "A bright sunny color like lemons and sunflowers.",
       "clues": [
-        "Sun",
-        "Banana",
-        "Cheer"
+        "Sunny",
+        "Bright",
+        "Cheerful"
       ]
     },
     {
@@ -5779,9 +5779,9 @@ const WORD_PACK = {
       "emoji": "🟢",
       "def": "The color of fresh grass and most leaves on trees.",
       "clues": [
-        "Grass",
-        "Nature",
-        "Envy"
+        "Leaf",
+        "Fresh",
+        "Nature"
       ]
     },
     {
@@ -5789,9 +5789,9 @@ const WORD_PACK = {
       "emoji": "🟠",
       "def": "A warm color between red and yellow like a ripe orange.",
       "clues": [
-        "Pumpkin",
-        "Citrus",
-        "Autumn"
+        "Sunset",
+        "Warm",
+        "Citrus"
       ]
     },
     {
@@ -5801,7 +5801,7 @@ const WORD_PACK = {
       "clues": [
         "Royal",
         "Grape",
-        "Mystery"
+        "Mixed"
       ]
     },
     {
@@ -5809,9 +5809,9 @@ const WORD_PACK = {
       "emoji": "🩷",
       "def": "A soft light color made by mixing red with white.",
       "clues": [
-        "Flamingo",
+        "Soft",
         "Sweet",
-        "Blossom"
+        "Blush"
       ]
     },
     {
@@ -5820,8 +5820,8 @@ const WORD_PACK = {
       "def": "The darkest color that absorbs all light around it.",
       "clues": [
         "Night",
-        "Shadow",
-        "Elegant"
+        "Dark",
+        "Coal"
       ]
     },
     {
@@ -5830,8 +5830,8 @@ const WORD_PACK = {
       "def": "The lightest color that reflects all light back to you.",
       "clues": [
         "Snow",
-        "Pure",
-        "Cloud"
+        "Clean",
+        "Pale"
       ]
     },
     {
@@ -5839,9 +5839,9 @@ const WORD_PACK = {
       "emoji": "🟤",
       "def": "A warm earthy color like tree bark and chocolate.",
       "clues": [
-        "Mud",
-        "Chocolate",
-        "Earth"
+        "Earth",
+        "Cocoa",
+        "Wood"
       ]
     },
     {
@@ -5850,8 +5850,8 @@ const WORD_PACK = {
       "def": "A neutral color between black and white like storm clouds.",
       "clues": [
         "Foggy",
-        "Steel",
-        "Neutral"
+        "Neutral",
+        "Cloudy"
       ]
     },
     {
@@ -5859,9 +5859,9 @@ const WORD_PACK = {
       "emoji": "",
       "def": "A bright blue-green color like tropical ocean water.",
       "clues": [
-        "Tropical",
-        "Jewel",
-        "Aquatic"
+        "Ocean",
+        "Gem",
+        "Bright"
       ]
     },
     {
@@ -5869,9 +5869,9 @@ const WORD_PACK = {
       "emoji": "",
       "def": "A dark brownish-red color like dried autumn leaves.",
       "clues": [
-        "Burgundy",
         "Wine",
-        "School"
+        "Autumn",
+        "Deep"
       ]
     },
     {
@@ -5880,8 +5880,8 @@ const WORD_PACK = {
       "def": "A very pale sandy color that is almost cream or tan.",
       "clues": [
         "Sand",
-        "Neutral",
-        "Pale"
+        "Plain",
+        "Soft"
       ]
     },
     {
@@ -5890,8 +5890,8 @@ const WORD_PACK = {
       "def": "A shiny yellow color like precious gold metal coins.",
       "clues": [
         "Shiny",
-        "Trophy",
-        "Treasure"
+        "Treasure",
+        "Rich"
       ]
     },
     {
@@ -5901,7 +5901,7 @@ const WORD_PACK = {
       "clues": [
         "Shiny",
         "Metal",
-        "Medal"
+        "Shimmer"
       ]
     },
     {
@@ -5910,8 +5910,8 @@ const WORD_PACK = {
       "def": "A bright purplish-pink color found on many printers.",
       "clues": [
         "Vivid",
-        "Printer",
-        "Fuchsia"
+        "Bold",
+        "Bright"
       ]
     },
     {
@@ -5919,9 +5919,9 @@ const WORD_PACK = {
       "emoji": "",
       "def": "A deep blue-purple color like the night sky at dusk.",
       "clues": [
-        "Denim",
-        "Dusk",
-        "Rainbow"
+        "Rainbow",
+        "Night",
+        "Deep"
       ]
     },
     {
@@ -5929,9 +5929,9 @@ const WORD_PACK = {
       "emoji": "",
       "def": "A blue-green color similar to the feathers of a teal duck.",
       "clues": [
-        "Duck",
-        "Aqua",
-        "Muted"
+        "Peacock",
+        "Calm",
+        "Cool"
       ]
     },
     {
@@ -5939,9 +5939,9 @@ const WORD_PACK = {
       "emoji": "",
       "def": "A soft pale purple color like the lavender flower.",
       "clues": [
-        "Floral",
-        "Soothing",
-        "Pastel"
+        "Flower",
+        "Soft",
+        "Calm"
       ]
     },
     {
@@ -5951,7 +5951,7 @@ const WORD_PACK = {
       "clues": [
         "Reef",
         "Warm",
-        "Tropical"
+        "Blush"
       ]
     },
     {
@@ -5959,9 +5959,9 @@ const WORD_PACK = {
       "emoji": "",
       "def": "A bright blue-green color used in printing and design.",
       "clues": [
-        "Printer",
         "Bright",
-        "Aqua"
+        "Cool",
+        "Fresh"
       ]
     },
     {
@@ -5969,9 +5969,9 @@ const WORD_PACK = {
       "emoji": "",
       "def": "A deep vivid red color like fresh roses or ripe cherries.",
       "clues": [
-        "Deep",
+        "Bold",
         "Rose",
-        "Harvard"
+        "Vivid"
       ]
     },
     {
@@ -6001,7 +6001,7 @@ const WORD_PACK = {
       "clues": [
         "Sand",
         "Summer",
-        "Leather"
+        "Earthy"
       ]
     },
     {
@@ -6010,8 +6010,8 @@ const WORD_PACK = {
       "def": "A very bright and vivid shade of red.",
       "clues": [
         "Vivid",
-        "Letter",
-        "Fire"
+        "Fiery",
+        "Bold"
       ]
     },
     {
@@ -6019,9 +6019,9 @@ const WORD_PACK = {
       "emoji": "",
       "def": "A very dark shade of blue like a sailor's uniform.",
       "clues": [
+        "Deep",
         "Sailor",
-        "Dark",
-        "Anchor"
+        "Midnight"
       ]
     },
     {
@@ -6029,9 +6029,9 @@ const WORD_PACK = {
       "emoji": "",
       "def": "A soft pinkish-orange color like the skin of a ripe peach.",
       "clues": [
-        "Fuzzy",
+        "Fruit",
         "Soft",
-        "Fruit"
+        "Warm"
       ]
     },
     {
@@ -6039,9 +6039,9 @@ const WORD_PACK = {
       "emoji": "",
       "def": "A dark yellowish-green color like unripe olives on a tree.",
       "clues": [
-        "Military",
-        "Dull",
-        "Mediterranean"
+        "Earthy",
+        "Muted",
+        "Leaf"
       ]
     }
   ],
@@ -6051,9 +6051,9 @@ const WORD_PACK = {
       "emoji": "🎄",
       "def": "A winter holiday celebrating the birth of Jesus with gifts and trees.",
       "clues": [
-        "Presents",
-        "Carols",
-        "Reindeer"
+        "Gifts",
+        "Winter",
+        "Joy"
       ]
     },
     {
@@ -6061,9 +6061,9 @@ const WORD_PACK = {
       "emoji": "🎃",
       "def": "A spooky fall holiday where kids dress up and collect candy.",
       "clues": [
-        "Costume",
-        "Candy",
-        "Spooky"
+        "Spooky",
+        "Dusk",
+        "Treats"
       ]
     },
     {
@@ -6071,9 +6071,9 @@ const WORD_PACK = {
       "emoji": "🐰",
       "def": "A spring holiday with egg hunts and the story of Jesus rising.",
       "clues": [
-        "Eggs",
-        "Bunny",
-        "Spring"
+        "Spring",
+        "Hunt",
+        "Renewal"
       ]
     },
     {
@@ -6081,9 +6081,9 @@ const WORD_PACK = {
       "emoji": "🦃",
       "def": "A harvest holiday when families gather to share a big meal.",
       "clues": [
-        "Gratitude",
-        "Turkey",
-        "Harvest"
+        "Feast",
+        "Grateful",
+        "Autumn"
       ]
     },
     {
@@ -6092,8 +6092,8 @@ const WORD_PACK = {
       "def": "The Hindu festival of lights celebrated with lamps and fireworks.",
       "clues": [
         "Lights",
-        "Fireworks",
-        "Sweets"
+        "Sweets",
+        "Glow"
       ]
     },
     {
@@ -6101,9 +6101,9 @@ const WORD_PACK = {
       "emoji": "🕎",
       "def": "A Jewish festival of lights lasting eight nights with a menorah.",
       "clues": [
-        "Candles",
-        "Dreidel",
-        "Latkes"
+        "Lights",
+        "Eight",
+        "Family"
       ]
     },
     {
@@ -6112,8 +6112,8 @@ const WORD_PACK = {
       "def": "The celebration welcoming the first day of the brand new year.",
       "clues": [
         "Countdown",
-        "Fireworks",
-        "Midnight"
+        "Midnight",
+        "Cheer"
       ]
     },
     {
@@ -6121,9 +6121,9 @@ const WORD_PACK = {
       "emoji": "❤️",
       "def": "A holiday in February when people share cards and show love.",
       "clues": [
+        "Love",
         "Hearts",
-        "Roses",
-        "Chocolate"
+        "Sweet"
       ]
     },
     {
@@ -6132,8 +6132,8 @@ const WORD_PACK = {
       "def": "An Irish holiday celebrated with green clothing and shamrocks.",
       "clues": [
         "Green",
-        "Clover",
-        "Luck"
+        "Luck",
+        "Parade"
       ]
     },
     {
@@ -6141,8 +6141,8 @@ const WORD_PACK = {
       "emoji": "🎇",
       "def": "America's Independence Day celebrated with fireworks and parades.",
       "clues": [
-        "Fireworks",
         "Freedom",
+        "Summer",
         "Parade"
       ]
     },
@@ -6153,7 +6153,7 @@ const WORD_PACK = {
       "clues": [
         "Flowers",
         "Brunch",
-        "Appreciation"
+        "Family"
       ]
     },
     {
@@ -6161,9 +6161,9 @@ const WORD_PACK = {
       "emoji": "👔",
       "def": "A holiday celebrating dads with gifts and quality time together.",
       "clues": [
-        "Barbecue",
-        "Tie",
-        "Appreciation"
+        "Family",
+        "Grill",
+        "Gifts"
       ]
     },
     {
@@ -6181,9 +6181,9 @@ const WORD_PACK = {
       "emoji": "🧧",
       "def": "A festival welcoming the new year on the lunar calendar with red envelopes.",
       "clues": [
-        "Dragon",
-        "Lanterns",
-        "Envelope"
+        "Red",
+        "Family",
+        "Lanterns"
       ]
     },
     {
@@ -6191,9 +6191,9 @@ const WORD_PACK = {
       "emoji": "🎭",
       "def": "A festive carnival celebration with colorful masks and parades.",
       "clues": [
-        "Beads",
         "Parade",
-        "Masks"
+        "Beads",
+        "Festive"
       ]
     },
     {
@@ -6202,8 +6202,8 @@ const WORD_PACK = {
       "def": "A UK holiday with bonfires and fireworks remembering Guy Fawkes.",
       "clues": [
         "Bonfire",
-        "Fireworks",
-        "Gunpowder"
+        "Autumn",
+        "Night"
       ]
     },
     {
@@ -6212,8 +6212,8 @@ const WORD_PACK = {
       "def": "A festive season of parades and costumes before Lent begins.",
       "clues": [
         "Parade",
-        "Costumes",
-        "Samba"
+        "Music",
+        "Festive"
       ]
     },
     {
@@ -6221,9 +6221,9 @@ const WORD_PACK = {
       "emoji": "🇫🇷",
       "def": "France's national holiday celebrating the French Revolution with fireworks.",
       "clues": [
-        "Freedom",
-        "Paris",
-        "Fireworks"
+        "French",
+        "Summer",
+        "Freedom"
       ]
     },
     {
@@ -6231,9 +6231,9 @@ const WORD_PACK = {
       "emoji": "🌮",
       "def": "A Mexican holiday celebrating a famous military victory in 1862.",
       "clues": [
-        "Mexico",
+        "Fiesta",
         "Parade",
-        "Fiesta"
+        "Spring"
       ]
     },
     {
@@ -6241,9 +6241,9 @@ const WORD_PACK = {
       "emoji": "💀",
       "def": "A Mexican holiday honoring loved ones who have passed away.",
       "clues": [
-        "Marigolds",
-        "Ofrendas",
-        "Memories"
+        "Remember",
+        "Autumn",
+        "Family"
       ]
     },
     {
@@ -6253,7 +6253,7 @@ const WORD_PACK = {
       "clues": [
         "Spring",
         "Renewal",
-        "Table"
+        "Family"
       ]
     },
     {
@@ -6261,9 +6261,9 @@ const WORD_PACK = {
       "emoji": "🎨",
       "def": "A Hindu spring festival known for throwing bright colored powder.",
       "clues": [
-        "Powder",
         "Colors",
-        "Spring"
+        "Spring",
+        "Joyful"
       ]
     },
     {
@@ -6271,7 +6271,7 @@ const WORD_PACK = {
       "emoji": "☀️",
       "def": "A Scandinavian summer festival celebrating the longest day of the year.",
       "clues": [
-        "Solstice",
+        "Daylight",
         "Dancing",
         "Flowers"
       ]
@@ -6281,9 +6281,9 @@ const WORD_PACK = {
       "emoji": "🏮",
       "def": "A Japanese Buddhist festival honoring the spirits of ancestors with dances.",
       "clues": [
-        "Ancestors",
         "Lanterns",
-        "Dance"
+        "Ancestors",
+        "Summer"
       ]
     },
     {
@@ -6291,9 +6291,9 @@ const WORD_PACK = {
       "emoji": "🌸",
       "def": "A Buddhist holiday celebrating the birth and enlightenment of Buddha.",
       "clues": [
-        "Buddha",
-        "Candles",
-        "Meditation"
+        "Peace",
+        "Temple",
+        "Lanterns"
       ]
     },
     {
@@ -6302,7 +6302,7 @@ const WORD_PACK = {
       "def": "The Thai New Year festival famous for giant water fights in streets.",
       "clues": [
         "Water",
-        "Thailand",
+        "Splash",
         "Blessing"
       ]
     },
@@ -6311,9 +6311,9 @@ const WORD_PACK = {
       "emoji": "🍎",
       "def": "The Jewish New Year celebrated with apples, honey, and prayer.",
       "clues": [
-        "Honey",
-        "Apples",
-        "Shofar"
+        "Sweet",
+        "Prayer",
+        "Autumn"
       ]
     },
     {
@@ -6322,18 +6322,18 @@ const WORD_PACK = {
       "def": "A Korean harvest festival when families gather to share food and thanks.",
       "clues": [
         "Harvest",
-        "Moon",
-        "Ancestors"
+        "Feast",
+        "Moon"
       ]
     },
     {
-      "word": "Guy Fawkes Night",
+      "word": "Hogmanay",
       "emoji": "🎆",
-      "def": "A British night of bonfires and fireworks on the fifth of November.",
+      "def": "A lively Scottish celebration to welcome the brand new year.",
       "clues": [
-        "Bonfire",
-        "November",
-        "Gunpowder"
+        "Midnight",
+        "Scottish",
+        "Cheer"
       ]
     },
     {
@@ -6343,7 +6343,7 @@ const WORD_PACK = {
       "clues": [
         "Workers",
         "Rest",
-        "September"
+        "Autumn"
       ]
     }
   ],
