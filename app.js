@@ -81,6 +81,9 @@ const state = {
   screen: 'home',         // 'home' | 'setup' | 'menu' | 'card' | 'order' | 'reveal' | 'online'
   names: ['', '', ''],    // raw text fields on the setup screen
   numImposters: 1,
+  randomImposters: false, // when true, deal a random number of imposters each round
+  impMin: 1,              // range low  (used when randomImposters)
+  impMax: 2,              // range high (used when randomImposters)
   players: [],            // [{ name, isImposter, seen }] — kept in entry order
   category: '',
   word: '',
@@ -98,7 +101,8 @@ const state = {
 function saveSetup() {
   try {
     localStorage.setItem('imposter.setup', JSON.stringify({
-      names: state.names, numImposters: state.numImposters
+      names: state.names, numImposters: state.numImposters,
+      randomImposters: state.randomImposters, impMin: state.impMin, impMax: state.impMax
     }));
   } catch (e) { /* ignore */ }
 }
@@ -108,12 +112,27 @@ function loadSetup() {
     if (s && Array.isArray(s.names) && s.names.length >= 2) {
       state.names = s.names;
       state.numImposters = s.numImposters || 1;
+      state.randomImposters = !!s.randomImposters;
+      state.impMin = s.impMin || 1;
+      state.impMax = s.impMax || Math.max(state.impMin, 2);
     }
   } catch (e) { /* ignore */ }
 }
 
 /* ---------- helpers ---------- */
 const validNames = () => state.names.map((n) => n.trim()).filter(Boolean);
+
+// how many imposters to deal for n players — a fixed count, or a random number
+// drawn from the [impMin, impMax] range, always clamped to a valid 1..n-1.
+function imposterCountFor(n) {
+  const cap = Math.max(1, n - 1);
+  if (state.randomImposters) {
+    const lo = Math.min(Math.max(1, state.impMin), cap);
+    const hi = Math.min(Math.max(lo, state.impMax), cap);
+    return lo + randInt(hi - lo + 1);
+  }
+  return Math.min(Math.max(1, state.numImposters), cap);
+}
 
 function dealRoles() {
   const names = validNames();
@@ -134,9 +153,11 @@ function dealRoles() {
   // each word has several one-word clues — draw one at random for the imposter
   state.clue = pick.clues[randInt(pick.clues.length)] || '';
 
+  // how many imposters this round (fixed, or a random number in the chosen range)
+  const m = imposterCountFor(names.length);
   // assign imposters to random positions, but keep players in entry order
   const positions = shuffle(names.map((_, i) => i));
-  const imposterSet = new Set(positions.slice(0, state.numImposters));
+  const imposterSet = new Set(positions.slice(0, m));
   state.players = names.map((name, i) => ({
     name, isImposter: imposterSet.has(i), seen: false
   }));
@@ -203,7 +224,8 @@ function createRoom() {
   const code = makeRoomCode(), me = clientId(), TS = firebase.database.ServerValue.TIMESTAMP;
   state.online.code = code; state.online.isHost = true; state.online.joinError = '';
   db.ref('rooms/' + code).set({
-    host: me, status: 'lobby', numImposters: 1, createdAt: TS,
+    host: me, status: 'lobby', numImposters: 1,
+    randomImposters: false, impMin: 1, impMax: 2, createdAt: TS,
     players: { [me]: { name: name, joinedAt: TS } }
   }).then(() => {
     db.ref('rooms/' + code + '/players/' + me).onDisconnect().remove();
@@ -244,6 +266,75 @@ function onlineSetImposters(delta) {
   let n = Math.min(Math.max(1, (room.numImposters || 1) + delta), max);
   db.ref('rooms/' + state.online.code + '/numImposters').set(n);
 }
+function onlineSetRandom(on) {
+  db.ref('rooms/' + state.online.code + '/randomImposters').set(!!on);
+}
+function onlineSetImpMin(delta) {
+  const room = state.online.room; if (!room) return;
+  const cap = Math.max(1, Object.keys(room.players || {}).length - 1);
+  const hi = Math.min(room.impMax || 2, cap);
+  const lo = Math.min(Math.max(1, (room.impMin || 1) + delta), hi);
+  db.ref('rooms/' + state.online.code).update({ impMin: lo });
+}
+function onlineSetImpMax(delta) {
+  const room = state.online.room; if (!room) return;
+  const cap = Math.max(1, Object.keys(room.players || {}).length - 1);
+  const lo = Math.max(1, room.impMin || 1);
+  const hi = Math.min(Math.max(lo, (room.impMax || 2) + delta), cap);
+  db.ref('rooms/' + state.online.code).update({ impMax: hi });
+}
+
+// host-only imposter controls for the lobby (fixed count, or a random range)
+function onlineImposterControls(room, n, maxImp) {
+  const on = !!room.randomImposters;
+  const toggle = h('button', { class: 'toggle-row', onclick: () => onlineSetRandom(!on) },
+    h('div', { class: 'label' },
+      h('span', { class: 'big' }, 'Random each round'),
+      h('span', { class: 'hint' }, on ? 'A surprise number of imposters' : 'Always the same number')),
+    h('span', { class: 'switch' + (on ? ' on' : '') }, h('span', { class: 'thumb' }))
+  );
+  if (!on) {
+    const numImp = Math.min(room.numImposters || 1, maxImp);
+    return h('div', { class: 'range-block' }, toggle,
+      h('div', { class: 'stepper' },
+        h('div', { class: 'label' },
+          h('span', { class: 'big' }, numImp + (numImp === 1 ? ' imposter' : ' imposters')),
+          h('span', { class: 'hint' }, 'of ' + n + ' players')),
+        h('div', { class: 'controls' },
+          h('button', { class: 'round-btn', disabled: numImp <= 1, onclick: () => onlineSetImposters(-1) }, '−'),
+          h('span', { class: 'count' }, String(numImp)),
+          h('button', { class: 'round-btn', disabled: numImp >= maxImp, onclick: () => onlineSetImposters(1) }, '+')
+        )
+      )
+    );
+  }
+  const lo = Math.min(Math.max(1, room.impMin || 1), maxImp);
+  const hi = Math.min(Math.max(lo, room.impMax || 2), maxImp);
+  const caption = lo === hi
+    ? ('Always ' + lo + (lo === 1 ? ' imposter' : ' imposters') + ' — widen the range for a surprise')
+    : ('A random ' + lo + '–' + hi + ' imposters each round · nobody knows how many');
+  return h('div', { class: 'range-block' }, toggle,
+    h('div', { class: 'stepper' },
+      h('div', { class: 'label' }, h('span', { class: 'big' }, 'Fewest'),
+        h('span', { class: 'hint' }, lo === 1 ? '1 imposter' : lo + ' imposters')),
+      h('div', { class: 'controls' },
+        h('button', { class: 'round-btn', disabled: lo <= 1, onclick: () => onlineSetImpMin(-1) }, '−'),
+        h('span', { class: 'count' }, String(lo)),
+        h('button', { class: 'round-btn', disabled: lo >= hi, onclick: () => onlineSetImpMin(1) }, '+')
+      )
+    ),
+    h('div', { class: 'stepper' },
+      h('div', { class: 'label' }, h('span', { class: 'big' }, 'Most'),
+        h('span', { class: 'hint' }, hi === 1 ? '1 imposter' : hi + ' imposters')),
+      h('div', { class: 'controls' },
+        h('button', { class: 'round-btn', disabled: hi <= lo, onclick: () => onlineSetImpMax(-1) }, '−'),
+        h('span', { class: 'count' }, String(hi)),
+        h('button', { class: 'round-btn', disabled: hi >= maxImp, onclick: () => onlineSetImpMax(1) }, '+')
+      )
+    ),
+    h('p', { class: 'note center', style: 'margin-top: 2px;' }, caption)
+  );
+}
 
 function onlineDeal() {
   const room = state.online.room, code = state.online.code;
@@ -255,7 +346,15 @@ function onlineDeal() {
   }
   const pick = flat[randInt(flat.length)];
   const clue = pick.clues[randInt(pick.clues.length)] || '';
-  const m = Math.min(Math.max(1, room.numImposters || 1), ids.length - 1);
+  const cap = ids.length - 1;
+  let m;
+  if (room.randomImposters) {
+    const lo = Math.min(Math.max(1, room.impMin || 1), cap);
+    const hi = Math.min(Math.max(lo, room.impMax || 2), cap);
+    m = lo + randInt(hi - lo + 1);
+  } else {
+    m = Math.min(Math.max(1, room.numImposters || 1), cap);
+  }
   const impIds = shuffle(ids).slice(0, m);
   const imposters = {}; impIds.forEach((id) => { imposters[id] = true; });
   db.ref('rooms/' + code).update({
@@ -334,14 +433,7 @@ function onlineLobbyScreen() {
       id === room.host ? h('span', { class: 'tag ins' }, 'Host') : null
     ))),
     h('div', { class: 'spacer' }),
-    isHost ? h('div', { class: 'stepper' },
-      h('div', { class: 'label' }, h('span', { class: 'big' }, numImp + (numImp === 1 ? ' imposter' : ' imposters')), h('span', { class: 'hint' }, 'of ' + ids.length + ' players')),
-      h('div', { class: 'controls' },
-        h('button', { class: 'round-btn', disabled: numImp <= 1, onclick: () => onlineSetImposters(-1) }, '−'),
-        h('span', { class: 'count' }, String(numImp)),
-        h('button', { class: 'round-btn', disabled: numImp >= maxImp, onclick: () => onlineSetImposters(1) }, '+')
-      )
-    ) : null,
+    isHost ? onlineImposterControls(room, ids.length, maxImp) : null,
     isHost
       ? h('button', { class: 'btn btn-primary', disabled: !canStart, onclick: onlineDeal }, canStart ? 'Start game' : 'Need at least 3 players')
       : h('p', { class: 'note center' }, 'Waiting for the host to start…')
@@ -391,6 +483,65 @@ function onlineRevealScreen() {
   );
 }
 
+// ---- setup imposter controls: a fixed count, or a random range ----
+function imposterToggle() {
+  const on = state.randomImposters;
+  return h('button', {
+    class: 'toggle-row',
+    onclick: () => { state.randomImposters = !state.randomImposters; saveSetup(); render(); }
+  },
+    h('div', { class: 'label' },
+      h('span', { class: 'big' }, 'Random each round'),
+      h('span', { class: 'hint' }, on ? 'A surprise number of imposters' : 'Always the same number')
+    ),
+    h('span', { class: 'switch' + (on ? ' on' : '') }, h('span', { class: 'thumb' }))
+  );
+}
+
+function fixedStepper(count, maxImp) {
+  return h('div', { class: 'stepper' },
+    h('div', { class: 'label' },
+      h('span', { class: 'big' }, state.numImposters + (state.numImposters === 1 ? ' imposter' : ' imposters')),
+      h('span', { class: 'hint' }, count >= 1 ? ('of ' + count + ' players') : 'add players first')
+    ),
+    h('div', { class: 'controls' },
+      h('button', { class: 'round-btn', disabled: state.numImposters <= 1, onclick: () => { state.numImposters--; saveSetup(); render(); } }, '−'),
+      h('span', { class: 'count' }, String(state.numImposters)),
+      h('button', { class: 'round-btn', disabled: state.numImposters >= maxImp, onclick: () => { state.numImposters++; saveSetup(); render(); } }, '+')
+    )
+  );
+}
+
+function rangeSteppers(count, maxImp) {
+  const lo = state.impMin, hi = state.impMax;
+  const caption = lo === hi
+    ? ('Always ' + lo + (lo === 1 ? ' imposter' : ' imposters') + ' — widen the range for a surprise')
+    : ('A random ' + lo + '–' + hi + ' imposters each round · nobody knows how many');
+  return h('div', { class: 'range-block' },
+    h('div', { class: 'stepper' },
+      h('div', { class: 'label' },
+        h('span', { class: 'big' }, 'Fewest'),
+        h('span', { class: 'hint' }, lo === 1 ? '1 imposter' : lo + ' imposters')),
+      h('div', { class: 'controls' },
+        h('button', { class: 'round-btn', disabled: lo <= 1, onclick: () => { state.impMin = Math.max(1, state.impMin - 1); saveSetup(); render(); } }, '−'),
+        h('span', { class: 'count' }, String(lo)),
+        h('button', { class: 'round-btn', disabled: lo >= hi, onclick: () => { state.impMin = Math.min(state.impMax, state.impMin + 1); saveSetup(); render(); } }, '+')
+      )
+    ),
+    h('div', { class: 'stepper' },
+      h('div', { class: 'label' },
+        h('span', { class: 'big' }, 'Most'),
+        h('span', { class: 'hint' }, hi === 1 ? '1 imposter' : hi + ' imposters')),
+      h('div', { class: 'controls' },
+        h('button', { class: 'round-btn', disabled: hi <= lo, onclick: () => { state.impMax = Math.max(state.impMin, state.impMax - 1); saveSetup(); render(); } }, '−'),
+        h('span', { class: 'count' }, String(hi)),
+        h('button', { class: 'round-btn', disabled: hi >= maxImp, onclick: () => { state.impMax = Math.min(maxImp, state.impMax + 1); saveSetup(); render(); } }, '+')
+      )
+    ),
+    h('p', { class: 'note center', style: 'margin-top: 2px;' }, caption)
+  );
+}
+
 function setupScreen() {
   let packTotal = 0;
   for (const c in WORD_PACK) packTotal += WORD_PACK[c].length;
@@ -399,8 +550,13 @@ function setupScreen() {
   const maxImp = Math.max(1, count - 1);
   if (state.numImposters > maxImp) state.numImposters = maxImp;
   if (state.numImposters < 1) state.numImposters = 1;
+  // keep the random range inside 1..maxImp and correctly ordered
+  if (state.impMin < 1) state.impMin = 1;
+  if (state.impMin > maxImp) state.impMin = maxImp;
+  if (state.impMax > maxImp) state.impMax = maxImp;
+  if (state.impMax < state.impMin) state.impMax = state.impMin;
 
-  const canStart = count >= 3 && state.numImposters <= count - 1;
+  const canStart = count >= 3 && (state.randomImposters || state.numImposters <= count - 1);
 
   const rows = state.names.map((name, i) =>
     h('div', { class: 'name-row' },
@@ -438,26 +594,8 @@ function setupScreen() {
     }, '＋  Add player'),
 
     h('div', { class: 'section-label' }, 'Imposters'),
-    h('div', { class: 'stepper' },
-      h('div', { class: 'label' },
-        h('span', { class: 'big' },
-          state.numImposters + (state.numImposters === 1 ? ' imposter' : ' imposters')),
-        h('span', { class: 'hint' }, count >= 1 ? ('of ' + count + ' players') : 'add players first')
-      ),
-      h('div', { class: 'controls' },
-        h('button', {
-          class: 'round-btn',
-          disabled: state.numImposters <= 1,
-          onclick: () => { state.numImposters--; saveSetup(); render(); }
-        }, '−'),
-        h('span', { class: 'count' }, String(state.numImposters)),
-        h('button', {
-          class: 'round-btn',
-          disabled: state.numImposters >= maxImp,
-          onclick: () => { state.numImposters++; saveSetup(); render(); }
-        }, '+')
-      )
-    ),
+    imposterToggle(),
+    state.randomImposters ? rangeSteppers(count, maxImp) : fixedStepper(count, maxImp),
 
     h('div', { class: 'spacer' }),
     h('p', { id: 'start-hint', class: 'note' + (canStart ? '' : ' warn') },
@@ -476,7 +614,7 @@ function setupScreen() {
 // Toggle the Start button live while typing names (no full re-render = keeps focus).
 function updateStartButton() {
   const count = validNames().length;
-  const canStart = count >= 3 && state.numImposters <= count - 1;
+  const canStart = count >= 3 && (state.randomImposters || state.numImposters <= count - 1);
   const btn = document.getElementById('start-btn');
   const hint = document.getElementById('start-hint');
   if (btn) btn.disabled = !canStart;
